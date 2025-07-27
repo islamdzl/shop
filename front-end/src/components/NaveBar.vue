@@ -38,16 +38,16 @@
 </template>
 <script>
  // solt
-  import navBar from '@/store/modules/navBar';
+  import naveBar from '@/store/modules/naveBar';
   import ISideBar from '../assets/images/side-bar.png'
   export default {
-      name: 'NavBar',
+      name: 'NaveBar',
       computed: {
         routes() {
-          return this.$store.getters['navBar/routes'];
+          return this.$store.getters['naveBar/routes'];
         },
         routeSelected() {
-          return this.$store.getters['navBar/routeSelected']
+          return this.$store.getters['naveBar/routeSelected']
         },
         sidebarState() {
           return this.$store.getters['sideBar/state']
@@ -66,7 +66,7 @@
         goToPage(path, index) {
           if (this.$route.path === path) return;
           this.$router.push(path)
-          navBar.state.routeSelected = index;
+          naveBar.state.routeSelected = index;
         },
         search(word) {
           if (!word) return;

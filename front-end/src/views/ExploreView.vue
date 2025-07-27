@@ -19,17 +19,23 @@
                         <span v v-else>{{ product.delivery }} DA</span> 
                       </div>
                       <div class="promo">
-                        <span class="price" old>{{ '1000' }}</span>
-                        <span class="price" new>DA {{ '3000' }}</span>
+                        <span v-if="product.promo" class="price" old>{{ product.promo }}</span>
+                        <span class="price" new>DA {{ product.price }}</span>
                       </div>
-                      <button v-if="ifCartHas(product.id)" class="button" style="background-color: var(--color-3);" w="90">
-                        <h4>add To Cart</h4>
-                        <img src="../assets/images/shopping-cart.png" alt="">
+                      <button v-if="! $store.getters['user/isLogin']" class="button" style="background-color: var(--color-2);" w="90">
+                        <h4>Buyig Now</h4>
+                        <img src="../assets/images/buy.png">
                       </button>
-                      <button v-else t class="button" style="border: 1px var(--color-3) solid;" w="90">
-                        <h4>add To Cart</h4>
-                        <img src="../assets/images/true-1.png" alt="">
-                      </button>
+                      <div v-else>
+                        <button v-if="ifCartHas(product.id)" class="button" style="background-color: var(--color-3);" w="90">
+                          <h4>add To Cart</h4>
+                          <img src="../assets/images/shopping-cart.png" alt="">
+                        </button>
+                        <button v-else t class="button" style="border: 1px var(--color-3) solid;" w="90">
+                          <h4>add To Cart</h4>
+                          <img src="../assets/images/true-1.png" alt="">
+                        </button>
+                      </div>
                     </div>
                   </div>
               </div>
@@ -105,11 +111,11 @@
                 {delivery: null, name: 'Islam', price: '400', description: 'New Order', promo: '560', id: 'lkqnds-kjqnsd-slkd-'},
                 {delivery: 0,name: 'Islam', price: '400', description: 'New Order', promo: '560', id: 'lkqnds-kjqnsd-slkd-'},
                 {delivery: 200,name: 'Islam', price: '400', description: 'New Order', promo: '560', id: 'lkqnds-kjqnsd-slkd-'},
-                {name: 'Islam', price: '400', description: 'New Order', promo: '560', id: 'lkqnds-kjqnsd-slkd-'},
-                {name: 'Islam', price: '400', description: 'New Order', promo: '560', id: 'lkqnds-kjqnsd-slkd-'},
-                {name: 'Islam', price: '400', description: 'New Order', promo: '560', id: 'lkqnds-kjqnsd-slkd-'},
-                {name: 'Islam', price: '400', description: 'New Order', promo: '560', id: 'lkqnds-kjqnsd-slkd-'},
-                {name: 'Islam', price: '400', description: 'New Order', promo: '560', id: 'lkqnds-kjqnsd-slkd-'},
+                {name: 'Islam', price: '400', description: 'New Order', promo: '560', id: 'lkqnds-kjqnsd-sDFlkd-'},
+                {name: 'Islam', price: '400', description: 'New Order', promo: '560', id: 'lkqnds-kjqnsd-sSQlkd-'},
+                {name: 'Islam', price: '400', description: 'New Order', id: 'lkqnds-kjqnsd-Sslkd-'},
+                {name: 'Islam', price: '400', description: 'New Order', promo: '560', id: 'lkqnds-kjqnsd-slkWd-'},
+                {name: 'Islam', price: '400', description: 'New Order', promo: '560', id: 'lkqnds-kjqnsd-slkDd-'},
                 {name: 'Islam', price: '400', description: 'New Order', promo: '560'},
               ],
               [

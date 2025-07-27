@@ -87,7 +87,10 @@
       removeImage(index) {
         this.productImages = this.productImages.filter((item, Index)=> index !== Index)
       }
-    }
+    },
+    created() {
+      this.$store.commit('controlles/checkView', this.$route.path)
+    },
   };
 </script>
 <style scoped>
@@ -133,7 +136,7 @@
       background-color: var(--layer-7);
     }
     .mobile-textarwa {
-      max-width: 75%;
+      max-width: 76%;
       min-width: 75%;
       height: 4vh;
       font-size: 1.2em;
@@ -178,6 +181,7 @@
       align-items: center;
       overflow-x: scroll;
       overflow-y: hidden;
+      transition: 300ms;
     }
     .mobile-images-previow:has(div) {
       height: 30vh;

@@ -1,8 +1,10 @@
 import app from "@/main"
+import api from '../../api/index'
 
 export default {
   namespaced: true,
   state: {
+    USER: null,
     isLogin: false,
     buyingDetiles: (JSON.parse(localStorage.getItem('buying-detiles')) || null),
     _buyingDetilesResolver: null,
@@ -10,6 +12,7 @@ export default {
   getters: {
     _buyingDetilesResolver: state => state._buyingDetilesResolver,
     buyingDetiles: state => state.buyingDetiles,
+    isLogin: (state)=> state.isLogin,
   },
   mutations: {
     setBuyingResolver(state, resolver) {state._buyingDetilesResolver = resolver},
@@ -24,6 +27,9 @@ export default {
     }
   },
   actions: {
+    async getUser() {
+      return await api.post('/user')
+    },
     async verifyBuyingDetiles({commit, state}) {
       return new Promise((resolve)=>{
         if (! state.buyingDetiles) {

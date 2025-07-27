@@ -8,17 +8,20 @@
         <SideBar/>
         <NavigationBar/>
       </div>
+      <LoadingView/>
+
     <!-- <router-view/> -->
   </div>
 </template>
 <script>
-  import NavBar from './components/NavBar.vue';
+  import NavBar from './components/NaveBar.vue';
   import SideBar from './components/SideBar.vue';
   import sideBar from './store/modules/sideBar';
   import NavigationBar from './components/NavigationBar.vue';
+  import LoadingView from './views/LoadingView.vue';
 
   export default {
-    components: {NavBar, SideBar, NavigationBar},
+    components: {NavBar, SideBar, NavigationBar, LoadingView},
     computed: {
       sideBarWidth() {
         return this.$store.getters['sideBar/width']
@@ -34,6 +37,7 @@
     },
     created() {
       this.screenContent.width = 100 - this.sideBarWidth
+      this.$store.dispatch('controlles/init', this)
     }
   }
 </script>

@@ -21,7 +21,7 @@ export default {
       return state.routeSelected;
     }
   },
-  mutation: {
+  mutations: {
     create(state, routes) {
       state.routes = routes;
     },
@@ -29,14 +29,8 @@ export default {
       if (this.$route.path === path) return;
       this.$router.push(path)
     },
-    add(state, route) {
-      state.routes.push(route)
-    },
-    remove(state, name) {
-      state.routes = state.routes.filter((item)=>{
-        if (item.name === name) return false;
-        return true;
-      })
-    },
+    buttons(state, buttons) {
+      state.routes = buttons;
+    }
   }
 }

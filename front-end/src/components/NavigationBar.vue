@@ -12,23 +12,23 @@
   </div>
 </template>
 <script>
-import navBar from '@/store/modules/navBar';
+  import naveBar from '@/store/modules/naveBar';
 
   export default {
     name: 'NavigationBar',
     computed: {
       routes() {
-        return this.$store.getters['navBar/routes'];
+        return this.$store.getters['naveBar/routes'];
       },
       routeSelected() {
-        return this.$store.getters['navBar/routeSelected']
+        return this.$store.getters['naveBar/routeSelected']
       },
     },
     methods: {
       goToPage(path, index) {
         if (this.$route.path === path) return;
         this.$router.push(path)
-        navBar.state.routeSelected = index;
+        naveBar.state.routeSelected = index;
       },
     }
   }
