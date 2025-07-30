@@ -83,7 +83,7 @@
           </div>
         </div>
         <div class="mobile-info-items">
-        <button class="button" w="90" t style="border: 1px var(--color-2) solid;">Bye All</button>
+        <button class="button" w="90" style="background: var(--color-2);">Bye All</button>
         </div>
       </div>
       <div class="mobile-items">
@@ -93,8 +93,12 @@
           <h3>{{ product.name }}</h3>
           <h4>{{ product.count }}</h4>
           <div class="mobile-item-buttons">
-            <button class="mobile-item-button" r>Remove</button>
-            <button class="mobile-item-button" g>Pay Now</button>
+            <button class="mobile-item-button" w="90" style="background-color: var(--color-2);" r>
+              {{ 'Remove' }}
+            </button>
+            <button class="mobile-item-button" w="90" style="background-color: var(--color-2);" r>
+              {{ 'Pay Now' }}
+            </button>
           </div>
         </div>
 
@@ -148,6 +152,7 @@
       },
     },
     created() {
+      this.$store.commit('checkView', this.$route.path)
       this.calcTotalPrice();
       const schema = [
         {type: 'Lable', text: 'Products', size: 23},
@@ -199,7 +204,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: var(--layer-4);
+    background-color: var(--layer-1);
     margin: 1vh 0;
     border-radius: 30px;
     border: 1px transparent solid;
@@ -271,11 +276,11 @@
     border-radius: 50%;
     cursor: pointer;
     padding: 0.5vw;
-    background-color: var(--layer-2);
+    background-color: var(--layer-1);
     transition: 100ms;
   }
   .item-controles img:active {
-    background-color: var(--layer-3);
+    background-color: var(--layer-2);
     animation: smoth-zoom 300ms;
   }
 
@@ -333,7 +338,6 @@
       display: flex;
       flex-direction: row;
       justify-content: space-around;
-      background-color: var(--layer-6);
     }
     .mobile-info p {
       font-size: 1.3rem;
@@ -365,19 +369,19 @@
       padding: 0 10px;
       gap: 10px;
       row-gap: 10px;
-      background-color: var(--layer-6);
     }
     .mobile-product {
       position: relative;
       height: 220px;
       width: 170px;
       border-radius: 13px;
-      background-color: var(--layer-7);
+      background-color: var(--layer-1);
       display: flex;
       flex-direction: column;
       align-items: top;
       margin-bottom: 5px;
       margin: 5px auto;
+      box-shadow: 0px 0px 10px var(--shadow);
     }
     .mobile-product img {
       width: 17vh;
@@ -396,26 +400,28 @@
       padding: 2px 4px;
       font-size: 1.1rem;
       border-radius: 6px;
-      background-color: rgba(0, 0, 0, 0.3);
+      background-color: var(--layer-2);
     }
     .mobile-item-buttons {
+      width: 100%;
+      height: 6vh;
       display: flex;
       flex-direction: row;
       justify-content: space-around;
-      height: 50%;
-      padding: 0;
     }
     .mobile-item-button {
       width: 42%;
       height: 70%;
       border-radius: 12px;
-      background-color: var(--layer-6);
+      border: none;
       cursor: pointer;
-      font-size: 1rem;
+      font-size: 0.9rem;
+      color: aliceblue;
+      font-weight: bold;
       margin: 5px;
     }
-    .mobile-item-button[r] {border: 1px var(--color-1) solid;}
-    .mobile-item-button[g] {border: 1px var(--color-2) solid;}
+    .mobile-item-button[r] {background-color: var(--color-1);}
+    .mobile-item-button[g] {background-color: var(--color-2);}
     .mobile-item-button:active {animation: smoth-zoom 200ms;}
   }
 </style>

@@ -47,9 +47,8 @@
       flex-direction: row;
       justify-content: space-around;
       align-items: center;
-      background-color: var(--layer-6);
-      border-top: 1px rgba(240, 248, 255, 0.5) solid;
-      border-bottom: 1px rgba(240, 248, 255, 0.5) solid;
+      background-color: var(--layer-2);
+      border-top: 1px var(--row) solid;
     }
     .route {
       width: 23%;
@@ -60,10 +59,11 @@
       margin: 1vh  5px;
       padding: 7px 6px;
       text-align: center;
-      border-radius: 20px;
-      background-color: var(--layer-7);
+      border-radius: 14px;
+      background-color: var(--layer-4);
       border: 1px solid transparent;
       display: flex;
+      box-shadow: 0px 0px 7px 1px var(--shadow);
       transition: 300ms;
     }
     .route[select='1'] {
@@ -75,6 +75,7 @@
     .route p {
       font-size: 0.9rem;
       align-self: center;
+      color: aliceblue;
     }
     .route img {
       width: 3vh;

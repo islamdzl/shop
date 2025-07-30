@@ -1,14 +1,15 @@
 import store from "@/store/index";
-import IBasket from '../assets/images/basket.png';
-// import IShoppingCart from '../assets/images/shopping-cart.png';
-import IPackage from '../assets/images/package.png';
+import IShoppingCart from '../assets/images/shopping-cart.png';
+import IStore from '../assets/images/store.png';
+import ICompass from '../assets/images/compass.png';
+
 
 export const Roles = {
   Gust: {
     naveBar: [
-      {name:'Login', path:'/login', img: IBasket},
-      {name:'Explore', path:'/explore', img: IPackage},
-      {name:'My Profile', path:'/buying/detales', img: IPackage},
+      {name:'Cart', path:'/login', img: IShoppingCart},
+      {name:'My Store', path:'/login', img: IStore},
+      {name:'Explore', path:'/explore', img: ICompass},
     ],
     baseView: '/explore',
     views: {
@@ -78,19 +79,21 @@ export const setToken = (token)=>{
 }
 
 export const baseURL =  `${location.protocol}//${location.host}`;
+export const getColorTheme = ()=> localStorage.getItem('color-thime') || 'light';
+export const setColorTheme = (thime)=> {
+  localStorage.setItem('color-thime', thime)
 
+}
 export const useRoll = (role, app, user)=> {
   const controler = store.state.controlles
   store.commit('naveBar/buttons', role.naveBar);
   controler.accountRole = role;
   controler.views = role.views;
-  setTimeout(()=>{
-   if (app.$route.path === '/') app.$router.push(role.baseView);
-  }, 100)
+  //  if (app.$route.path === '/') app.$router.push(role.baseView);
   console.log(user)
 }
 export default {
   baseURL, Roles,
   getToken, getUser, reLoad, setToken,
-  useRoll, 
+  useRoll, getColorTheme, setColorTheme
 }

@@ -89,7 +89,7 @@
       }
     },
     created() {
-      this.$store.commit('controlles/checkView', this.$route.path)
+      this.$store.commit('checkView', this.$route.path)
     },
   };
 </script>
@@ -133,7 +133,8 @@
       border-radius: 17px;
       text-align: center;
       font-size: 1.2rem;
-      background-color: var(--layer-7);
+      background-color: var(--layer-1);
+      box-shadow: 0px 0px 10px var(--shadow);
     }
     .mobile-textarwa {
       max-width: 76%;
@@ -145,14 +146,18 @@
       border-radius: 17px;
       border: none;
       transition: 300ms;
-      background-color: var(--layer-7);
+      background-color: var(--layer-1);
+      box-shadow: 0px 0px 10px var(--shadow);
     }
     .mobile-textarwa:focus {
       height: 13vh;
     }
     .mobile-add-image span img {
       height: 50%;
-      margin: 3.7vh 0;
+      margin: 3.2vh 0;
+      padding: 0.25vh;
+      border-radius: 13px;
+      background-color: var(--background-icon);
     }
     .mobile-add-image span {
       height: 25vh;
@@ -198,7 +203,7 @@
       justify-content: space-around;
       padding: 0 5px 0 10px;
       border-radius: 11px;
-      background-color: var(--layer-7);
+      background-color: var(--layer-1);
       border: 1px transparent solid;
       margin: 10px 0;
       transition: 300ms;
@@ -208,6 +213,9 @@
       display: flex;
       flex-direction: column;
     }
+    .mobile-delivery-product div:has(div), .mobile-delivery-product div:has(input[type='radio']) {
+      box-shadow: 0px 0px 10px var(--shadow);
+    }
     .mobile-delivery-product div div input {
       width: 90%;
       height: 3vh;
@@ -216,7 +224,7 @@
       text-align: center;
       font-size: 1.2rem;
       color: var(--color-3);
-      background-color: var(--layer-6);
+      background-color: var(--layer-1);
     }
     .mobile-previow-img {
       position: relative;

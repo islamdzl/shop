@@ -89,6 +89,7 @@
       },
     },
     created() {
+      this.$store.commit('checkView', this.$route.path)
       const sideBar = [
         {type: 'Lable', text: 'Settings', size: 23},
         {type: 'Button', onClick: ()=> this.selectSetting('account'), name: 'Account',},

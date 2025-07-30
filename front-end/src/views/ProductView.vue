@@ -85,10 +85,6 @@
         </div>
       </div>
       <div class="mobile-product-detils">
-        <div class="mobile-go-back" @click="dd()">
-            <span t >Go Back</span>
-            <img src="../assets/images/arrow-2.png" class="icon">
-        </div>
         <h2>{{ product.name }}</h2>
         <span>
           <span k>Price</span>
@@ -110,8 +106,10 @@
         </span>
         <span><p>{{ product.discription.length < 150 ? product.discription : product.discription.slice(0, 150) + ' ...' }}</p></span>
         <span>
-          <button class="button" t style="border: 1px var(--color-2) solid;">Add To Cart</button>
-          <button class="button" t style="border: 1px var(--color-2) solid;">Bye Now</button>
+          <button v-if="isLogin" class="button" style="background-color: var(--color-2);">Add To Cart</button>
+          <button v-else class="button" style="background-color: var(--color-2);">Bye Now</button>
+          
+          <button class="button" style="background-color: var(--color-1);">Go Back</button>
         </span>
       </div>
     </div>
@@ -122,8 +120,10 @@
 
   export default {
     name: 'ProductView',
-    components: {
-      // SelectSwitch
+    computed: {
+      isLogin() {
+        return this.$store.getters['user/isLogin']
+      }
     },
     data() {
       return {
@@ -163,6 +163,7 @@
       }
     },
     created() {
+      this.$store.commit('checkView', this.$route.path)
       const productId = this.$route.params.productId;
       console.log(productId)
 
@@ -232,7 +233,7 @@
     transition: 300ms;
   }
   .images-previw img[a]:hover {
-    background-color: var(--layer-3);
+    background-color: var(--layer-2);
     opacity: 1;
   }
   .images-previw img[a]:active {
@@ -305,7 +306,7 @@
     border-radius: 50%;
     padding: 10px;
     margin: 0.2vw 0;
-    background-color: var(--layer-4);
+    background-color: var(--layer-1);
     cursor: pointer;
     transition: 300ms;
   }
@@ -353,6 +354,7 @@
       display: flex;
       flex-direction: row;
       align-items: center;
+      margin: 5px 0;
       justify-content: space-around;
     }
     .mobile-preview img[a] {
@@ -370,6 +372,8 @@
       display: flex;
       align-items: center;
       justify-content: center;
+      border-radius: 10px;
+      background-color: var(--layer-1);
       margin: 8px;
     }
     .mobile-img-viewr img {
@@ -435,29 +439,6 @@
     .mobile-product-detils span button {
       width: 30vw;
       height: 5vh;
-    }
-    .mobile-go-back {
-      position: absolute;
-      display: flex;
-      align-items: center;
-      justify-content: space-around;
-      border: 1px var(--color-3) solid;
-      padding: 0.5% 1%;
-      border-radius: 10px;
-      cursor: pointer;
-      top: 1.5vh;
-      right: 3vw;
-    }
-    .mobile-go-back:active {
-      animation: smoth-zoom 300ms;
-    }
-    .mobile-go-back img {
-      width: 3.7vh;
-      height: 3.7vh;
-    }
-    .mobile-go-back span{
-      width: 23vw;
-      height: 3.7vh;
     }
     .mobile-product-detils span p {
       font-size: 0.8rem;

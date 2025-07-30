@@ -142,6 +142,7 @@
       }
     },
     created() {
+      this.$store.commit('checkView', this.$route.path)
       const schema = [
         {type: 'Lable', text: 'Products', size: 23},
         {type: 'Route', name: 'Cart', img: ICart, path: '/cart'},
@@ -193,7 +194,7 @@
     height: 25vh;
     border-radius: 2vw;
     margin: 1.5vh auto;
-    background-color: var(--layer-4);
+    background-color: var(--layer-1);
     border: 1px transparent solid;
     transition: 300ms;
   }
@@ -359,7 +360,7 @@
       position: relative;
       width: 100%;
       height: 24vh;
-      background-color: var(--layer-6);
+      background-color: var(--layer-1);
     }
     .mobile-product-info div {
       width: 100%;
@@ -382,14 +383,13 @@
       width: 100%;
       top: 24vh;
       bottom: 0;
-      background-color: var(--layer-6);
       overflow-y: scroll;
     }
     .mobile-product-item {
       width: 95%;
       height: 12vh;
       margin: 1vh auto;
-      background-color: var(--layer-7);
+      background-color: var(--layer-1);
       border-radius: 2vw;
       display: flex;
       flex-direction: row;

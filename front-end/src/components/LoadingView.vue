@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div v-if="loadingState">
+    <div v-if="state">
       <div class="desktop"></div>
       <div class="mobile">
         <div class="mobile-loading">
@@ -13,17 +13,12 @@
 <script>
   export default {
     name: 'LoadingView',
-    data() {
-      return {
-      }
-    },
-    computed: {
-      loadingState() {
-        return this.$store.getters['loadingState']
-      }
-    },
-    methods: {
+  props: {
+    state: {
+      type: Boolean,
+      default: true,
     }
+  }
   }
 </script>
 <style scoped>
@@ -31,16 +26,17 @@
     .mobile-loading {
       position: absolute;
       z-index: 10;
-      width: 100%;
+      top: 0;
+      left: 0;
       height: 100%;
-      backdrop-filter: blur(4px);
+      backdrop-filter: blur(2px);
       background-color: rgb(0, 0, 0, 0.3);
       display: flex;
       justify-content: center;
       align-items: center;
     }
     .mobile-loading img {
-      width: 10vw;
+      width: 10%;
       animation: rotate 700ms linear infinite;
     }
   }

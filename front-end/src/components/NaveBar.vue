@@ -12,10 +12,12 @@
       <img src="../assets/images/user.png">
       <p>Example Email@gmail.com</p>
     </div>
+
     <div class="search">
       <input type="search" placeholder="Search" v-model="searchWord" @keydown.enter="search(searchWord)">
       <img src="../assets/images/magnifying-glass.png">
     </div>
+
     <div class="routers">
       <span 
       v-for="(route, index) in routes" 
@@ -29,8 +31,8 @@
     </div>
 
     <div v-if="! $store.getters['sideBar/hide']" class="flex">
-      <div class="hv"></div>
-      <img :src="ISideBar" class="side-bar" @click="$store.commit('sideBar/setState', !sidebarState)">
+      <div class="hv" style="background-color: var(--row);"></div>
+      <img :src="sideBarIcon" class="side-bar" @click="$store.commit('sideBar/setState', !sidebarState)">
     </div>
     <div v-else class="flex" style="width: 10vw;"></div>
 
@@ -38,8 +40,9 @@
 </template>
 <script>
  // solt
+  import ISideBar_0 from '../assets/images/side-bar-0.png';
+  import ISideBar_1 from '../assets/images/side-bar-1.png';
   import naveBar from '@/store/modules/naveBar';
-  import ISideBar from '../assets/images/side-bar.png'
   export default {
       name: 'NaveBar',
       computed: {
@@ -54,12 +57,18 @@
         },
         sideBarHide() {
           return this.$store.getters['sideBar/hide']
-        }
+        },
+        sideBarIcon() {
+          const theme = this.$store.getters['colorTheme'];
+          if (theme === 'dark-mode') return ISideBar_1;
+          if (theme === 'light-mode') return ISideBar_0;
+          return ISideBar_0
+        },
       },
       data() {
         return {
           searchWord: '',
-          ISideBar,
+          ISideBar_0, ISideBar_1
         }
       }, 
       methods: {
@@ -78,7 +87,8 @@
           }
         }
       },
-      
+      created() {
+      }
   }
 </script>
 <style scoped>
@@ -109,14 +119,18 @@
     position: fixed;
     width: 98vw;
     height: calc(8vh - 1px);
-    background-color: var(--background);
+    background-color: var(--layer-2);
     border-bottom: 1px rgba(240, 248, 255, 0.5) solid;
     display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     padding: 1vh 1vw;
   }
   .routers {
     display: flex;
-    margin-left: auto;
+    flex-direction: row;
+    justify-content: flex-end;
+    width: 80%;
   }
   .route {
     height: 6vh;
@@ -126,7 +140,7 @@
     color: #42b983;
     cursor: pointer;
     border-radius: 10px;
-    background-color: var(--layer-2);
+    background-color: var(--layer-4);
     border: 1px solid var(--color-2);
     display: flex;
     transition: 300ms;
@@ -150,11 +164,13 @@
     color: #42b983;
   }
   .search {
-    width: 30%;
+    width: 50%;
+    height: 6vh;
     background-color: var(--layer-1);
-    border-radius: 20px;
-    margin: 0.3vh auto;
+    border-radius: 17px;
     display: flex;
+    margin: auto;
+    box-shadow: 0px 0px 10px var(--shadow);
   }
   .search input {
     background-color: transparent;
@@ -169,7 +185,7 @@
     width: 2vw;
     height: 2vw;
     padding: 2%;
-    margin: 0 2%;
+    margin: auto 2%;
   }
   .hv {
     display: none;
@@ -200,8 +216,8 @@
       position: fixed;
       width: 98vw;
       height: calc(6vh - 1px);
-      background-color: var(--background);
-      border-bottom: 1px rgba(240, 248, 255, 0.5) solid;
+      background-color: var(--layer-2);
+      border-bottom: 1px var(--row) solid;
       display: flex;
       flex-direction: row;
       padding: 1vh 1vw;
@@ -212,7 +228,8 @@
     }
     .routers {
       display: flex;
-      margin-left: auto;
+      flex-direction: row;
+      width: 100%;
     }
     .route {
       height: 3vh;

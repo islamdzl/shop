@@ -5,21 +5,29 @@
         <div class="panel">
           <div class="flex">
             <h1>Register</h1>
-            <div class="go-back">
-              <img src="../assets/images/back.png" @click="goBack">
-            </div>
           </div>
           <div class="inputs"> 
               <input class="input input-text" type="email" v-model="inputs.user.value" placeholder="Email">
             <div class="flex">
               <input class="input" :type="inputs.Password_1.type" v-model="inputs.Password_1.value" placeholder="Password">
-              <img :src="inputs.Password_1.img" class="eye delay_0-3" @click="changeEye(1)">
+              <span class="eye">
+                <img :src="inputs.Password_1.img" class="delay_0-3" key="img-input-2" @click="changeEye(1)">
+              </span>
             </div>
             <div class="flex">
               <input class="input" :type="inputs.Password_2.type" v-model="inputs.Password_2.value" placeholder="Confermi Password">
-              <img :src="inputs.Password_2.img" class="eye delay_0-3" @click="changeEye(2)">
+              <span class="eye">
+                <img :src="inputs.Password_2.img" class="delay_0-3" key="img-input-2" @click="changeEye(2)">
+              </span>
             </div>
-            <button class="button" style="background: var(--color-2);">{{ 'Register' }}</button>
+            <div class="controles">
+              <button w="90" class="button" style="background: var(--color-2);">
+                <h4>{{ 'Register' }}</h4>
+              </button>
+              <button w="90" class="button" style="background: var(--color-1);" @click="goBack">
+                <h4>{{ 'Leave' }}</h4>
+              </button>
+            </div>
           </div>
         </div>
       </div>
@@ -29,21 +37,29 @@
         <div class="panel">
           <div class="flex">
             <h1>Register</h1>
-            <div class="go-back">
-              <img src="../assets/images/back.png" @click="goBack">
-            </div>
           </div>
           <div class="inputs"> 
               <input class="input input-text" type="email" v-model="inputs.user.value" placeholder="Email">
             <div class="flex">
               <input class="input" :type="inputs.Password_1.type" v-model="inputs.Password_1.value" placeholder="Password">
-              <img :src="inputs.Password_1.img" class="eye delay_0-3" @click="changeEye(1)">
+              <span  class="mobile-eye">
+                <img :src="inputs.Password_1.img" class="delay_0-3" key="img-input-1" @click="changeEye(1)">
+              </span>
             </div>
             <div class="flex">
               <input class="input" :type="inputs.Password_2.type" v-model="inputs.Password_2.value" placeholder="Confermi Password">
-              <img :src="inputs.Password_2.img" class="eye delay_0-3" @click="changeEye(2)">
+              <span class="mobile-eye">
+                <img :src="inputs.Password_2.img" class="delay_0-3" key="img-input-2" @click="changeEye(2)">
+              </span>
             </div>
-            <button class="button" style="background: var(--color-2);">{{ 'Register' }}</button>
+            <div class="mobile-controles">
+              <button w="90" class="button" style="background: var(--color-2);">
+                <h4>{{ 'Register' }}</h4>
+              </button>
+              <button w="90" class="button" style="background: var(--color-1);" @click="goBack">
+                <h4>{{ 'Leave' }}</h4>
+              </button>
+            </div>
           </div>
         </div>
       </div>
@@ -83,6 +99,7 @@
       }
     },
     created() {
+      this.$store.commit('checkView', this.$route.path)
       this.$store.commit('sideBar/setHide', true)
     }
   }
@@ -93,15 +110,16 @@
     justify-content: center;
   }
   .panel {
-    width: 40vw;
-    height: 80vh;
-    margin: 5vh;
+    width: 35vw;
+    height: 60vh;
+    margin: 13vh;
     background-color: var(--layer-1);
     border-radius: 20px;
+    box-shadow: 0px 0px 10px var(--shadow);
   }
   .panel h1{
-    margin: 5vh 4vw;
-    font-size: 40px;
+    margin: 3vh 4vw;
+    font-size: 37px;
   }
   .inputs {
     margin: 0 20%;
@@ -109,39 +127,32 @@
   }
   .input {
     width: 80%;
-    height: 7vh;
+    height: 6vh;
     border-radius: 16px;
-    margin: 3.5vh 0;
-    background-color: var(--background);
+    margin: 1.5vh 0;
+    background-color: var(--layer-2);
     border: 1px rgba(240, 248, 255, 0) solid;
     font-size: 19px;
     text-align: center;
+    box-shadow: 0px 0px 10px var(--shadow);
     transition: 300ms;
   }
   .input-text {
     width: 100%;
+    margin: 1.5vh 0;
   }
   .input:hover{border: 1px rgba(240, 248, 255, 0.5) solid;}
-  .button {
-    width: 60%;
-    height: 6.5vh;
-    border-radius: 14px;
-    margin: 0.5vh 20%;
-    border: none;
-    font-size: 17px;
-    cursor: pointer;
-  }
   .eye {
-    width: 2vw;
-    height: 2vw;
-    margin: 4vh auto;
-    border-radius: 30%;
-    cursor: pointer;
-    transition: 300ms;
-  }
-  .eye:hover {
-    background-color: var(--layer-3);
-  }
+      width: 5.5vh;
+      height: 5.5vh;
+      margin: auto;
+      border-radius: 30%;
+      cursor: pointer;
+      transition: 300ms;
+      border-radius: 50%;
+      background-color: var(--background-icon);
+    }
+  .eye img {height: 4.5vh;width: 4.5vh;margin: 0.5vh;}
   .flex {display: flex;}
   .hr {
     height: 1px;
@@ -149,26 +160,27 @@
     background-color: rgba(240, 248, 255, 0.5);
     margin: 5% 23%;
   }
-  .go-back {
+  .controles {
     width: 100%;
-  }
-  .go-back img {
-    width: 3vw;
-    margin: 2vh 2vw 0 80%;
-    cursor: pointer;
+    height: 7vh;
+    margin:3vh 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
   }
 
   @media screen and (max-width: 850px) {
     .login {
       display: grid;
       justify-content: center;
-      background-color: var(--layer-6);
     }
     .panel {
       width: 80vw;
       height: 50vh;
-      background-color: var(--layer-7);
+      background-color: var(--layer-1);
       border-radius: 20px;
+      max-width: 400px;
     }
     .panel h1{
       margin: 2vh 4vw;
@@ -183,9 +195,10 @@
       width: 80%;
       height: 5vh;
       border-radius: 10px;
-      margin: 2.4vh 0;
-      background-color: var(--background);
+      margin: 2vh 0;
+      background-color: var(--layer-2);
       border: 1px rgba(240, 248, 255, 0) solid;
+      box-shadow: 0 0 5px var(--shadow);
       font-size: 1.2rem;
       text-align: center;
       transition: 300ms;
@@ -194,23 +207,17 @@
       width: 100%;
     }
     .input:hover{border: 1px rgba(240, 248, 255, 0.5) solid;}
-    .button {
-      width: 50%;
-      height: 5vh;
-      border-radius: 11px;
-      margin: 0.5vh 20%;
-      border: none;
-      font-size: 17px;
-      cursor: pointer;
-    }
-    .eye {
-      width: 4vh;
-      height: 4vh;
+    .mobile-eye {
+      width: 4.5vh;
+      height: 4.5vh;
       margin: auto;
       border-radius: 30%;
       cursor: pointer;
       transition: 300ms;
+      border-radius: 50%;
+      background-color: var(--background-icon);
     }
+    .mobile-eye img {height: 3.5vh;width: 3.5vh;margin: 0.5vh;}
     .eye:hover {
       background-color: transparent;
     }
@@ -218,16 +225,16 @@
     .hr {
       height: 1px;
       width: 54%;
-      background-color: rgba(240, 248, 255, 0.5);
+      background-color: var(--row);
       margin: 5% 23%;
     }
-    .go-back {
+    .mobile-controles {
       width: 100%;
-    }
-    .go-back img {
-      width: 4vh;
-      margin: 2vh 2vw 0 70%;
-      cursor: pointer;
+      height: 7vh;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
     }
   }
 </style>

@@ -102,7 +102,8 @@
 </script>
 <style scoped>
   .side-bar {
-    background-color: var(--background);
+    background-color: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(3px);
     top: 10vh;
     height: 100%;
     border-left: 1px rgba(240, 248, 255, 0.5) solid;
@@ -188,7 +189,7 @@
   .input, .button, .route {
     border-radius: 10px;
     border: 1px rgba(240, 248, 255, 0.0) solid;
-    background-color: var(--layer-0);
+    background-color: var(--layer-1);
 
   }
   .arrow {

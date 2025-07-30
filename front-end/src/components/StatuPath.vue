@@ -65,7 +65,7 @@
     border-radius: 50%;
     display: flex;
     align-items: center;
-    background-color: var(--layer-5);
+    background-color: var(--layer-1);
     transition: 300ms;
   }
   .circle:active {

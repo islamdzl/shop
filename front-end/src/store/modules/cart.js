@@ -16,7 +16,7 @@ export default {
   },
   mutations: {
     calcProducts(state) {
-
+      console.log(state)
     }
   }
 }

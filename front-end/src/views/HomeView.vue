@@ -37,6 +37,7 @@ export default {
     }
   },
   created() {
+    this.$store.commit('checkView', this.$route.path)
     const action = (bollean)=>{
       console.log(bollean)
       sideBar.state.isShow = bollean;

@@ -174,6 +174,7 @@
       }
     },
     created() {
+      this.$store.commit('checkView', this.$route.path)
       this.$store.commit('sideBar/setHide', true);
     }
   }
@@ -187,7 +188,7 @@
   }
   .section {
     position: relative;
-    width: 100%;
+    width: 100vw;
     display: flex;
     flex-wrap: wrap;
   }
@@ -217,6 +218,7 @@
     border: 1px transparent solid;
     background-color: var(--layer-1);
     transition: 300ms;
+    box-shadow: 0px 0px 10px var(--shadow);
   }
   .section-item:hover {
     border: 1px var(--color-2) solid;
@@ -299,6 +301,7 @@
     margin: 0 7px;
     border: 1px transparent solid;
     transition: 300ms;
+    box-shadow: 0px 0px 10px var(--shadow);
   }
   .accounts-item:hover {
     border: 1px var(--color-2) solid;
@@ -351,7 +354,6 @@
       bottom: 0;
       width: 100%;
       overflow-y: scroll;
-      background-color: var(--layer-6);
     }
     .section {
       position: relative;
@@ -383,7 +385,8 @@
       padding: 0 10px;
       margin: 5px 10px;
       border: 1px transparent solid;
-      background-color: var(--layer-7);
+      background-color: var(--layer-1);
+      box-shadow: 0px 0px 10px var(--shadow);
       transition: 300ms;
     }
     .section-item:hover {
@@ -461,13 +464,14 @@
       position: relative;
       width: auto;
       height: calc(100% - 10px);
-      background-color: var(--layer-7);
       display: flex;
       flex-direction: row;
       padding: 5px 0;
       border-radius: 20px;
       margin: 0 7px;
       border: 1px transparent solid;
+      background-color: var(--layer-1);
+      box-shadow: 0px 0px 10px var(--shadow);
       transition: 300ms;
     }
     .accounts-item:hover {
