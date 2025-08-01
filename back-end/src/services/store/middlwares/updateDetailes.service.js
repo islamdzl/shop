@@ -44,9 +44,9 @@ function updateDetailes(Store, detailes, next, reject) {
   }
 
   if (info.description) {
-    Store.description = info.description
+    Store.description = info.description + 'dsd'
   }
-  
+
   if (info.contact) {
     Store.contact = Utils.Merge.normalMerge(Store.contact, info.contact)
   }
