@@ -3,16 +3,19 @@ const Logger = require('../../Logger.js')
 
 /*
   {
-    productId
+    productBuyingObject: {
+      id: string uuid,
+
+    }
   }
  */
 
 async function addProductInBuying(Cart, detailes, next, reject) {
   try {
 
-    if (! detailes.productId) {
+    if (! detailes.productBuyingObject || typeof detailes.productBuyingObject !== "object") {
       return reject({
-        error: 'Product id is required'
+        error: 'ProductObjectBuying is required'
       })
     }
     
@@ -20,30 +23,29 @@ async function addProductInBuying(Cart, detailes, next, reject) {
       Cart.buying = []
     }
 
-    if (Cart.buying.includes(detailes.productId)) {
-      next()
-      return
+    for (const productBuyingObject of Cart.buying) {
+      if (productBuyingObject.id.toString() === detailes.productBuyingObject.id.toString()) {
+        next()
+        return
+      }
     }
 
     const product = await Product.findOne({
-      _id: detailes.productId
+      _id: detailes.productBuyingObject.id
     }, {_id: 1, isAvailable: 1})
 
     if (product && product.isAvailable) {
-      Cart.buying.unshift(detailes.productId)
+      Cart.buying.unshift(detailes.productBuyingObject)
     }
     next()
   }catch(error) {
 
     Logger.error({
-      message: `Error in Add item in buying: ${error.message}`,
+      message: 'Error in Add item in buying',
       error: error,
-      context: { productId: detailes.productId }
     })
 
-    return reject({
-      error: 'Error in add product in buying'
-    })
+    return reject(error)
   }
 }
 

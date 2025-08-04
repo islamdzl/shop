@@ -1,28 +1,38 @@
-
+const Logger = require('../../Logger')
 
 
 /*
   {
-    productId
+    productSuccessId
   }
  */
 
-  async function removeProductFromSuccess(Cart, detailes, next, reject) {
+async function removeProductFromSuccess(Cart, detailes, next, reject) {
+  try {
 
-  if (! Array.isArray(Cart.success)) {
+    if (! Array.isArray(Cart.success)) {
+      next()
+      return;
+    }
+
+    if (! detailes.productSuccessId || typeof detailes.productSuccessId !== 'object') {
+      reject({
+        error: 'productSuccessId is required'
+      })
+      return 
+    }
+
+    Cart.success = Cart.success.filter((productSuccessObject)=> productSuccessObject.id.toString() !== detailes.productSuccessId.toString())
     next()
-    return;
-  }
+  }catch(error) {
 
-  if (! detailes.productId) {
-    reject({
-      error: 'Product id is required'
+    Logger.error({
+      message: 'Error in remove product success Cart',
+      error
     })
-    return 
-  }
 
-  Cart.success = Cart.success.filter((productId)=> productId.toString() !== detailes.productId.toString())
-  next()
+    reject(error)
+  }
 }
 removeProductFromSuccess.required = {
   success: 1

@@ -1,8 +1,9 @@
-const Utils = require('../../../utils/index.js')
+const Logger = require('../../Logger.js');
+const Utils = require('../../../utils/index.js');
 
 /*
   {
-    info: {
+    storeDetailes: {
       logo: string '<link>',
       name: 'string',
       description: string,
@@ -23,42 +24,57 @@ const Utils = require('../../../utils/index.js')
         instagram: string,
         twitter: string
       }
-
+      categories: [string]
     }
   }
  */
 
 function updateDetailes(Store, detailes, next, reject) {
-  const info = detailes.info;
+  const storeDetailes = detailes.storeDetailes;
   
-  if (!info) {
-    return reject({ error: "Invalid info payload" });
-  }
+  try {
+    if (!storeDetailes) {
+      return reject({ error: "Invalid storeDetailes payload" });
+    }
 
-  if (info.logo) {
-    Store.logo = info.logo
-  }
+    if (storeDetailes.logo) {
+      Store.logo = storeDetailes.logo
+    }
 
-  if (info.name) {
-    Store.name = info.name
-  }
+    if (storeDetailes.name) {
+      Store.name = storeDetailes.name
+    }
 
-  if (info.description) {
-    Store.description = info.description + 'dsd'
-  }
+    if (storeDetailes.categories) {
+      Store.categories = storeDetailes.categories
+    }
 
-  if (info.contact) {
-    Store.contact = Utils.Merge.normalMerge(Store.contact, info.contact)
-  }
-  
-  if (info.socialLinks) {
-    Store.socialLinks = Utils.Merge.normalMerge(Store.socialLinks, info.socialLinks)
-  }
+    if (storeDetailes.description) {
+      Store.description = storeDetailes.description
+    }
 
-  if (info.location) {
-    Store.location = Utils.Merge.normalMerge(Store.location, info.location)
+    if (storeDetailes.contact) {
+      Store.contact = Utils.Merge.normalMerge(Store.contact, storeDetailes.contact)
+    }
+    
+    if (storeDetailes.socialLinks) {
+      Store.socialLinks = Utils.Merge.normalMerge(Store.socialLinks, storeDetailes.socialLinks)
+    }
+
+    if (storeDetailes.location) {
+      Store.location = Utils.Merge.normalMerge(Store.location, storeDetailes.location)
+    }
+    next()
+
+  }catch(error) {
+
+    Logger.error({
+      message: 'Error in update detailes Store',
+      error
+    })
+
+    reject(error)
   }
-  next()
 }
 
 updateDetailes.required = {

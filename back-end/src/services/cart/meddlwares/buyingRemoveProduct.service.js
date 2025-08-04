@@ -2,26 +2,40 @@
 
 /*
   {
-    productId
+    productBuyingId
   }
  */
 
+const Logger = require("../../Logger");
+
 async function removeProductFromBuying(Cart, detailes, next, reject) {
 
-  if (! Array.isArray(Cart.buying)) {
+  try {
+      if (! Array.isArray(Cart.buying)) {
+      next()
+      return;
+    }
+
+    if (! detailes.productBuyingId) {
+      reject({
+        error: 'Product id is required'
+      })
+      return 
+    }
+
+    Cart.buying = Cart.buying.filter((productBuyingObject)=> productBuyingObject.id.toString() !== detailes.productBuyingId.toString())
+    
     next()
-    return;
-  }
 
-  if (! detailes.productId) {
-    reject({
-      error: 'Product id is required'
+  }catch(error) {
+
+    Logger.error({
+      message: 'Error in remove buying product Cart',
+      error
     })
-    return 
-  }
 
-  Cart.buying = Cart.buying.filter((productId)=> productId.toString() !== detailes.productId.toString())
-  next()
+    reject(error)
+  }
 }
 removeProductFromBuying.required = {
   buying: 1

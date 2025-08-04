@@ -3,26 +3,37 @@
 
 /*
   {
-    productId
+    productCartId
   }
  */
 
+const Logger = require("../../Logger");
+
 async function removeProductFromCart(Cart, detailes, next, reject) {
 
-  if (! Array.isArray(Cart.cart)) {
+  try {
+    if (! Array.isArray(Cart.cart)) {
+      next()
+      return;
+    }
+
+    if (! detailes.productCartId) {
+      reject({
+        error: 'productCartId is required'
+      })
+      return 
+    }
+
+    Cart.cart = Cart.cart.filter((productCartObject)=> productCartObject.id.toString() !== detailes.productCartId.toString())
     next()
-    return;
-  }
-
-  if (! detailes.productId) {
-    reject({
-      error: 'Product id is required'
+  }catch(error) {
+    Logger.error({
+      message: 'Error in remove product Cart',
+      error
     })
-    return 
-  }
 
-  Cart.cart = Cart.cart.filter((productId)=> productId.toString() !== detailes.productId.toString())
-  next()
+    reject(error)
+  }
 }
 removeProductFromCart.required = {
   cart: 1

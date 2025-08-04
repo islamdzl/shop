@@ -5,15 +5,17 @@ const StoreMeddlwares = require('../middlewares/store/index')
 const storeSchema = new mongoose.Schema({
   _id: {
     type: SchemaTypes.ObjectId,
-    ref: 'Account',
     required: true,
   },
 
   productList: { type: SchemaTypes.ObjectId, default: [] },
 
+  requests: { type: SchemaTypes.Mixed, default: []},
+
   logo: { type: SchemaTypes.String, default: 'https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png' },
   name: { type: SchemaTypes.String, required: true },
   description: { type: SchemaTypes.String, default: 'No description provided' },
+  categories: [{ type: SchemaTypes.String, default: 'General' }],
 
   location: {
     country: { type: SchemaTypes.Int32, default: 0 },
@@ -34,10 +36,9 @@ const storeSchema = new mongoose.Schema({
 
   ratings: {
     average: { type: SchemaTypes.Number, default: 50 },
-    count: { type: SchemaTypes.Number, default: 0 }
+    count: { type: SchemaTypes.Number, default: 0 },
+    sum: { type: SchemaTypes.Number, default: 0 }
   },
-
-  categories: [{ type: SchemaTypes.String, default: 'General' }],
 
   isVerified: { type: SchemaTypes.Boolean, default: false },
   isOpen: { type: SchemaTypes.Boolean, default: true },

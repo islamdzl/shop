@@ -35,14 +35,19 @@ const productSchema = new mongoose.Schema({
     default: ['https://cdn-icons-png.flaticon.com/512/18809/18809093.png']
   },
 
-  category: {
-    type: SchemaTypes.String,
+  categories: {
+    type: [SchemaTypes.String],
     required: true
   },
 
   delivery: {
     type: SchemaTypes.Number,
     default: null
+  },
+
+  requests: {
+    type: SchemaTypes.Number,
+    default: 0
   }
 }, {
   timestamps: true
