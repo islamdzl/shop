@@ -1,3 +1,3 @@
 
 
-exports.ChangeValue = require('./account.account.changeValue')
+exports.ChangeValue = require('./account.changeValue')

@@ -4,6 +4,6 @@ const validations = require('../validations')
 
 const Router = express.Router()
 
-Router.post('add-item', validations.UserAuthValidate.getUser, cartController.addItem)
+Router.post('add-item', validations.UserAuthValidate.getUser, cartController.shoppingCartAddProduct)
 
 module.exports = Router;

@@ -2,13 +2,22 @@ const Logger = require('../../Logger.js')
 
 /*
   {
-
+    items: 10
   }
  */
 
 async function decrementProductRequests(Product, detailes, next, reject) {
   try{
     Product.requests --;
+
+    if (Number.isInteger(Product.content) && Number.isInteger(detailes.items)) {
+      
+      if (Product.content === 0) {
+        Product.isAvailable = true;
+      }
+
+      Product.content += detailes.items;
+    }
 
     next()
   }catch(error) {

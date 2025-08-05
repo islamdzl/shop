@@ -22,6 +22,8 @@ exports.create = (data)=> {
 
   ownerId: joi.object().required(),
 
+  content: joi.number().min(1).default(null),
+  
   price: joi.number().min(0).default(0),
 
   isAvailable: joi.boolean().default(true),

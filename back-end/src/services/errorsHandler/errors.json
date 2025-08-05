@@ -1,0 +1,150 @@
+{
+  "INVALID_DATA": {
+    "message": "Invalid available data",
+    "code": 400
+  },
+  "SYSTEM_ERROR": {
+    "message": "Unknown system error",
+    "code": 500
+  },
+  "UNAUTHORIZED": {
+    "message": "Unauthorized access",
+    "code": 401
+  },
+  "FORBIDDEN": {
+    "message": "Forbidden action",
+    "code": 403
+  },
+  "NOT_FOUND": {
+    "message": "Resource not found",
+    "code": 404
+  },
+  "DUPLICATE_ENTRY": {
+    "message": "Duplicate entry detected",
+    "code": 409
+  },
+  "VALIDATION_ERROR": {
+    "message": "Data validation failed",
+    "code": 422
+  },
+  "TOO_MANY_REQUESTS": {
+    "message": "Too many requests, please try again later",
+    "code": 429
+  },
+  "UPLOAD_FAILED": {
+    "message": "File upload failed",
+    "code": 400
+  },
+  "IMAGE_TYPE_INVALID": {
+    "message": "Invalid image type",
+    "code": 400
+  },
+  "PACKAGE_ID_INVALID": {
+    "message": "Invalid packageId provided",
+    "code": 400
+  },
+  "PRODUCT_NOT_AVAILABLE": {
+    "message": "Product not available",
+    "code": 404
+  },
+  "ADD_TO_CART_FAILED": {
+    "message": "Failed to add product to cart",
+    "code": 400
+  },
+  "REMOVE_FROM_CART_FAILED": {
+    "message": "Failed to remove product from cart",
+    "code": 400
+  },
+  "DATABASE_ERROR": {
+    "message": "A database error occurred",
+    "code": 500
+  },
+  "AUTH_REQUIRED": {
+    "message": "Authentication is required",
+    "code": 401
+  },
+  "SESSION_EXPIRED": {
+    "message": "User session has expired",
+    "code": 401
+  },
+  "PERMISSION_DENIED": {
+    "message": "User does not have permission",
+    "code": 403
+  },
+  "INVALID_REQUEST": {
+    "message": "The request is invalid",
+    "code": 400
+  },
+  "SERVICE_UNAVAILABLE": {
+    "message": "Service temporarily unavailable",
+    "code": 503
+  },
+  "INVALID_TOKEN": {
+    "message": "Token is invalid or expired",
+    "code": 401
+  },
+  "EMAIL_ALREADY_EXISTS": {
+    "message": "Email is already registered",
+    "code": 409
+  },
+  "USERNAME_ALREADY_EXISTS": {
+    "message": "Username is already taken",
+    "code": 409
+  },
+  "PASSWORD_TOO_WEAK": {
+    "message": "Password is too weak",
+    "code": 400
+  },
+  "EMAIL_NOT_VERIFIED": {
+    "message": "Email address is not verified",
+    "code": 403
+  },
+  "CART_NOT_FOUND": {
+    "message": "Cart not found",
+    "code": 404
+  },
+  "ACCESS_TOKEN_REQUIRED": {
+    "message": "Access token is required",
+    "code": 401
+  },
+  "RESOURCE_LOCKED": {
+    "message": "Resource is currently locked",
+    "code": 423
+  },
+  "METHOD_NOT_ALLOWED": {
+    "message": "This HTTP method is not allowed",
+    "code": 405
+  },
+  "BAD_GATEWAY": {
+    "message": "Bad gateway",
+    "code": 502
+  },
+  "GATEWAY_TIMEOUT": {
+    "message": "Gateway timeout",
+    "code": 504
+  },
+  "INSUFFICIENT_STORAGE": {
+    "message": "Not enough storage available",
+    "code": 507
+  },
+  "REQUEST_TIMEOUT": {
+    "message": "Request timed out",
+    "code": 408
+  },
+  "CONFLICT": {
+    "message": "Conflict with current state of resource",
+    "code": 409
+  },
+  "UNSUPPORTED_MEDIA_TYPE": {
+    "message": "Unsupported media type",
+    "code": 415
+  },
+  "PAYLOAD_TOO_LARGE": {
+    "message": "Payload too large",
+    "code": 413
+  },
+  "RANGE_NOT_SATISFIABLE": {
+    "message": "Requested range not satisfiable",
+    "code": 416
+  }
+}

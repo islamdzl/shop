@@ -20,6 +20,12 @@ const productSchema = new mongoose.Schema({
     required: true
   },
 
+  content: {
+    type: SchemaTypes.Number,
+    default: 0
+  },
+
+
   isAvailable: {
     type: SchemaTypes.Boolean,
     default: true,
@@ -30,7 +36,7 @@ const productSchema = new mongoose.Schema({
     default: ''
   },
 
-  imageUrl: {
+  imagesUrls: {
     type: [SchemaTypes.String],
     default: ['https://cdn-icons-png.flaticon.com/512/18809/18809093.png']
   },

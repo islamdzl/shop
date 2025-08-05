@@ -16,7 +16,7 @@ exports.request = (requestDetailes)=> {
 
   const schema = joi.object({
     
-    clientId: joi.string(),
+    clientId: joi.string().default(null),
 
     fullName: joi.string().required().trim().min(7).messages({
       'string.empty': 'الاسم الكامل لا يمكن أن يكون فارغًا',
@@ -58,9 +58,7 @@ exports.request = (requestDetailes)=> {
       'number.max': 'العدد الأقصى للمنتج هو 100'
     }),
 
-    fullPrice: joi.number().messages({
-      'number.base': 'السعر الكامل يجب أن يكون رقمًا'
-    })
+    fullPrice: joi.number()
   })
 
   return validateReturner(schema, requestDetailes)

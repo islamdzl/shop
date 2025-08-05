@@ -1,6 +1,9 @@
+const model = require('../../models/cart.model')
+const middlware = require('../../utils/middlware')
 
+exports.MidllwaresUseger = (_id, detailes, ...middlwares)=> middlware(model, _id, detailes, middlwares)
 
-exports.Middlwares = {
+exports.Midllwares = {
   buyingAddProduct: require('./meddlwares/buyingAddProduct.service'),
   buyingRemoveProduct: require('./meddlwares/buyingAddProduct.service'),
   cartAddProduct: require('./meddlwares/cartAddProduct.service'),
@@ -8,6 +11,7 @@ exports.Middlwares = {
   successAddProduct: require('./meddlwares/successAddProduct.service'),
   successRemoveProduct: require('./meddlwares/successRemoveProduct.service'),
 }
+
 
 exports.Services = require('./services')
 exports.CreateObjects = require('./create.Objects')

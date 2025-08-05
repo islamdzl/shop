@@ -1,7 +1,7 @@
 const Validations = require('../../validations')
 
 /*
-    clientId: joi.string(),
+    clientId: joi.string().default(null),
 
     fullName: joi.string().required().trim().min(7)
 
