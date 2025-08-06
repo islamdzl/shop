@@ -8,18 +8,18 @@ const storeSchema = new mongoose.Schema({
     required: true,
   },
 
-  productList: { type: SchemaTypes.ObjectId, default: [] },
+  productList: { type: SchemaTypes.Array, default: [] },
 
   requests: { type: SchemaTypes.Mixed, default: []},
 
   logo: { type: SchemaTypes.String, default: 'https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png' },
   name: { type: SchemaTypes.String, required: true },
   description: { type: SchemaTypes.String, default: 'No description provided' },
-  categories: [{ type: SchemaTypes.String, default: 'General' }],
+  categories: [{ type: [SchemaTypes.String], default: [] }],
 
   location: {
     country: { type: SchemaTypes.Int32, default: 0 },
-    city: { type: SchemaTypes.String, default: 'Algiers' },
+    city: { type: SchemaTypes.String, default: null },
     address: { type: SchemaTypes.String, default: 'No address provided' }
   },
 
@@ -31,7 +31,7 @@ const storeSchema = new mongoose.Schema({
   socialLinks: {
     facebook: { type: SchemaTypes.String, default: 'No Facebook link provided' },
     instagram: { type: SchemaTypes.String, default: 'No Instagram link provided' },
-    twitter: { type: SchemaTypes.String, default: 'No Twitter link provided' }
+    tiktok: { type: SchemaTypes.String, default: 'No Tiktok link provided' }
   },
 
   ratings: {

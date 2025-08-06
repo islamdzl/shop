@@ -1,15 +1,16 @@
 const DataStore = require('nedb');
 const DataStoreUseger = require('./db.useger');
-const Utils = require('../../utils/index');
-const Logger = require('../Logger');
+const Validations = require('../validations/index')
+const Utils = require('../utils/index');
+const Logger = require('../services/Logger');
 const path = require('path')
 const fs = require('fs')
 
-const directoryTempPath = path.join(__dirname, '../../uploads/temp')
-const directoryUploadsPath = path.join(__dirname, '../../uploads')
+const directoryTempPath = path.join(__dirname, '../uploads/temp')
+const directoryUploadsPath = path.join(__dirname, '../uploads')
 
 const uploads = new DataStore({
-  filename: './datastore/uploads.db',
+  filename: path.join(__dirname, './datastore/uploads.db'),
   autoload: true,
 })
 
@@ -34,6 +35,10 @@ exports.find = (...args)=> DataStoreUseger.find(uploads, Middlwares.find,...args
 exports.pushFileInWaiting = async(packageId, fileName)=> {
 
   try {
+
+    if (! fs.existsSync(directoryTempPath)) {
+      fs.mkdirSync(directoryTempPath)
+    }
 
     const objectDB = await exports.findOne({packageId})
 
@@ -66,13 +71,10 @@ exports.resolveFiles = async(packageId)=> {
 
     const filesPath = [];
 
-    if (! fs.existsSync(directoryTempPath)) {
-      fs.mkdirSync(directoryTempPath)
-    }
 
     for (const filename of object.fileNames) {
 
-      const fileTempPath = path.join(__dirname, '../../uploads/temp', filename);
+      const fileTempPath = path.join(directoryTempPath, filename);
       const destinationDirectory = path.join(directoryUploadsPath, Utils.Path.yearMonthDay())
       if (fs.existsSync(fileTempPath)) {
         
@@ -96,7 +98,7 @@ exports.resolveFiles = async(packageId)=> {
   }catch(error) {
 
     Logger.error({
-      message: 'Error in resolveFiles uploads',
+      message: 'Error in resolveFiles uploads' + error,
       error
     })
 
@@ -113,7 +115,7 @@ exports.rejectFiles = async(packageId)=> {
     }
 
     const objectDB = await exports.findOne({packageId})
-
+    
     if (! objectDB) return false;
 
     for (const filename of objectDB.fileNames) {
@@ -133,7 +135,7 @@ exports.rejectFiles = async(packageId)=> {
   }catch(error) {
 
     Logger.error({
-      message: 'Error in rejectFiles uploads',
+      message: 'Error in rejectFiles uploads' + error,
       error
     })
 
@@ -146,10 +148,11 @@ exports.generatePackageId = (userId)=> {
   const randomId = Utils.Uuid.generateUuid()
   setTimeout(() => exports.rejectFiles(randomId), 15 * 60 * 1000);
 
-  const obgectDb = {
+  const obgectDb = Validations.Uploads.createObjectDB({
     packageId: randomId,
-    userId
-  }
+    userId,
+    fileNames: []
+  })
 
   exports.insert(obgectDb)
 

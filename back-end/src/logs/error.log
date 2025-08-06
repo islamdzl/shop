@@ -1,13 +1,190 @@
-[2025-07-31 17:51:24] error: ❌ MongoDB initial connection failed
-[2025-07-31 19:36:42] error: ❌ MongoDB initial connection failed
-[2025-07-31 21:24:36] error: ❌ MongoDB initial connection failed
-[2025-07-31 21:24:41] error: ❌ MongoDB initial connection failed
-[2025-07-31 21:24:46] error: ❌ MongoDB initial connection failed
-[2025-07-31 22:58:30] error: ❌ MongoDB initial connection failed
-[2025-07-31 22:58:35] error: ❌ MongoDB initial connection failed
-[2025-07-31 22:58:40] error: ❌ MongoDB initial connection failed
-[2025-07-31 22:58:45] error: ❌ MongoDB initial connection failed
-[2025-07-31 22:58:50] error: ❌ MongoDB initial connection failed
-[2025-07-31 22:58:55] error: ❌ MongoDB initial connection failed
-[2025-08-01 12:11:37] error: ❌ MongoDB initial connection failed
-[2025-08-01 15:31:54] error: ❌ MongoDB initial connection failed
+[2025-08-05 21:18:49] error: ❌ MongoDB initial connection failed
+[2025-08-05 21:20:03] error: ❌ MongoDB initial connection failed
+[2025-08-05 21:21:52] error: ❌ MongoDB initial connection failed
+[2025-08-05 21:22:33] error: ❌ MongoDB initial connection failed
+[2025-08-05 21:23:37] error: ❌ MongoDB initial connection failed
+[2025-08-05 21:24:18] error: ❌ MongoDB initial connection failed
+[2025-08-05 21:24:53] error: ❌ MongoDB initial connection failed
+[2025-08-05 21:25:45] error: ❌ MongoDB initial connection failed
+[2025-08-05 21:26:20] error: ❌ MongoDB initial connection failed
+[2025-08-05 21:26:25] error: ❌ MongoDB initial connection failed
+[2025-08-05 21:26:30] error: ❌ MongoDB initial connection failed
+[2025-08-05 21:26:35] error: ❌ MongoDB initial connection failed
+[2025-08-05 21:26:40] error: ❌ MongoDB initial connection failed
+[2025-08-05 21:26:45] error: ❌ MongoDB initial connection failed
+[2025-08-05 21:26:50] error: ❌ MongoDB initial connection failed
+[2025-08-05 21:26:55] error: ❌ MongoDB initial connection failed
+[2025-08-05 21:27:00] error: ❌ MongoDB initial connection failed
+[2025-08-05 21:28:14] error: ❌ MongoDB initial connection failed
+[2025-08-05 21:29:05] error: ❌ MongoDB initial connection failed
+[2025-08-05 21:30:07] error: ❌ MongoDB initial connection failed
+[2025-08-05 21:30:13] error: ❌ MongoDB initial connection failed
+[2025-08-05 21:30:17] error: ❌ MongoDB initial connection failed
+[2025-08-05 21:31:03] error: ❌ MongoDB initial connection failed
+[2025-08-05 21:31:54] error: ❌ MongoDB initial connection failed
+[2025-08-05 21:32:34] error: ❌ MongoDB initial connection failed
+[2025-08-05 22:05:47] error: Error in register Controller
+[2025-08-05 22:09:37] error: Error in register Controller > TypeError: Cannot read properties of undefined (reading 'email')
+[2025-08-05 22:10:59] error: ❌ MongoDB initial connection failed > Could not connect to any servers in your MongoDB Atlas cluster. One common reason is that you're trying to access the database from an IP that isn't whitelisted. Make sure your current IP address is on your Atlas cluster's IP whitelist: https://www.mongodb.com/docs/atlas/security-whitelist/
+[2025-08-05 22:12:04] error: Error in register Controller > TypeError: Cannot read properties of undefined (reading 'email')
+[2025-08-05 22:13:20] error: Error in register Controller > TypeError: Cannot read properties of undefined (reading 'email')
+[2025-08-05 22:15:23] error: Error in register Controller > TypeError: Cannot read properties of undefined (reading 'email')
+[2025-08-05 22:15:39] error: Error in register Controller > TypeError: Cannot read properties of undefined (reading 'details')
+[2025-08-05 22:15:41] error: Error in register Controller > TypeError: Cannot read properties of undefined (reading 'details')
+[2025-08-05 22:15:48] error: Error in register Controller > TypeError: Cannot read properties of undefined (reading 'details')
+[2025-08-05 22:16:02] error: Error in register Controller > TypeError: Cannot read properties of undefined (reading 'details')
+[2025-08-05 22:16:04] error: Error in register Controller > TypeError: Cannot read properties of undefined (reading 'details')
+[2025-08-05 22:16:48] error: Error in register Controller > TypeError: Cannot read properties of undefined (reading 'details')
+[2025-08-05 22:16:57] error: Error in register Controller > TypeError: Cannot read properties of undefined (reading 'details')
+[2025-08-05 22:17:20] error: Error in register Controller > TypeError: Cannot read properties of undefined (reading 'details')
+[2025-08-05 22:17:20] error: Error in register Controller > TypeError: Cannot read properties of undefined (reading 'details')
+[2025-08-05 22:17:56] error: Error in register Controller > TypeError: Cannot read properties of undefined (reading 'details')
+[2025-08-05 22:18:27] error: Error in register Controller > TypeError: Cannot read properties of undefined (reading 'details')
+[2025-08-05 22:18:48] error: Error in register Controller > TypeError: Cannot read properties of undefined (reading 'details')
+[2025-08-05 22:19:25] error: Error in register Controller > TypeError: Cannot read properties of undefined (reading 'details')
+[2025-08-05 22:23:01] error: Error in register Controller
+[2025-08-05 22:23:19] error: Error in register Controller
+[2025-08-05 22:24:03] error: Error in register Controller
+[2025-08-05 22:26:59] error: Error in register Controller
+[2025-08-05 22:28:10] error: Error in register Controller
+[2025-08-05 22:29:57] error: Error in register Controller
+[2025-08-05 22:32:08] error: Error in register Controller
+[2025-08-05 22:44:05] error: Error in changeType Controller
+[2025-08-05 22:44:54] error: Error in changeType Controller
+[2025-08-05 22:45:54] error: Error in changeType Controller
+[2025-08-05 22:46:18] error: Error in changeType Controller
+[2025-08-05 22:47:16] error: Error in changeType Controller
+[2025-08-05 22:47:59] error: Error in changeType Controller
+[2025-08-05 22:48:37] error: Error in changeType Controller
+[2025-08-05 22:49:28] error: Error in changeType Controller
+[2025-08-05 22:50:37] error: Error in changeType Controller
+[2025-08-05 22:51:06] error: Error in changeType Controller
+[2025-08-05 22:51:31] error: Error in changeType Controller
+[2025-08-05 22:54:29] error: Error in changeType Controller
+[2025-08-05 22:54:54] error: Error in changeType Controller
+[2025-08-05 22:55:17] error: Error in changeType Controller
+[2025-08-05 22:55:18] error: Error in changeType Controller
+[2025-08-05 22:56:43] error: ValidationError: _id: Path `_id` is required.
+[2025-08-05 22:57:51] error: ValidationError: _id: Path `_id` is required.
+[2025-08-05 23:03:59] error: Error in changeType Controller
+[2025-08-05 23:06:09] error: [object Object]
+[2025-08-05 23:06:17] error: [object Object]
+[2025-08-06 10:36:18] error: ❌ MongoDB initial connection failed
+[2025-08-06 11:08:24] error: Error in getStore Controller
+[2025-08-06 11:09:06] error: Error in getStore Controller
+[2025-08-06 11:09:37] error: Error in getStore Controller
+[2025-08-06 11:09:59] error: Error in getStore Controller
+[2025-08-06 11:15:56] error: Error in addRating controller
+[2025-08-06 11:18:19] error: Error in addRating controller
+[2025-08-06 11:19:03] error: Error in addRating controller
+[2025-08-06 11:19:03] error: Error: Next handler is not a function
+[2025-08-06 11:21:20] error: Error in addRating controller
+[2025-08-06 11:21:20] error: Error: Next handler is not a function
+[2025-08-06 11:21:57] error: Error in addRating controller
+[2025-08-06 11:21:57] error: Error: Next handler is not a function
+[2025-08-06 11:22:19] error: Error in addRating controller
+[2025-08-06 11:22:19] error: Error: Next handler is not a function
+[2025-08-06 11:22:28] error: Error in addRating controller
+[2025-08-06 11:22:28] error: Error: Next handler is not a function
+[2025-08-06 11:23:22] error: Error in addRating controller
+[2025-08-06 11:23:22] error: Error: Next handler is not a function
+[2025-08-06 11:23:50] error: Error in addRating controller
+[2025-08-06 11:23:50] error: Error: Next handler is not a function
+[2025-08-06 11:24:00] error: Error in addRating controller
+[2025-08-06 11:24:00] error: Error: Next handler is not a function
+[2025-08-06 11:24:34] error: Error in addRating controller
+[2025-08-06 11:24:34] error: Error: Next handler is not a function
+[2025-08-06 11:24:57] error: Error in addRating controller
+[2025-08-06 11:24:57] error: Error: Next handler is not a function
+[2025-08-06 11:25:20] error: Error in addRating controller
+[2025-08-06 11:25:20] error: Error: Next handler is not a function
+[2025-08-06 11:25:48] error: Error in addRating controller
+[2025-08-06 11:25:48] error: Error: Next handler is not a function
+[2025-08-06 11:26:11] error: Error in addRating controller
+[2025-08-06 11:26:11] error: Error: Next handler is not a function
+[2025-08-06 11:26:30] error: Error in addRating controller
+[2025-08-06 11:26:30] error: Error: Next handler is not a function
+[2025-08-06 11:26:45] error: Error in addRating controller
+[2025-08-06 11:26:45] error: Error: Next handler is not a function
+[2025-08-06 11:26:56] error: Error in addRating controller
+[2025-08-06 11:26:56] error: Error: Next handler is not a function
+[2025-08-06 11:27:14] error: Error in addRating controller
+[2025-08-06 11:27:14] error: Error: Next handler is not a function
+[2025-08-06 11:27:40] error: Error in addRating controller
+[2025-08-06 11:27:40] error: TypeError: handler is not a function
+[2025-08-06 11:28:41] error: Error in addRating controller
+[2025-08-06 11:28:41] error: Error: Next handler is not a function
+[2025-08-06 11:29:50] error: Error in addRating controller
+[2025-08-06 11:29:50] error: TypeError: handler is not a function
+[2025-08-06 11:30:00] error: Error in addRating controller
+[2025-08-06 11:30:00] error: TypeError: handler is not a function
+[2025-08-06 11:30:23] error: Error in addRating controller
+[2025-08-06 11:30:23] error: TypeError: handler is not a function
+[2025-08-06 11:31:17] error: Error in addRating controller
+[2025-08-06 11:31:17] error: TypeError: handler is not a function
+[2025-08-06 11:31:29] error: Error in addRating controller
+[2025-08-06 11:31:29] error: TypeError: handler is not a function
+[2025-08-06 11:31:55] error: Error in addRating controller
+[2025-08-06 11:31:55] error: TypeError: handler is not a function
+[2025-08-06 11:32:22] error: Error in addRating controller
+[2025-08-06 11:32:22] error: TypeError: handler is not a function
+[2025-08-06 11:32:44] error: Error in addRating controller
+[2025-08-06 11:32:44] error: TypeError: handler is not a function
+[2025-08-06 11:33:00] error: Error in addRating controller
+[2025-08-06 11:33:00] error: TypeError: handler is not a function
+[2025-08-06 11:34:23] error: Error in addRating controller
+[2025-08-06 11:34:23] error: TypeError: handler is not a function
+[2025-08-06 11:34:41] error: Error in addRating controller
+[2025-08-06 11:34:41] error: TypeError: handler is not a function
+[2025-08-06 11:35:01] error: Error in addRating controller
+[2025-08-06 11:35:01] error: TypeError: handler is not a function
+[2025-08-06 11:39:17] error: Error in addRating controller
+[2025-08-06 11:39:17] error: Error: Next handler is not a function
+[2025-08-06 11:39:29] error: Error in addRating controller
+[2025-08-06 11:39:29] error: Error: Next handler is not a function
+[2025-08-06 11:40:40] error: Error in addRating controller
+[2025-08-06 11:40:40] error: Error: Next handler is not a function
+[2025-08-06 11:42:14] error: Error in addRating controller
+[2025-08-06 11:42:14] error: Error: Next handler is not a function
+[2025-08-06 11:42:45] error: Error in addRating controller
+[2025-08-06 11:42:45] error: Error: Next handler is not a function
+[2025-08-06 11:44:02] error: Error in addRating controller
+[2025-08-06 11:44:02] error: Error: Next handler is not a function
+[2025-08-06 11:44:38] error: Error in addRating controller
+[2025-08-06 11:44:38] error: Error: Next handler is not a function
+[2025-08-06 11:45:11] error: Error in addRating controller
+[2025-08-06 11:45:11] error: Error: Next handler is not a function
+[2025-08-06 11:51:22] error: Error in addRating controller
+[2025-08-06 11:51:22] error: Error: Next handler is not a function
+[2025-08-06 11:51:40] error: Error in addRating controller
+[2025-08-06 11:51:40] error: Error: Next handler is not a function
+[2025-08-06 11:52:25] error: Error in addRating controller
+[2025-08-06 11:52:25] error: TypeError: handler is not a function
+[2025-08-06 11:57:29] error: Error in setOpen Controller
+[2025-08-06 12:04:49] error: Error in setOpen Controller
+[2025-08-06 14:09:17] error: Error in uploads Controller
+[2025-08-06 14:10:13] error: Error in uploads ControllerReferenceError: package is not defined
+[2025-08-06 14:15:40] error: ❌ MongoDB initial connection failed
+[2025-08-06 14:20:38] error: ❌ MongoDB initial connection failed
+[2025-08-06 14:32:24] error: Error in rejectFiles uploads
+[2025-08-06 14:32:57] error: Error in rejectFiles uploadsTypeError: objectDB.fileNames is not iterable
+[2025-08-06 14:33:36] error: Error in rejectFiles uploadsTypeError: objectDB.fileNames is not iterable
+[2025-08-06 14:34:18] error: Error in rejectFiles uploadsTypeError: objectDB.fileNames is not iterable
+[2025-08-06 14:34:19] error: Error in rejectFiles uploadsTypeError: objectDB.fileNames is not iterable
+[2025-08-06 14:34:33] error: Error in rejectFiles uploadsTypeError: objectDB.fileNames is not iterable
+[2025-08-06 14:35:38] error: Error in rejectFiles uploadsTypeError: objectDB.fileNames is not iterable
+[2025-08-06 14:38:07] error: Error in rejectFiles uploadsReferenceError: data is not defined
+[2025-08-06 19:14:23] error: Error in resolveFiles uploads
+[2025-08-06 19:14:35] error: Error in resolveFiles uploads
+[2025-08-06 19:15:23] error: Error in resolveFiles uploadsTypeError [ERR_INVALID_ARG_TYPE]: The "path" argument must be of type string. Received undefined
+[2025-08-06 19:17:20] error: Error in resolveFiles uploadsTypeError [ERR_INVALID_ARG_TYPE]: The "path" argument must be of type string. Received undefined
+[2025-08-06 19:17:39] error: Error in resolveFiles uploadsTypeError [ERR_INVALID_ARG_TYPE]: The "path" argument must be of type string. Received undefined
+[2025-08-06 19:18:10] error: Error in resolveFiles uploadsTypeError [ERR_INVALID_ARG_TYPE]: The "path" argument must be of type string. Received undefined
+[2025-08-06 19:19:04] error: Error in resolveFiles uploadsTypeError [ERR_INVALID_ARG_TYPE]: The "path" argument must be of type string. Received undefined
+[2025-08-06 19:20:56] error: Error in resolveFiles uploadsTypeError [ERR_INVALID_ARG_TYPE]: The "path" argument must be of type string. Received undefined
+[2025-08-06 19:21:29] error: Error in resolveFiles uploadsTypeError [ERR_INVALID_ARG_TYPE]: The "path" argument must be of type string. Received undefined
+[2025-08-06 19:22:06] error: Error in resolveFiles uploadsTypeError [ERR_INVALID_ARG_TYPE]: The "path" argument must be of type string. Received undefined
+[2025-08-06 19:22:21] error: Error in resolveFiles uploadsTypeError [ERR_INVALID_ARG_TYPE]: The "path" argument must be of type string. Received undefined
+[2025-08-06 19:35:06] error: Error in resolveFiles uploadsTypeError [ERR_INVALID_ARG_TYPE]: The "path" argument must be of type string. Received undefined
+[2025-08-06 19:35:33] error: Error in resolveFiles uploadsTypeError [ERR_INVALID_ARG_TYPE]: The "path" argument must be of type string. Received undefined
+[2025-08-06 19:36:04] error: Error in resolveFiles uploadsTypeError [ERR_INVALID_ARG_TYPE]: The "path" argument must be of type string. Received undefined

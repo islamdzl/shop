@@ -19,7 +19,7 @@ module.exports = async(storeId, filter = undefined)=> {
   }catch (error) {
 
     Logger.error({
-      message: `Error in get cart by id: ${storeId}`,
+      message: `Error in getStore Sevice: ${storeId}`,
       error
     })
 

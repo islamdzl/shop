@@ -3,7 +3,7 @@ const middlware = require('../../utils/middlware')
 
 exports.MidllwaresUseger = (_id, detailes, ...middlwares)=> middlware(model, _id, detailes, middlwares)
 
-exports.Middlewares = {
+exports.Midllewares = {
   changeRatings: require('./middlwares/changeRatings.service.js'),
   createProduct: require('./middlwares/createProduct.service.js'),
   deleteproduct: require('./middlwares/deleteProduct.service.js'),

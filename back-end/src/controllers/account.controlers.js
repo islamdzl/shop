@@ -1,12 +1,23 @@
 const Account = require('../models/account.model')
 const Utils = require('../utils/index')
-const Validation = require('../validations/index')
+const Validations = require('../validations/index')
+const ErrorHandler = require('../services/errorsHandler/index');
+const Logger = require('../services/Logger');
 
 exports.login = async(req, res)=>{
+
+  /*
+    {
+      username: joi.string().min(3).max(10),
+      email: joi.string().email(),
+      password: joi.string().required()
+    }
+  */
+
   try {
     const data = req.body;
 
-    const validation = Validation.AccountValidate.login(data)
+    const validation = Validations.AccountValidate.login(data)
 
     if (! validation.valid) {
       res.status(400).json({
@@ -16,10 +27,8 @@ exports.login = async(req, res)=>{
     }
 
     const account = await Account.findOne({
-      $or:[
-        {email: data.email},
-        {username: data.username},
-      ]
+      email: data.email,
+      username: data.username,
     })
 
     if (! account) {
@@ -27,18 +36,20 @@ exports.login = async(req, res)=>{
       return
     }
     
-    const isMatch = await Utils.Hash.compare(account.password, data.password);
+    const isMatch = await Utils.Hash.compare(data.password, account.password);
+    
     if (! isMatch) {
       res.status(400).end()
       return;
     } 
 
-    const token =  Utils.Token.createToken({
+    const token =  await Utils.Token.createToken({
       _id: account._id,
       email: account.email,
       username: account.username,
       accountType: account.accountType,
     })
+
 
     res.cookie('token', token, {
       httpOnly: true,
@@ -51,13 +62,37 @@ exports.login = async(req, res)=>{
 
     res.status(200).json(response)
   }catch (error) {
-    res.status(500).end()
+
+    Logger.error({
+      message: 'Error in login Controller',
+      error
+    })
+
+    ErrorHandler.useResponseError(res, ErrorHandler.ERRORS.SYSTEM_ERROR)
   }
 };
 
 exports.register = async(req, res)=> {
+
+  /*
+    {
+      username: joi.string().min(3).max(10),
+      email: joi.string().email(),
+      password: joi.string().required()
+    }
+  */
+
   try {
     const data = req.body;
+
+    const validate = Validations.AccountValidate.register(data)
+
+    if (! validate.valid) {
+      res.status(400).json({
+        errors: validate.errors,
+      })
+      return;
+    }
 
     if (await Account.findOne({
       $or: [
@@ -66,15 +101,6 @@ exports.register = async(req, res)=> {
       ]
     }, {_id: 1})) {
       res.status(409).end()
-      return;
-    }
-
-    const validate = Validation.AccountValidate.register(data)
-
-    if (! validate.valid) {
-      res.status(400).json({
-        errors: validate.errors,
-      })
       return;
     }
 
@@ -98,7 +124,13 @@ exports.register = async(req, res)=> {
 
     res.status(200).json(response)
   }catch (error) {
-    res.status(500).end()
+
+    Logger.error({
+      message: 'Error in register Controller',
+      error
+    })
+    
+    ErrorHandler.useResponseError(res, ErrorHandler.ERRORS.SYSTEM_ERROR)
   }
 }
 
@@ -112,22 +144,45 @@ exports.logout = (req, res) => {
 }
 
 exports.changeAccountType = async(req, res) => {
+
+  /*
+    {
+      accountType: 'admin' | 'client' | 'seller'
+    }
+  */
   try {
     const { accountType } = req.body;
     const user = req.user;
 
     if (!accountType || !['admin', 'client', 'seller'].includes(accountType)) {
-      res.status(400).end();
+      ErrorHandler.useResponseError(res, ErrorHandler.ERRORS.INVALID_DATA)
       return;
     }
-    await Account.updateOne({
-      _id: user._id
-    }, {
-      accountType
-    })
+
+    const projections = {
+      accountType: 1
+    }
+
+    const account = await Account.findOne({_id: user._id}, projections)
+
+    if (! account) {
+      ErrorHandler.useResponseError(res, ErrorHandler.ERRORS.ACCOUNT_NOT_AVAILABLE)
+      return;
+    }
+
+    account.accountType = accountType;
+
+    await Account.updateOne({_id: user._id}, account)
+
     res.status(200).end();
 
   } catch (error) {
-    res.status(500).end();
+
+    Logger.error({
+      message: 'Error in changeType Controller',
+      error
+    })
+
+    ErrorHandler.useResponseError(res, ErrorHandler.ERRORS.SYSTEM_ERROR)
   }
 }

@@ -1,575 +1,1122 @@
-[2025-07-31 17:42:30] info: ✅ MongoDB connected successfully
-[2025-07-31 17:42:30] info: Listening in port: 2007
-[2025-07-31 17:43:20] info: ✅ MongoDB connected successfully
-[2025-07-31 17:43:20] info: Listening in port: 2007
-[2025-07-31 17:44:22] info: ✅ MongoDB connected successfully
-[2025-07-31 17:44:22] info: Listening in port: 2007
-[2025-07-31 17:50:35] info: ✅ MongoDB connected successfully
-[2025-07-31 17:50:35] info: Listening in port: 2007
-[2025-07-31 17:51:24] warn: ⚠️ MongoDB connection lost
-[2025-07-31 17:51:24] error: ❌ MongoDB initial connection failed
-[2025-07-31 17:51:24] info: Listening in port: 2007
-[2025-07-31 17:51:32] info: ✅ MongoDB connected successfully
-[2025-07-31 17:52:45] info: ✅ MongoDB connected successfully
-[2025-07-31 17:52:45] info: Listening in port: 2007
-[2025-07-31 17:53:15] info: ✅ MongoDB connected successfully
-[2025-07-31 17:53:15] info: Listening in port: 2007
-[2025-07-31 17:53:49] info: ✅ MongoDB connected successfully
-[2025-07-31 17:53:49] info: Listening in port: 2007
-[2025-07-31 17:55:39] info: ✅ MongoDB connected successfully
-[2025-07-31 17:55:39] info: Listening in port: 2007
-[2025-07-31 17:58:37] info: ✅ MongoDB connected successfully
-[2025-07-31 17:58:37] info: Listening in port: 2007
-[2025-07-31 18:12:29] warn: ⚠️ MongoDB connection lost
-[2025-07-31 18:12:36] info: ✅ MongoDB connected successfully
-[2025-07-31 18:13:37] info: ✅ MongoDB connected successfully
-[2025-07-31 18:13:37] info: Listening in port: 2007
-[2025-07-31 18:13:52] info: ✅ MongoDB connected successfully
-[2025-07-31 18:13:52] info: Listening in port: 2007
-[2025-07-31 18:14:21] info: ✅ MongoDB connected successfully
-[2025-07-31 18:14:21] info: Listening in port: 2007
-[2025-07-31 18:15:14] info: ✅ MongoDB connected successfully
-[2025-07-31 18:15:14] info: Listening in port: 2007
-[2025-07-31 18:18:54] info: ✅ MongoDB connected successfully
-[2025-07-31 18:18:54] info: Listening in port: 2007
-[2025-07-31 18:19:12] info: ✅ MongoDB connected successfully
-[2025-07-31 18:19:12] info: Listening in port: 2007
-[2025-07-31 18:19:32] info: ✅ MongoDB connected successfully
-[2025-07-31 18:19:32] info: Listening in port: 2007
-[2025-07-31 18:19:58] info: ✅ MongoDB connected successfully
-[2025-07-31 18:19:58] info: Listening in port: 2007
-[2025-07-31 18:20:51] info: ✅ MongoDB connected successfully
-[2025-07-31 18:20:51] info: Listening in port: 2007
-[2025-07-31 18:27:50] info: ✅ MongoDB connected successfully
-[2025-07-31 18:27:50] info: Listening in port: 2007
-[2025-07-31 18:31:57] info: ✅ MongoDB connected successfully
-[2025-07-31 18:31:57] info: Listening in port: 2007
-[2025-07-31 18:32:35] info: ✅ MongoDB connected successfully
-[2025-07-31 18:32:35] info: Listening in port: 2007
-[2025-07-31 18:33:20] info: ✅ MongoDB connected successfully
-[2025-07-31 18:33:20] info: Listening in port: 2007
-[2025-07-31 18:34:17] info: ✅ MongoDB connected successfully
-[2025-07-31 18:34:17] info: Listening in port: 2007
-[2025-07-31 18:35:17] info: ✅ MongoDB connected successfully
-[2025-07-31 18:35:17] info: Listening in port: 2007
-[2025-07-31 18:36:10] info: ✅ MongoDB connected successfully
-[2025-07-31 18:36:10] info: Listening in port: 2007
-[2025-07-31 18:36:51] info: ✅ MongoDB connected successfully
-[2025-07-31 18:36:51] info: Listening in port: 2007
-[2025-07-31 18:37:49] info: ✅ MongoDB connected successfully
-[2025-07-31 18:37:49] info: Listening in port: 2007
-[2025-07-31 18:37:58] info: ✅ MongoDB connected successfully
-[2025-07-31 18:37:58] info: Listening in port: 2007
-[2025-07-31 18:38:20] info: ✅ MongoDB connected successfully
-[2025-07-31 18:38:20] info: Listening in port: 2007
-[2025-07-31 18:39:19] info: ✅ MongoDB connected successfully
-[2025-07-31 18:39:19] info: Listening in port: 2007
-[2025-07-31 18:41:57] info: ✅ MongoDB connected successfully
-[2025-07-31 18:41:57] info: Listening in port: 2007
-[2025-07-31 18:42:16] info: ✅ MongoDB connected successfully
-[2025-07-31 18:42:16] info: Listening in port: 2007
-[2025-07-31 18:42:34] info: ✅ MongoDB connected successfully
-[2025-07-31 18:42:34] info: Listening in port: 2007
-[2025-07-31 18:42:43] info: ✅ MongoDB connected successfully
-[2025-07-31 18:42:43] info: Listening in port: 2007
-[2025-07-31 18:43:40] info: ✅ MongoDB connected successfully
-[2025-07-31 18:43:41] info: Listening in port: 2007
-[2025-07-31 18:45:57] info: ✅ MongoDB connected successfully
-[2025-07-31 18:45:57] info: Listening in port: 2007
-[2025-07-31 18:48:02] info: ✅ MongoDB connected successfully
-[2025-07-31 18:48:02] info: Listening in port: 2007
-[2025-07-31 18:48:43] info: ✅ MongoDB connected successfully
-[2025-07-31 18:48:43] info: Listening in port: 2007
-[2025-07-31 18:50:08] info: ✅ MongoDB connected successfully
-[2025-07-31 18:50:08] info: Listening in port: 2007
-[2025-07-31 19:03:36] info: ✅ MongoDB connected successfully
-[2025-07-31 19:03:36] info: Listening in port: 2007
-[2025-07-31 19:04:28] info: ✅ MongoDB connected successfully
-[2025-07-31 19:04:28] info: Listening in port: 2007
-[2025-07-31 19:04:59] info: ✅ MongoDB connected successfully
-[2025-07-31 19:04:59] info: Listening in port: 2007
-[2025-07-31 19:05:48] info: ✅ MongoDB connected successfully
-[2025-07-31 19:05:48] info: Listening in port: 2007
-[2025-07-31 19:06:14] info: ✅ MongoDB connected successfully
-[2025-07-31 19:06:14] info: Listening in port: 2007
-[2025-07-31 19:09:40] info: ✅ MongoDB connected successfully
-[2025-07-31 19:09:40] info: Listening in port: 2007
-[2025-07-31 19:11:30] info: ✅ MongoDB connected successfully
-[2025-07-31 19:11:30] info: Listening in port: 2007
-[2025-07-31 19:13:17] info: ✅ MongoDB connected successfully
-[2025-07-31 19:13:17] info: Listening in port: 2007
-[2025-07-31 19:14:39] info: ✅ MongoDB connected successfully
-[2025-07-31 19:14:39] info: Listening in port: 2007
-[2025-07-31 19:17:11] info: ✅ MongoDB connected successfully
-[2025-07-31 19:17:11] info: Listening in port: 2007
-[2025-07-31 19:21:31] info: ✅ MongoDB connected successfully
-[2025-07-31 19:21:31] info: Listening in port: 2007
-[2025-07-31 19:21:43] info: ✅ MongoDB connected successfully
-[2025-07-31 19:21:43] info: Listening in port: 2007
-[2025-07-31 19:22:07] info: ✅ MongoDB connected successfully
-[2025-07-31 19:22:07] info: Listening in port: 2007
-[2025-07-31 19:22:51] info: ✅ MongoDB connected successfully
-[2025-07-31 19:22:51] info: Listening in port: 2007
-[2025-07-31 19:23:08] info: ✅ MongoDB connected successfully
-[2025-07-31 19:23:08] info: Listening in port: 2007
-[2025-07-31 19:23:59] info: ✅ MongoDB connected successfully
-[2025-07-31 19:23:59] info: Listening in port: 2007
-[2025-07-31 19:27:48] info: ✅ MongoDB connected successfully
-[2025-07-31 19:27:48] info: Listening in port: 2007
-[2025-07-31 19:30:20] info: ✅ MongoDB connected successfully
-[2025-07-31 19:30:20] info: Listening in port: 2007
-[2025-07-31 19:30:43] info: ✅ MongoDB connected successfully
-[2025-07-31 19:30:43] info: Listening in port: 2007
-[2025-07-31 19:31:16] info: ✅ MongoDB connected successfully
-[2025-07-31 19:31:16] info: Listening in port: 2007
-[2025-07-31 19:31:57] info: ✅ MongoDB connected successfully
-[2025-07-31 19:31:57] info: Listening in port: 2007
-[2025-07-31 19:32:32] info: ✅ MongoDB connected successfully
-[2025-07-31 19:32:32] info: Listening in port: 2007
-[2025-07-31 19:34:07] info: ✅ MongoDB connected successfully
-[2025-07-31 19:34:07] info: Listening in port: 2007
-[2025-07-31 19:36:42] warn: ⚠️ MongoDB connection lost
-[2025-07-31 19:36:42] error: ❌ MongoDB initial connection failed
-[2025-07-31 19:36:42] info: Listening in port: 2007
-[2025-07-31 19:36:52] info: ✅ MongoDB connected successfully
-[2025-07-31 21:24:36] warn: ⚠️ MongoDB connection lost
-[2025-07-31 21:24:36] error: ❌ MongoDB initial connection failed
-[2025-07-31 21:24:41] warn: ⚠️ MongoDB connection lost
-[2025-07-31 21:24:41] error: ❌ MongoDB initial connection failed
-[2025-07-31 21:24:46] warn: ⚠️ MongoDB connection lost
-[2025-07-31 21:24:46] error: ❌ MongoDB initial connection failed
-[2025-07-31 22:58:30] warn: ⚠️ MongoDB connection lost
-[2025-07-31 22:58:30] error: ❌ MongoDB initial connection failed
-[2025-07-31 22:58:35] warn: ⚠️ MongoDB connection lost
-[2025-07-31 22:58:35] error: ❌ MongoDB initial connection failed
-[2025-07-31 22:58:40] warn: ⚠️ MongoDB connection lost
-[2025-07-31 22:58:40] error: ❌ MongoDB initial connection failed
-[2025-07-31 22:58:45] warn: ⚠️ MongoDB connection lost
-[2025-07-31 22:58:45] error: ❌ MongoDB initial connection failed
-[2025-07-31 22:58:50] warn: ⚠️ MongoDB connection lost
-[2025-07-31 22:58:50] error: ❌ MongoDB initial connection failed
-[2025-07-31 22:58:55] warn: ⚠️ MongoDB connection lost
-[2025-07-31 22:58:55] error: ❌ MongoDB initial connection failed
-[2025-07-31 22:59:05] info: ✅ MongoDB connected successfully
-[2025-07-31 22:59:26] info: ✅ MongoDB connected successfully
-[2025-07-31 23:11:12] warn: ⚠️ MongoDB connection lost
-[2025-07-31 23:11:22] info: ✅ MongoDB connected successfully
-[2025-07-31 23:11:34] info: ✅ MongoDB connected successfully
-[2025-07-31 23:16:42] info: 🔄 MongoDB reconnected
-[2025-07-31 23:16:55] warn: ⚠️ MongoDB connection lost
-[2025-07-31 23:16:55] info: 🔄 MongoDB reconnected
-[2025-07-31 23:17:00] info: ✅ MongoDB connected successfully
-[2025-07-31 23:23:20] warn: ⚠️ MongoDB connection lost
-[2025-07-31 23:23:30] info: ✅ MongoDB connected successfully
-[2025-07-31 23:23:33] info: ✅ MongoDB connected successfully
-[2025-08-01 11:48:10] info: 🔄 MongoDB reconnected
-[2025-08-01 11:48:21] warn: ⚠️ MongoDB connection lost
-[2025-08-01 11:48:21] info: 🔄 MongoDB reconnected
-[2025-08-01 11:48:26] info: ✅ MongoDB connected successfully
-[2025-08-01 11:49:12] info: 🔄 MongoDB reconnected
-[2025-08-01 11:49:17] info: 🔄 MongoDB reconnected
-[2025-08-01 11:49:17] info: 🔄 MongoDB reconnected
-[2025-08-01 11:49:17] info: 🔄 MongoDB reconnected
-[2025-08-01 11:49:17] info: 🔄 MongoDB reconnected
-[2025-08-01 11:49:58] warn: ⚠️ MongoDB connection lost
-[2025-08-01 11:49:59] info: 🔄 MongoDB reconnected
-[2025-08-01 11:50:03] info: ✅ MongoDB connected successfully
-[2025-08-01 11:53:11] info: ✅ MongoDB connected successfully
-[2025-08-01 11:53:11] info: Listening in port: 2007
-[2025-08-01 11:56:54] info: ✅ MongoDB connected successfully
-[2025-08-01 11:56:54] info: Listening in port: 2007
-[2025-08-01 11:58:44] info: ✅ MongoDB connected successfully
-[2025-08-01 11:58:44] info: Listening in port: 2007
-[2025-08-01 11:59:03] info: ✅ MongoDB connected successfully
-[2025-08-01 11:59:03] info: Listening in port: 2007
-[2025-08-01 12:08:41] info: ✅ MongoDB connected successfully
-[2025-08-01 12:08:41] info: Listening in port: 2007
-[2025-08-01 12:08:58] info: ✅ MongoDB connected successfully
-[2025-08-01 12:08:58] info: Listening in port: 2007
-[2025-08-01 12:10:23] info: ✅ MongoDB connected successfully
-[2025-08-01 12:10:23] info: Listening in port: 2007
-[2025-08-01 12:11:02] warn: ⚠️ MongoDB connection lost
-[2025-08-01 12:11:12] info: ✅ MongoDB connected successfully
-[2025-08-01 12:11:37] warn: ⚠️ MongoDB connection lost
-[2025-08-01 12:11:37] error: ❌ MongoDB initial connection failed
-[2025-08-01 12:11:38] info: 🔄 MongoDB reconnected
-[2025-08-01 12:11:42] info: ✅ MongoDB connected successfully
-[2025-08-01 12:31:08] info: ✅ MongoDB connected successfully
-[2025-08-01 12:31:08] info: Listening in port: 2007
-[2025-08-01 12:33:02] info: ✅ MongoDB connected successfully
-[2025-08-01 12:33:02] info: Listening in port: 2007
-[2025-08-01 12:36:37] info: ✅ MongoDB connected successfully
-[2025-08-01 12:36:37] info: Listening in port: 2007
-[2025-08-01 12:37:08] info: ✅ MongoDB connected successfully
-[2025-08-01 12:37:08] info: Listening in port: 2007
-[2025-08-01 12:37:22] info: ✅ MongoDB connected successfully
-[2025-08-01 12:37:22] info: Listening in port: 2007
-[2025-08-01 12:41:02] warn: ⚠️ MongoDB connection lost
-[2025-08-01 12:41:03] info: 🔄 MongoDB reconnected
-[2025-08-01 12:41:07] info: ✅ MongoDB connected successfully
-[2025-08-01 12:48:26] warn: ⚠️ MongoDB connection lost
-[2025-08-01 12:48:33] info: ✅ MongoDB connected successfully
-[2025-08-01 12:59:11] info: 🔄 MongoDB reconnected
-[2025-08-01 12:59:20] info: 🔄 MongoDB reconnected
-[2025-08-01 13:00:13] warn: ⚠️ MongoDB connection lost
-[2025-08-01 13:00:13] info: 🔄 MongoDB reconnected
-[2025-08-01 13:00:13] warn: ⚠️ MongoDB connection lost
-[2025-08-01 13:00:14] info: 🔄 MongoDB reconnected
-[2025-08-01 13:00:18] info: ✅ MongoDB connected successfully
-[2025-08-01 13:10:17] info: ✅ MongoDB connected successfully
-[2025-08-01 13:10:17] info: Listening in port: 2007
-[2025-08-01 13:17:00] info: ✅ MongoDB connected successfully
-[2025-08-01 13:17:00] info: Listening in port: 2007
-[2025-08-01 13:17:05] info: ✅ MongoDB connected successfully
-[2025-08-01 13:17:05] info: Listening in port: 2007
-[2025-08-01 14:48:20] info: ✅ MongoDB connected successfully
-[2025-08-01 14:48:20] info: Listening in port: 3000
-[2025-08-01 14:48:46] info: ✅ MongoDB connected successfully
-[2025-08-01 14:48:46] info: Listening in port: 2007
-[2025-08-01 14:49:28] info: ✅ MongoDB connected successfully
-[2025-08-01 14:49:28] info: Listening in port: 2007
-[2025-08-01 14:51:28] info: ✅ MongoDB connected successfully
-[2025-08-01 14:51:28] info: Listening in port: 2007
-[2025-08-01 14:53:31] info: ✅ MongoDB connected successfully
-[2025-08-01 14:53:31] info: Listening in port: 2007
-[2025-08-01 14:54:16] info: ✅ MongoDB connected successfully
-[2025-08-01 14:54:16] info: Listening in port: 2007
-[2025-08-01 14:55:09] info: ✅ MongoDB connected successfully
-[2025-08-01 14:55:09] info: Listening in port: 2007
-[2025-08-01 14:55:11] info: ✅ MongoDB connected successfully
-[2025-08-01 14:55:11] info: Listening in port: 2007
-[2025-08-01 14:58:36] info: ✅ MongoDB connected successfully
-[2025-08-01 14:58:36] info: Listening in port: 2007
-[2025-08-01 14:59:04] info: ✅ MongoDB connected successfully
-[2025-08-01 14:59:04] info: Listening in port: 2007
-[2025-08-01 14:59:27] info: ✅ MongoDB connected successfully
-[2025-08-01 14:59:27] info: Listening in port: 2007
-[2025-08-01 15:00:52] info: ✅ MongoDB connected successfully
-[2025-08-01 15:00:52] info: Listening in port: 2007
-[2025-08-01 15:02:29] info: ✅ MongoDB connected successfully
-[2025-08-01 15:02:29] info: Listening in port: 2007
-[2025-08-01 15:02:55] info: ✅ MongoDB connected successfully
-[2025-08-01 15:02:55] info: Listening in port: 2007
-[2025-08-01 15:03:43] info: ✅ MongoDB connected successfully
-[2025-08-01 15:03:43] info: Listening in port: 2007
-[2025-08-01 15:03:57] info: ✅ MongoDB connected successfully
-[2025-08-01 15:03:57] info: Listening in port: 2007
-[2025-08-01 15:04:08] info: ✅ MongoDB connected successfully
-[2025-08-01 15:04:08] info: Listening in port: 2007
-[2025-08-01 15:06:57] info: ✅ MongoDB connected successfully
-[2025-08-01 15:06:57] info: Listening in port: 2007
-[2025-08-01 15:07:14] info: ✅ MongoDB connected successfully
-[2025-08-01 15:07:14] info: Listening in port: 2007
-[2025-08-01 15:07:46] info: ✅ MongoDB connected successfully
-[2025-08-01 15:07:46] info: Listening in port: 2007
-[2025-08-01 15:10:26] info: ✅ MongoDB connected successfully
-[2025-08-01 15:10:26] info: Listening in port: 2007
-[2025-08-01 15:10:41] info: ✅ MongoDB connected successfully
-[2025-08-01 15:10:41] info: Listening in port: 2007
-[2025-08-01 15:13:15] info: ✅ MongoDB connected successfully
-[2025-08-01 15:13:15] info: Listening in port: 2007
-[2025-08-01 15:15:08] info: ✅ MongoDB connected successfully
-[2025-08-01 15:15:08] info: Listening in port: 2007
-[2025-08-01 15:16:00] info: ✅ MongoDB connected successfully
-[2025-08-01 15:16:00] info: Listening in port: 2007
-[2025-08-01 15:16:38] info: ✅ MongoDB connected successfully
-[2025-08-01 15:16:38] info: Listening in port: 2007
-[2025-08-01 15:17:15] info: ✅ MongoDB connected successfully
-[2025-08-01 15:17:15] info: Listening in port: 2007
-[2025-08-01 15:17:33] info: ✅ MongoDB connected successfully
-[2025-08-01 15:17:33] info: Listening in port: 2007
-[2025-08-01 15:17:54] info: ✅ MongoDB connected successfully
-[2025-08-01 15:17:54] info: Listening in port: 2007
-[2025-08-01 15:18:22] info: ✅ MongoDB connected successfully
-[2025-08-01 15:18:22] info: Listening in port: 2007
-[2025-08-01 15:18:37] info: ✅ MongoDB connected successfully
-[2025-08-01 15:18:37] info: Listening in port: 2007
-[2025-08-01 15:21:53] info: ✅ MongoDB connected successfully
-[2025-08-01 15:21:53] info: Listening in port: 2007
-[2025-08-01 15:24:11] info: ✅ MongoDB connected successfully
-[2025-08-01 15:24:11] info: Listening in port: 2007
-[2025-08-01 15:25:10] info: ✅ MongoDB connected successfully
-[2025-08-01 15:25:10] info: Listening in port: 2007
-[2025-08-01 15:25:25] info: ✅ MongoDB connected successfully
-[2025-08-01 15:25:25] info: Listening in port: 2007
-[2025-08-01 15:26:58] info: ✅ MongoDB connected successfully
-[2025-08-01 15:26:58] info: Listening in port: 2007
-[2025-08-01 15:27:35] info: ✅ MongoDB connected successfully
-[2025-08-01 15:27:35] info: Listening in port: 2007
-[2025-08-01 15:28:16] info: ✅ MongoDB connected successfully
-[2025-08-01 15:28:16] info: Listening in port: 2007
-[2025-08-01 15:28:19] info: ✅ MongoDB connected successfully
-[2025-08-01 15:28:19] info: Listening in port: 2007
-[2025-08-01 15:28:35] info: ✅ MongoDB connected successfully
-[2025-08-01 15:28:35] info: Listening in port: 2007
-[2025-08-01 15:30:01] info: ✅ MongoDB connected successfully
-[2025-08-01 15:30:01] info: Listening in port: 2007
-[2025-08-01 15:31:54] warn: ⚠️ MongoDB connection lost
-[2025-08-01 15:31:54] error: ❌ MongoDB initial connection failed
-[2025-08-01 15:31:54] info: Listening in port: 2007
-[2025-08-01 15:32:01] info: ✅ MongoDB connected successfully
-[2025-08-01 15:32:26] info: ✅ MongoDB connected successfully
-[2025-08-01 15:32:26] info: Listening in port: 2007
-[2025-08-01 15:33:42] info: ✅ MongoDB connected successfully
-[2025-08-01 15:33:43] info: Listening in port: 2007
-[2025-08-01 15:34:09] info: ✅ MongoDB connected successfully
-[2025-08-01 15:34:09] info: Listening in port: 2007
-[2025-08-01 15:34:28] info: ✅ MongoDB connected successfully
-[2025-08-01 15:34:28] info: Listening in port: 2007
-[2025-08-01 15:35:18] info: ✅ MongoDB connected successfully
-[2025-08-01 15:35:18] info: Listening in port: 2007
-[2025-08-01 15:36:07] info: ✅ MongoDB connected successfully
-[2025-08-01 15:36:07] info: Listening in port: 2007
-[2025-08-01 15:37:52] info: ✅ MongoDB connected successfully
-[2025-08-01 15:37:52] info: Listening in port: 2007
-[2025-08-01 15:38:38] info: ✅ MongoDB connected successfully
-[2025-08-01 15:38:38] info: Listening in port: 2007
-[2025-08-01 15:38:54] info: ✅ MongoDB connected successfully
-[2025-08-01 15:38:54] info: Listening in port: 2007
-[2025-08-01 15:40:37] info: ✅ MongoDB connected successfully
-[2025-08-01 15:40:37] info: Listening in port: 2007
-[2025-08-01 15:45:38] info: ✅ MongoDB connected successfully
-[2025-08-01 15:45:38] info: Listening in port: 2007
-[2025-08-01 15:49:34] info: ✅ MongoDB connected successfully
-[2025-08-01 15:49:34] info: Listening in port: 2007
-[2025-08-01 15:50:04] info: ✅ MongoDB connected successfully
-[2025-08-01 15:50:04] info: Listening in port: 2007
-[2025-08-01 15:51:44] info: ✅ MongoDB connected successfully
-[2025-08-01 15:51:44] info: Listening in port: 2007
-[2025-08-01 15:53:20] info: ✅ MongoDB connected successfully
-[2025-08-01 15:53:20] info: Listening in port: 2007
-[2025-08-01 15:57:26] info: ✅ MongoDB connected successfully
-[2025-08-01 15:57:26] info: Listening in port: 2007
-[2025-08-01 15:57:45] info: ✅ MongoDB connected successfully
-[2025-08-01 15:57:45] info: Listening in port: 2007
-[2025-08-01 15:58:05] info: ✅ MongoDB connected successfully
-[2025-08-01 15:58:05] info: Listening in port: 2007
-[2025-08-01 16:03:37] info: ✅ MongoDB connected successfully
-[2025-08-01 16:03:37] info: Listening in port: 2007
-[2025-08-01 16:03:56] info: ✅ MongoDB connected successfully
-[2025-08-01 16:03:56] info: Listening in port: 2007
-[2025-08-01 16:04:20] info: ✅ MongoDB connected successfully
-[2025-08-01 16:04:20] info: Listening in port: 2007
-[2025-08-01 16:22:06] info: ✅ MongoDB connected successfully
-[2025-08-01 16:22:06] info: Listening in port: 2007
-[2025-08-01 16:24:26] info: ✅ MongoDB connected successfully
-[2025-08-01 16:24:26] info: Listening in port: 2007
-[2025-08-01 16:28:23] info: ✅ MongoDB connected successfully
-[2025-08-01 16:28:23] info: Listening in port: 2007
-[2025-08-01 16:29:30] info: ✅ MongoDB connected successfully
-[2025-08-01 16:29:30] info: Listening in port: 2007
-[2025-08-01 16:29:50] info: ✅ MongoDB connected successfully
-[2025-08-01 16:29:50] info: Listening in port: 2007
-[2025-08-01 16:30:51] info: ✅ MongoDB connected successfully
-[2025-08-01 16:30:51] info: Listening in port: 2007
-[2025-08-01 16:31:06] info: ✅ MongoDB connected successfully
-[2025-08-01 16:31:06] info: Listening in port: 2007
-[2025-08-01 16:32:38] info: ✅ MongoDB connected successfully
-[2025-08-01 16:32:38] info: Listening in port: 2007
-[2025-08-01 16:42:25] info: ✅ MongoDB connected successfully
-[2025-08-01 16:42:25] info: Listening in port: 2007
-[2025-08-01 17:04:33] info: ✅ MongoDB connected successfully
-[2025-08-01 17:04:33] info: Listening in port: 2007
-[2025-08-01 17:06:00] info: ✅ MongoDB connected successfully
-[2025-08-01 17:06:00] info: Listening in port: 2007
-[2025-08-01 17:06:29] info: ✅ MongoDB connected successfully
-[2025-08-01 17:06:29] info: Listening in port: 2007
-[2025-08-01 17:10:04] info: ✅ MongoDB connected successfully
-[2025-08-01 17:10:04] info: Listening in port: 2007
-[2025-08-01 17:12:31] info: ✅ MongoDB connected successfully
-[2025-08-01 17:12:31] info: Listening in port: 2007
-[2025-08-01 17:14:02] info: ✅ MongoDB connected successfully
-[2025-08-01 17:14:02] info: Listening in port: 2007
-[2025-08-01 17:18:18] info: ✅ MongoDB connected successfully
-[2025-08-01 17:18:18] info: Listening in port: 2007
-[2025-08-01 17:30:04] info: ✅ MongoDB connected successfully
-[2025-08-01 17:30:04] info: Listening in port: 2007
-[2025-08-01 17:32:25] info: ✅ MongoDB connected successfully
-[2025-08-01 17:32:25] info: Listening in port: 2007
-[2025-08-01 17:33:22] info: ✅ MongoDB connected successfully
-[2025-08-01 17:33:22] info: Listening in port: 2007
-[2025-08-01 17:38:00] info: ✅ MongoDB connected successfully
-[2025-08-01 17:38:00] info: Listening in port: 2007
-[2025-08-01 17:39:24] info: ✅ MongoDB connected successfully
-[2025-08-01 17:39:24] info: Listening in port: 2007
-[2025-08-01 17:43:44] info: ✅ MongoDB connected successfully
-[2025-08-01 17:43:44] info: Listening in port: 2007
-[2025-08-01 17:49:39] info: ✅ MongoDB connected successfully
-[2025-08-01 17:49:39] info: Listening in port: 2007
-[2025-08-01 17:58:57] info: ✅ MongoDB connected successfully
-[2025-08-01 17:58:57] info: Listening in port: 2007
-[2025-08-01 18:00:52] info: ✅ MongoDB connected successfully
-[2025-08-01 18:00:52] info: Listening in port: 2007
-[2025-08-01 18:01:35] info: ✅ MongoDB connected successfully
-[2025-08-01 18:01:35] info: Listening in port: 2007
-[2025-08-01 18:02:13] info: ✅ MongoDB connected successfully
-[2025-08-01 18:02:13] info: Listening in port: 2007
-[2025-08-01 18:02:40] info: ✅ MongoDB connected successfully
-[2025-08-01 18:02:40] info: Listening in port: 2007
-[2025-08-01 18:03:14] info: ✅ MongoDB connected successfully
-[2025-08-01 18:03:14] info: Listening in port: 2007
-[2025-08-01 18:03:36] info: ✅ MongoDB connected successfully
-[2025-08-01 18:03:36] info: Listening in port: 2007
-[2025-08-01 18:04:12] info: ✅ MongoDB connected successfully
-[2025-08-01 18:04:13] info: Listening in port: 2007
-[2025-08-01 18:04:49] info: ✅ MongoDB connected successfully
-[2025-08-01 18:04:49] info: Listening in port: 2007
-[2025-08-01 18:05:07] info: ✅ MongoDB connected successfully
-[2025-08-01 18:05:07] info: Listening in port: 2007
-[2025-08-01 18:05:22] info: ✅ MongoDB connected successfully
-[2025-08-01 18:05:22] info: Listening in port: 2007
-[2025-08-01 18:05:40] info: ✅ MongoDB connected successfully
-[2025-08-01 18:05:40] info: Listening in port: 2007
-[2025-08-01 18:06:45] info: ✅ MongoDB connected successfully
-[2025-08-01 18:06:45] info: Listening in port: 2007
-[2025-08-01 18:12:09] info: ✅ MongoDB connected successfully
-[2025-08-01 18:12:09] info: Listening in port: 2007
-[2025-08-01 18:13:27] info: ✅ MongoDB connected successfully
-[2025-08-01 18:13:27] info: Listening in port: 2007
-[2025-08-01 18:15:23] info: ✅ MongoDB connected successfully
-[2025-08-01 18:15:24] info: Listening in port: 2007
-[2025-08-01 18:16:13] info: ✅ MongoDB connected successfully
-[2025-08-01 18:16:13] info: Listening in port: 2007
-[2025-08-04 21:01:07] info: ✅ MongoDB connected successfully
-[2025-08-04 21:01:07] info: Listening in port: 2007
-[2025-08-04 21:03:59] info: ✅ MongoDB connected successfully
-[2025-08-04 21:03:59] info: Listening in port: 2007
-[2025-08-04 21:04:18] info: ✅ MongoDB connected successfully
-[2025-08-04 21:04:18] info: Listening in port: 2007
-[2025-08-04 21:05:29] info: ✅ MongoDB connected successfully
-[2025-08-04 21:05:29] info: Listening in port: 2007
-[2025-08-04 21:05:45] info: ✅ MongoDB connected successfully
-[2025-08-04 21:05:45] info: Listening in port: 2007
-[2025-08-04 21:05:58] info: ✅ MongoDB connected successfully
-[2025-08-04 21:05:58] info: Listening in port: 2007
-[2025-08-04 21:10:34] info: ✅ MongoDB connected successfully
-[2025-08-04 21:10:34] info: Listening in port: 2007
-[2025-08-04 21:11:38] info: ✅ MongoDB connected successfully
-[2025-08-04 21:11:38] info: Listening in port: 2007
-[2025-08-04 21:12:26] info: ✅ MongoDB connected successfully
-[2025-08-04 21:12:26] info: Listening in port: 2007
-[2025-08-04 21:12:51] info: ✅ MongoDB connected successfully
-[2025-08-04 21:12:51] info: Listening in port: 2007
-[2025-08-04 21:15:40] info: ✅ MongoDB connected successfully
-[2025-08-04 21:15:40] info: Listening in port: 2007
-[2025-08-04 21:16:14] info: ✅ MongoDB connected successfully
-[2025-08-04 21:16:14] info: Listening in port: 2007
-[2025-08-04 21:17:52] info: ✅ MongoDB connected successfully
-[2025-08-04 21:17:57] info: ✅ MongoDB connected successfully
-[2025-08-04 21:17:57] info: Listening in port: 2007
-[2025-08-04 21:19:38] info: ✅ MongoDB connected successfully
-[2025-08-04 21:19:38] info: Listening in port: 2007
-[2025-08-04 21:20:42] info: ✅ MongoDB connected successfully
-[2025-08-04 21:20:42] info: Listening in port: 2007
-[2025-08-04 21:20:52] info: ✅ MongoDB connected successfully
-[2025-08-04 21:20:52] info: Listening in port: 2007
-[2025-08-04 21:21:39] info: ✅ MongoDB connected successfully
-[2025-08-04 21:21:39] info: Listening in port: 2007
-[2025-08-04 21:24:07] info: ✅ MongoDB connected successfully
-[2025-08-04 21:24:07] info: Listening in port: 2007
-[2025-08-04 21:25:17] info: ✅ MongoDB connected successfully
-[2025-08-04 21:25:17] info: Listening in port: 2007
-[2025-08-04 21:25:55] info: ✅ MongoDB connected successfully
-[2025-08-04 21:25:55] info: Listening in port: 2007
-[2025-08-04 21:26:29] info: ✅ MongoDB connected successfully
-[2025-08-04 21:26:29] info: Listening in port: 2007
-[2025-08-04 21:27:04] info: ✅ MongoDB connected successfully
-[2025-08-04 21:27:04] info: Listening in port: 2007
-[2025-08-04 21:27:24] info: ✅ MongoDB connected successfully
-[2025-08-04 21:27:24] info: Listening in port: 2007
-[2025-08-04 21:28:19] info: ✅ MongoDB connected successfully
-[2025-08-04 21:28:19] info: Listening in port: 2007
-[2025-08-04 21:29:27] info: ✅ MongoDB connected successfully
-[2025-08-04 21:29:27] info: Listening in port: 2007
-[2025-08-04 21:30:09] info: ✅ MongoDB connected successfully
-[2025-08-04 21:30:09] info: Listening in port: 2007
-[2025-08-04 21:30:36] info: ✅ MongoDB connected successfully
-[2025-08-04 21:30:36] info: Listening in port: 2007
-[2025-08-04 21:30:40] info: ✅ MongoDB connected successfully
-[2025-08-04 21:30:40] info: Listening in port: 2007
-[2025-08-04 21:32:44] info: ✅ MongoDB connected successfully
-[2025-08-04 21:32:44] info: Listening in port: 2007
-[2025-08-04 21:33:09] info: ✅ MongoDB connected successfully
-[2025-08-04 21:33:10] info: Listening in port: 2007
-[2025-08-04 21:34:01] info: ✅ MongoDB connected successfully
-[2025-08-04 21:34:01] info: Listening in port: 2007
-[2025-08-04 21:34:28] info: ✅ MongoDB connected successfully
-[2025-08-04 21:34:28] info: Listening in port: 2007
-[2025-08-04 21:35:01] info: ✅ MongoDB connected successfully
-[2025-08-04 21:35:01] info: Listening in port: 2007
-[2025-08-04 21:35:17] info: ✅ MongoDB connected successfully
-[2025-08-04 21:35:17] info: Listening in port: 2007
-[2025-08-04 21:35:44] info: ✅ MongoDB connected successfully
-[2025-08-04 21:35:44] info: Listening in port: 2007
-[2025-08-04 21:36:50] info: ✅ MongoDB connected successfully
-[2025-08-04 21:36:50] info: Listening in port: 2007
-[2025-08-04 21:36:56] info: ✅ MongoDB connected successfully
-[2025-08-04 21:36:56] info: Listening in port: 2007
-[2025-08-04 21:37:39] info: ✅ MongoDB connected successfully
-[2025-08-04 21:37:39] info: Listening in port: 2007
-[2025-08-04 21:38:28] info: ✅ MongoDB connected successfully
-[2025-08-04 21:38:28] info: Listening in port: 2007
-[2025-08-04 21:39:47] info: ✅ MongoDB connected successfully
-[2025-08-04 21:39:47] info: Listening in port: 2007
-[2025-08-04 21:45:14] info: ✅ MongoDB connected successfully
-[2025-08-04 21:45:14] info: Listening in port: 2007
-[2025-08-04 21:48:00] info: ✅ MongoDB connected successfully
-[2025-08-04 21:48:00] info: Listening in port: 2007
-[2025-08-04 21:48:44] info: ✅ MongoDB connected successfully
-[2025-08-04 21:48:45] info: Listening in port: 2007
-[2025-08-04 21:49:18] info: ✅ MongoDB connected successfully
-[2025-08-04 21:49:18] info: Listening in port: 2007
-[2025-08-04 21:49:26] info: ✅ MongoDB connected successfully
-[2025-08-04 21:49:26] info: Listening in port: 2007
-[2025-08-04 21:49:39] info: ✅ MongoDB connected successfully
-[2025-08-04 21:49:39] info: Listening in port: 2007
-[2025-08-04 21:49:50] info: ✅ MongoDB connected successfully
-[2025-08-04 21:49:50] info: Listening in port: 2007
-[2025-08-04 21:50:45] info: ✅ MongoDB connected successfully
-[2025-08-04 21:50:45] info: Listening in port: 2007
-[2025-08-04 21:50:58] info: ✅ MongoDB connected successfully
-[2025-08-04 21:50:58] info: Listening in port: 2007
-[2025-08-04 21:51:13] info: ✅ MongoDB connected successfully
-[2025-08-04 21:51:13] info: Listening in port: 2007
-[2025-08-04 21:51:51] info: ✅ MongoDB connected successfully
-[2025-08-04 21:51:51] info: Listening in port: 2007
-[2025-08-04 21:52:11] info: ✅ MongoDB connected successfully
-[2025-08-04 21:52:11] info: Listening in port: 2007
-[2025-08-04 21:52:57] info: ✅ MongoDB connected successfully
-[2025-08-04 21:52:57] info: Listening in port: 2007
-[2025-08-04 21:54:54] info: ✅ MongoDB connected successfully
-[2025-08-04 21:54:54] info: Listening in port: 2007
-[2025-08-04 21:55:28] info: ✅ MongoDB connected successfully
-[2025-08-04 21:55:28] info: Listening in port: 2007
-[2025-08-04 21:55:32] info: ✅ MongoDB connected successfully
-[2025-08-04 21:55:32] info: Listening in port: 2007
-[2025-08-04 21:55:48] info: ✅ MongoDB connected successfully
-[2025-08-04 21:55:48] info: Listening in port: 2007
-[2025-08-04 21:56:30] info: ✅ MongoDB connected successfully
-[2025-08-04 21:56:30] info: Listening in port: 2007
-[2025-08-04 21:58:04] info: ✅ MongoDB connected successfully
-[2025-08-04 21:58:04] info: Listening in port: 2007
-[2025-08-04 21:58:31] info: ✅ MongoDB connected successfully
-[2025-08-04 21:58:31] info: Listening in port: 2007
-[2025-08-04 21:58:38] info: ✅ MongoDB connected successfully
-[2025-08-04 21:58:38] info: Listening in port: 2007
-[2025-08-04 22:00:07] info: ✅ MongoDB connected successfully
-[2025-08-04 22:00:07] info: Listening in port: 2007
-[2025-08-04 22:01:19] info: ✅ MongoDB connected successfully
-[2025-08-04 22:01:19] info: Listening in port: 2007
-[2025-08-04 22:02:12] info: ✅ MongoDB connected successfully
-[2025-08-04 22:02:12] info: Listening in port: 2007
-[2025-08-04 22:02:58] info: ✅ MongoDB connected successfully
-[2025-08-04 22:02:58] info: Listening in port: 2007
-[2025-08-04 22:03:18] info: ✅ MongoDB connected successfully
-[2025-08-04 22:03:18] info: Listening in port: 2007
-[2025-08-04 22:06:23] info: ✅ MongoDB connected successfully
-[2025-08-04 22:06:23] info: Listening in port: 2007
-[2025-08-04 22:06:54] info: ✅ MongoDB connected successfully
-[2025-08-04 22:06:54] info: Listening in port: 2007
-[2025-08-04 22:08:08] info: ✅ MongoDB connected successfully
-[2025-08-04 22:08:08] info: Listening in port: 2007
-[2025-08-04 22:08:59] info: ✅ MongoDB connected successfully
-[2025-08-04 22:08:59] info: Listening in port: 2007
-[2025-08-04 22:09:53] info: ✅ MongoDB connected successfully
-[2025-08-04 22:09:53] info: Listening in port: 2007
+[2025-08-05 16:36:45] info: 🔄 MongoDB reconnected
+[2025-08-05 16:37:55] info: ✅ MongoDB connected successfully
+[2025-08-05 16:37:55] info: Listening in port: 2007
+[2025-08-05 16:40:34] info: ✅ MongoDB connected successfully
+[2025-08-05 16:40:34] info: Listening in port: 2007
+[2025-08-05 16:40:46] info: ✅ MongoDB connected successfully
+[2025-08-05 16:40:46] info: Listening in port: 2007
+[2025-08-05 16:42:00] info: ✅ MongoDB connected successfully
+[2025-08-05 16:42:00] info: Listening in port: 2007
+[2025-08-05 20:05:41] info: ✅ MongoDB connected successfully
+[2025-08-05 20:05:41] info: Listening in port: 2007
+[2025-08-05 20:11:35] info: ✅ MongoDB connected successfully
+[2025-08-05 20:11:35] info: Listening in port: 2007
+[2025-08-05 20:11:46] info: ✅ MongoDB connected successfully
+[2025-08-05 20:11:46] info: Listening in port: 2007
+[2025-08-05 20:12:00] info: ✅ MongoDB connected successfully
+[2025-08-05 20:12:00] info: Listening in port: 2007
+[2025-08-05 20:12:14] info: ✅ MongoDB connected successfully
+[2025-08-05 20:12:14] info: Listening in port: 2007
+[2025-08-05 20:12:35] info: ✅ MongoDB connected successfully
+[2025-08-05 20:12:35] info: Listening in port: 2007
+[2025-08-05 20:12:42] info: ✅ MongoDB connected successfully
+[2025-08-05 20:12:42] info: Listening in port: 2007
+[2025-08-05 20:12:59] info: ✅ MongoDB connected successfully
+[2025-08-05 20:12:59] info: Listening in port: 2007
+[2025-08-05 20:13:54] info: ✅ MongoDB connected successfully
+[2025-08-05 20:13:54] info: Listening in port: 2007
+[2025-08-05 21:16:16] warn: ⚠️ MongoDB connection lost
+[2025-08-05 21:16:16] error: ❌ MongoDB initial connection failed
+[2025-08-05 21:16:16] info: Listening in port: 2007
+[2025-08-05 21:16:21] warn: ⚠️ MongoDB connection lost
+[2025-08-05 21:16:21] error: ❌ MongoDB initial connection failed
+[2025-08-05 21:16:26] warn: ⚠️ MongoDB connection lost
+[2025-08-05 21:16:26] error: ❌ MongoDB initial connection failed
+[2025-08-05 21:16:31] warn: ⚠️ MongoDB connection lost
+[2025-08-05 21:16:31] error: ❌ MongoDB initial connection failed
+[2025-08-05 21:16:36] warn: ⚠️ MongoDB connection lost
+[2025-08-05 21:16:36] error: ❌ MongoDB initial connection failed
+[2025-08-05 21:16:41] warn: ⚠️ MongoDB connection lost
+[2025-08-05 21:16:41] error: ❌ MongoDB initial connection failed
+[2025-08-05 21:16:51] info: ✅ MongoDB connected successfully
+[2025-08-05 21:17:27] warn: ⚠️ MongoDB connection lost
+[2025-08-05 21:17:27] error: ❌ MongoDB initial connection failed
+[2025-08-05 21:17:37] info: ✅ MongoDB connected successfully
+[2025-08-05 21:18:49] warn: ⚠️ MongoDB connection lost
+[2025-08-05 21:18:49] error: ❌ MongoDB initial connection failed
+[2025-08-05 21:18:49] info: Listening in port: 2007
+[2025-08-05 21:18:59] info: ✅ MongoDB connected successfully
+[2025-08-05 21:20:03] warn: ⚠️ MongoDB connection lost
+[2025-08-05 21:20:03] error: ❌ MongoDB initial connection failed
+[2025-08-05 21:20:13] info: ✅ MongoDB connected successfully
+[2025-08-05 21:21:52] warn: ⚠️ MongoDB connection lost
+[2025-08-05 21:21:52] error: ❌ MongoDB initial connection failed
+[2025-08-05 21:21:52] info: Listening in port: 2007
+[2025-08-05 21:22:02] info: ✅ MongoDB connected successfully
+[2025-08-05 21:22:33] warn: ⚠️ MongoDB connection lost
+[2025-08-05 21:22:33] error: ❌ MongoDB initial connection failed
+[2025-08-05 21:22:43] info: ✅ MongoDB connected successfully
+[2025-08-05 21:23:37] warn: ⚠️ MongoDB connection lost
+[2025-08-05 21:23:37] error: ❌ MongoDB initial connection failed
+[2025-08-05 21:23:47] info: ✅ MongoDB connected successfully
+[2025-08-05 21:24:18] warn: ⚠️ MongoDB connection lost
+[2025-08-05 21:24:18] error: ❌ MongoDB initial connection failed
+[2025-08-05 21:24:28] info: ✅ MongoDB connected successfully
+[2025-08-05 21:24:53] warn: ⚠️ MongoDB connection lost
+[2025-08-05 21:24:53] error: ❌ MongoDB initial connection failed
+[2025-08-05 21:25:45] warn: ⚠️ MongoDB connection lost
+[2025-08-05 21:25:45] error: ❌ MongoDB initial connection failed
+[2025-08-05 21:25:45] info: Listening in port: 2007
+[2025-08-05 21:25:55] info: ✅ MongoDB connected successfully
+[2025-08-05 21:26:20] warn: ⚠️ MongoDB connection lost
+[2025-08-05 21:26:20] error: ❌ MongoDB initial connection failed
+[2025-08-05 21:26:25] warn: ⚠️ MongoDB connection lost
+[2025-08-05 21:26:25] error: ❌ MongoDB initial connection failed
+[2025-08-05 21:26:30] warn: ⚠️ MongoDB connection lost
+[2025-08-05 21:26:30] error: ❌ MongoDB initial connection failed
+[2025-08-05 21:26:35] warn: ⚠️ MongoDB connection lost
+[2025-08-05 21:26:35] error: ❌ MongoDB initial connection failed
+[2025-08-05 21:26:40] warn: ⚠️ MongoDB connection lost
+[2025-08-05 21:26:40] error: ❌ MongoDB initial connection failed
+[2025-08-05 21:26:45] warn: ⚠️ MongoDB connection lost
+[2025-08-05 21:26:45] error: ❌ MongoDB initial connection failed
+[2025-08-05 21:26:50] warn: ⚠️ MongoDB connection lost
+[2025-08-05 21:26:50] error: ❌ MongoDB initial connection failed
+[2025-08-05 21:26:55] warn: ⚠️ MongoDB connection lost
+[2025-08-05 21:26:55] error: ❌ MongoDB initial connection failed
+[2025-08-05 21:27:00] warn: ⚠️ MongoDB connection lost
+[2025-08-05 21:27:00] error: ❌ MongoDB initial connection failed
+[2025-08-05 21:27:10] info: ✅ MongoDB connected successfully
+[2025-08-05 21:28:14] warn: ⚠️ MongoDB connection lost
+[2025-08-05 21:28:14] error: ❌ MongoDB initial connection failed
+[2025-08-05 21:29:05] warn: ⚠️ MongoDB connection lost
+[2025-08-05 21:29:05] error: ❌ MongoDB initial connection failed
+[2025-08-05 21:29:05] info: Listening in port: 2007
+[2025-08-05 21:29:15] info: ✅ MongoDB connected successfully
+[2025-08-05 21:30:07] warn: ⚠️ MongoDB connection lost
+[2025-08-05 21:30:07] error: ❌ MongoDB initial connection failed
+[2025-08-05 21:30:13] warn: ⚠️ MongoDB connection lost
+[2025-08-05 21:30:13] error: ❌ MongoDB initial connection failed
+[2025-08-05 21:30:17] warn: ⚠️ MongoDB connection lost
+[2025-08-05 21:30:17] error: ❌ MongoDB initial connection failed
+[2025-08-05 21:30:27] info: ✅ MongoDB connected successfully
+[2025-08-05 21:31:03] warn: ⚠️ MongoDB connection lost
+[2025-08-05 21:31:03] error: ❌ MongoDB initial connection failed
+[2025-08-05 21:31:13] info: ✅ MongoDB connected successfully
+[2025-08-05 21:31:54] warn: ⚠️ MongoDB connection lost
+[2025-08-05 21:31:54] error: ❌ MongoDB initial connection failed
+[2025-08-05 21:32:04] info: ✅ MongoDB connected successfully
+[2025-08-05 21:32:34] warn: ⚠️ MongoDB connection lost
+[2025-08-05 21:32:34] error: ❌ MongoDB initial connection failed
+[2025-08-05 21:32:44] info: ✅ MongoDB connected successfully
+[2025-08-05 21:33:27] info: ✅ MongoDB connected successfully
+[2025-08-05 21:34:01] info: 🔄 MongoDB reconnected
+[2025-08-05 21:34:15] info: 🔄 MongoDB reconnected
+[2025-08-05 21:35:05] warn: ⚠️ MongoDB connection lost
+[2025-08-05 21:35:15] info: ✅ MongoDB connected successfully
+[2025-08-05 22:04:06] info: ✅ MongoDB connected successfully
+[2025-08-05 22:04:06] info: Listening in port: 2007
+[2025-08-05 22:04:18] info: ✅ MongoDB connected successfully
+[2025-08-05 22:04:18] info: Listening in port: 2007
+[2025-08-05 22:04:31] info: ✅ MongoDB connected successfully
+[2025-08-05 22:04:31] info: Listening in port: 2007
+[2025-08-05 22:05:47] error: Error in register Controller
+[2025-08-05 22:06:42] warn: ⚠️ MongoDB connection lost
+[2025-08-05 22:06:52] info: ✅ MongoDB connected successfully
+[2025-08-05 22:09:34] info: ✅ MongoDB connected successfully > undefined
+[2025-08-05 22:09:34] info: Listening in port: 2007 > undefined
+[2025-08-05 22:09:37] error: Error in register Controller > TypeError: Cannot read properties of undefined (reading 'email')
+[2025-08-05 22:10:24] warn: ⚠️ MongoDB connection lost > undefined
+[2025-08-05 22:10:34] info: ✅ MongoDB connected successfully > undefined
+[2025-08-05 22:10:59] warn: ⚠️ MongoDB connection lost > undefined
+[2025-08-05 22:10:59] error: ❌ MongoDB initial connection failed > Could not connect to any servers in your MongoDB Atlas cluster. One common reason is that you're trying to access the database from an IP that isn't whitelisted. Make sure your current IP address is on your Atlas cluster's IP whitelist: https://www.mongodb.com/docs/atlas/security-whitelist/
+[2025-08-05 22:11:09] info: ✅ MongoDB connected successfully > undefined
+[2025-08-05 22:12:01] info: ✅ MongoDB connected successfully > undefined
+[2025-08-05 22:12:01] info: Listening in port: 2007 > undefined
+[2025-08-05 22:12:04] error: Error in register Controller > TypeError: Cannot read properties of undefined (reading 'email')
+[2025-08-05 22:13:16] info: ✅ MongoDB connected successfully > undefined
+[2025-08-05 22:13:16] info: Listening in port: 2007 > undefined
+[2025-08-05 22:13:20] error: Error in register Controller > TypeError: Cannot read properties of undefined (reading 'email')
+[2025-08-05 22:15:23] error: Error in register Controller > TypeError: Cannot read properties of undefined (reading 'email')
+[2025-08-05 22:15:38] info: ✅ MongoDB connected successfully > undefined
+[2025-08-05 22:15:38] info: Listening in port: 2007 > undefined
+[2025-08-05 22:15:39] error: Error in register Controller > TypeError: Cannot read properties of undefined (reading 'details')
+[2025-08-05 22:15:41] error: Error in register Controller > TypeError: Cannot read properties of undefined (reading 'details')
+[2025-08-05 22:15:48] error: Error in register Controller > TypeError: Cannot read properties of undefined (reading 'details')
+[2025-08-05 22:16:02] info: ✅ MongoDB connected successfully > undefined
+[2025-08-05 22:16:02] info: Listening in port: 2007 > undefined
+[2025-08-05 22:16:02] error: Error in register Controller > TypeError: Cannot read properties of undefined (reading 'details')
+[2025-08-05 22:16:04] error: Error in register Controller > TypeError: Cannot read properties of undefined (reading 'details')
+[2025-08-05 22:16:14] info: ✅ MongoDB connected successfully > undefined
+[2025-08-05 22:16:14] info: Listening in port: 2007 > undefined
+[2025-08-05 22:16:46] info: ✅ MongoDB connected successfully > undefined
+[2025-08-05 22:16:46] info: Listening in port: 2007 > undefined
+[2025-08-05 22:16:48] error: Error in register Controller > TypeError: Cannot read properties of undefined (reading 'details')
+[2025-08-05 22:16:57] error: Error in register Controller > TypeError: Cannot read properties of undefined (reading 'details')
+[2025-08-05 22:17:20] error: Error in register Controller > TypeError: Cannot read properties of undefined (reading 'details')
+[2025-08-05 22:17:20] error: Error in register Controller > TypeError: Cannot read properties of undefined (reading 'details')
+[2025-08-05 22:17:49] info: ✅ MongoDB connected successfully > undefined
+[2025-08-05 22:17:49] info: Listening in port: 2007 > undefined
+[2025-08-05 22:17:53] info: ✅ MongoDB connected successfully > undefined
+[2025-08-05 22:17:53] info: Listening in port: 2007 > undefined
+[2025-08-05 22:17:56] error: Error in register Controller > TypeError: Cannot read properties of undefined (reading 'details')
+[2025-08-05 22:18:25] info: ✅ MongoDB connected successfully > undefined
+[2025-08-05 22:18:25] info: Listening in port: 2007 > undefined
+[2025-08-05 22:18:27] error: Error in register Controller > TypeError: Cannot read properties of undefined (reading 'details')
+[2025-08-05 22:18:45] info: ✅ MongoDB connected successfully > undefined
+[2025-08-05 22:18:45] info: Listening in port: 2007 > undefined
+[2025-08-05 22:18:48] error: Error in register Controller > TypeError: Cannot read properties of undefined (reading 'details')
+[2025-08-05 22:19:16] warn: validate > undefined
+[2025-08-05 22:19:25] error: Error in register Controller > TypeError: Cannot read properties of undefined (reading 'details')
+[2025-08-05 22:20:15] info: ✅ MongoDB connected successfully > 
+[2025-08-05 22:20:15] info: Listening in port: 2007 > 
+[2025-08-05 22:20:28] info: ✅ MongoDB connected successfully > 
+[2025-08-05 22:20:28] info: Listening in port: 2007 > 
+[2025-08-05 22:20:31] warn: [object Object] > 
+[2025-08-05 22:20:46] info: ✅ MongoDB connected successfully > 
+[2025-08-05 22:20:46] info: Listening in port: 2007 > 
+[2025-08-05 22:21:21] info: ✅ MongoDB connected successfully > 
+[2025-08-05 22:21:21] info: Listening in port: 2007 > 
+[2025-08-05 22:21:25] warn: [object Object] > 
+[2025-08-05 22:21:46] info: ✅ MongoDB connected successfully > undefined
+[2025-08-05 22:21:46] info: Listening in port: 2007 > undefined
+[2025-08-05 22:21:54] warn: [object Object] > undefined
+[2025-08-05 22:22:10] info: ✅ MongoDB connected successfully > undefined
+[2025-08-05 22:22:10] info: Listening in port: 2007 > undefined
+[2025-08-05 22:22:13] warn: [object Object] > undefined
+[2025-08-05 22:22:31] info: ✅ MongoDB connected successfully
+[2025-08-05 22:22:31] info: Listening in port: 2007
+[2025-08-05 22:22:45] info: ✅ MongoDB connected successfully
+[2025-08-05 22:22:45] info: Listening in port: 2007
+[2025-08-05 22:22:47] warn: {"valid":false,"errors":["\"password\" إجباري"]}
+[2025-08-05 22:23:01] error: Error in register Controller
+[2025-08-05 22:23:17] info: ✅ MongoDB connected successfully
+[2025-08-05 22:23:17] info: Listening in port: 2007
+[2025-08-05 22:23:19] error: Error in register Controller
+[2025-08-05 22:23:50] info: ✅ MongoDB connected successfully
+[2025-08-05 22:23:50] info: Listening in port: 2007
+[2025-08-05 22:24:02] info: ✅ MongoDB connected successfully
+[2025-08-05 22:24:02] info: Listening in port: 2007
+[2025-08-05 22:24:03] warn: TypeError: Cannot read properties of undefined (reading 'details')
+[2025-08-05 22:24:03] error: Error in register Controller
+[2025-08-05 22:25:20] info: ✅ MongoDB connected successfully
+[2025-08-05 22:25:20] info: Listening in port: 2007
+[2025-08-05 22:25:38] info: ✅ MongoDB connected successfully
+[2025-08-05 22:25:38] info: Listening in port: 2007
+[2025-08-05 22:25:55] info: ✅ MongoDB connected successfully
+[2025-08-05 22:25:55] info: Listening in port: 2007
+[2025-08-05 22:26:59] warn: ValidationError: email: Path `email` is required.
+[2025-08-05 22:26:59] error: Error in register Controller
+[2025-08-05 22:28:03] info: ✅ MongoDB connected successfully
+[2025-08-05 22:28:03] info: Listening in port: 2007
+[2025-08-05 22:28:10] warn: ValidationError: productList: Cast to ObjectId failed for value "[]" (type Array) at path "productList" because of "BSONError"
+[2025-08-05 22:28:10] error: Error in register Controller
+[2025-08-05 22:29:54] info: ✅ MongoDB connected successfully
+[2025-08-05 22:29:54] info: Listening in port: 2007
+[2025-08-05 22:29:57] warn: ValidationError: productList: Cast to ObjectId failed for value "[]" (type Array) at path "productList" because of "BSONError"
+[2025-08-05 22:29:57] error: Error in register Controller
+[2025-08-05 22:30:11] info: ✅ MongoDB connected successfully
+[2025-08-05 22:30:11] info: Listening in port: 2007
+[2025-08-05 22:32:05] info: ✅ MongoDB connected successfully
+[2025-08-05 22:32:05] info: Listening in port: 2007
+[2025-08-05 22:32:08] warn: ValidationError: productList: Cast to ObjectId failed for value "[]" (type Array) at path "productList" because of "BSONError"
+[2025-08-05 22:32:08] error: Error in register Controller
+[2025-08-05 22:32:32] info: ✅ MongoDB connected successfully
+[2025-08-05 22:32:32] info: Listening in port: 2007
+[2025-08-05 22:34:29] info: ✅ MongoDB connected successfully
+[2025-08-05 22:34:29] info: Listening in port: 2007
+[2025-08-05 22:35:17] info: ✅ MongoDB connected successfully
+[2025-08-05 22:35:17] info: Listening in port: 2007
+[2025-08-05 22:35:18] warn: {"valid":true,"value":{"password":"islam","username":"islamdzl"}}
+[2025-08-05 22:35:42] info: ✅ MongoDB connected successfully
+[2025-08-05 22:35:42] info: Listening in port: 2007
+[2025-08-05 22:36:08] info: ✅ MongoDB connected successfully
+[2025-08-05 22:36:08] info: Listening in port: 2007
+[2025-08-05 22:36:09] warn: [object Object]
+[2025-08-05 22:36:19] info: ✅ MongoDB connected successfully
+[2025-08-05 22:36:19] info: Listening in port: 2007
+[2025-08-05 22:36:19] warn: false
+[2025-08-05 22:36:54] info: ✅ MongoDB connected successfully
+[2025-08-05 22:36:54] info: Listening in port: 2007
+[2025-08-05 22:36:57] warn: true
+[2025-08-05 22:37:05] info: ✅ MongoDB connected successfully
+[2025-08-05 22:37:05] info: Listening in port: 2007
+[2025-08-05 22:38:32] info: ✅ MongoDB connected successfully
+[2025-08-05 22:38:32] info: Listening in port: 2007
+[2025-08-05 22:38:39] info: ✅ MongoDB connected successfully
+[2025-08-05 22:38:39] info: Listening in port: 2007
+[2025-08-05 22:39:11] info: ✅ MongoDB connected successfully
+[2025-08-05 22:39:11] info: Listening in port: 2007
+[2025-08-05 22:39:12] warn: [object Promise]
+[2025-08-05 22:39:24] info: ✅ MongoDB connected successfully
+[2025-08-05 22:39:24] info: Listening in port: 2007
+[2025-08-05 22:39:28] warn: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2ODkyNzg3NWRmNDNkNTk4ZGNhNDg4MjEiLCJ1c2VybmFtZSI6ImlzbGFtZHpsIiwiYWNjb3VudFR5cGUiOiJjbGllbnQiLCJpYXQiOjE3NTQ0Mjk5NjgsImV4cCI6MTc1NTAzNDc2OH0.h7HYkHrSKOfkTY7kg0OID3HaYRn7SjEGsr8MM0AAmOI
+[2025-08-05 22:39:42] info: ✅ MongoDB connected successfully
+[2025-08-05 22:39:42] info: Listening in port: 2007
+[2025-08-05 22:41:59] info: ✅ MongoDB connected successfully
+[2025-08-05 22:41:59] info: Listening in port: 2007
+[2025-08-05 22:42:15] info: ✅ MongoDB connected successfully
+[2025-08-05 22:42:15] info: Listening in port: 2007
+[2025-08-05 22:42:28] info: ✅ MongoDB connected successfully
+[2025-08-05 22:42:28] info: Listening in port: 2007
+[2025-08-05 22:44:05] error: Error in changeType Controller
+[2025-08-05 22:44:53] info: ✅ MongoDB connected successfully
+[2025-08-05 22:44:54] info: Listening in port: 2007
+[2025-08-05 22:44:54] warn: {"_id":"68927875df43d598dca48821","accountType":"client"}
+[2025-08-05 22:44:54] error: Error in changeType Controller
+[2025-08-05 22:45:11] info: ✅ MongoDB connected successfully
+[2025-08-05 22:45:11] info: Listening in port: 2007
+[2025-08-05 22:45:51] info: ✅ MongoDB connected successfully
+[2025-08-05 22:45:51] info: Listening in port: 2007
+[2025-08-05 22:45:54] warn: [object Object]
+[2025-08-05 22:45:54] error: Error in changeType Controller
+[2025-08-05 22:46:15] info: ✅ MongoDB connected successfully
+[2025-08-05 22:46:15] info: Listening in port: 2007
+[2025-08-05 22:46:18] warn: 0
+[2025-08-05 22:46:18] error: Error in changeType Controller
+[2025-08-05 22:47:15] info: ✅ MongoDB connected successfully
+[2025-08-05 22:47:15] info: Listening in port: 2007
+[2025-08-05 22:47:16] warn: 0
+[2025-08-05 22:47:16] error: Error in changeType Controller
+[2025-08-05 22:47:59] info: ✅ MongoDB connected successfully
+[2025-08-05 22:47:59] info: Listening in port: 2007
+[2025-08-05 22:47:59] warn: ValidationError: _id: Path `_id` is required.
+[2025-08-05 22:47:59] error: Error in changeType Controller
+[2025-08-05 22:48:36] info: ✅ MongoDB connected successfully
+[2025-08-05 22:48:36] info: Listening in port: 2007
+[2025-08-05 22:48:37] warn: {"_id":"68927875df43d598dca48821","username":"islamdzl","accountType":"client","iat":1754429968,"exp":1755034768}
+[2025-08-05 22:48:37] warn: ValidationError: _id: Path `_id` is required.
+[2025-08-05 22:48:37] error: Error in changeType Controller
+[2025-08-05 22:49:27] info: ✅ MongoDB connected successfully
+[2025-08-05 22:49:27] info: Listening in port: 2007
+[2025-08-05 22:49:28] warn: {"_id":"68927875df43d598dca48821","username":"islamdzl","accountType":"client","iat":1754429968,"exp":1755034768}
+[2025-08-05 22:49:28] warn: ValidationError: _id: Path `_id` is required.
+[2025-08-05 22:49:28] error: Error in changeType Controller
+[2025-08-05 22:50:37] info: ✅ MongoDB connected successfully
+[2025-08-05 22:50:37] info: Listening in port: 2007
+[2025-08-05 22:50:37] warn: {"_id":"68927875df43d598dca48821","username":"islamdzl","accountType":"client","iat":1754429968,"exp":1755034768}
+[2025-08-05 22:50:37] warn: ValidationError: _id: Path `_id` is required.
+[2025-08-05 22:50:37] error: Error in changeType Controller
+[2025-08-05 22:51:03] info: ✅ MongoDB connected successfully
+[2025-08-05 22:51:03] info: Listening in port: 2007
+[2025-08-05 22:51:06] warn: {"_id":"68927875df43d598dca48821","username":"islamdzl","accountType":"client","iat":1754429968,"exp":1755034768}
+[2025-08-05 22:51:06] warn: ValidationError: _id: Path `_id` is required.
+[2025-08-05 22:51:06] error: Error in changeType Controller
+[2025-08-05 22:51:30] info: ✅ MongoDB connected successfully
+[2025-08-05 22:51:30] info: Listening in port: 2007
+[2025-08-05 22:51:31] warn: 68927875df43d598dca48821
+[2025-08-05 22:51:31] warn: ValidationError: _id: Path `_id` is required.
+[2025-08-05 22:51:31] error: Error in changeType Controller
+[2025-08-05 22:53:50] info: ✅ MongoDB connected successfully
+[2025-08-05 22:53:50] info: Listening in port: 2007
+[2025-08-05 22:53:57] info: ✅ MongoDB connected successfully
+[2025-08-05 22:53:57] info: Listening in port: 2007
+[2025-08-05 22:53:58] warn: 68927875df43d598dca48821
+[2025-08-05 22:54:27] info: ✅ MongoDB connected successfully
+[2025-08-05 22:54:27] info: Listening in port: 2007
+[2025-08-05 22:54:29] warn: 68927875df43d598dca48821
+[2025-08-05 22:54:29] warn: ValidationError: _id: Path `_id` is required.
+[2025-08-05 22:54:29] error: Error in changeType Controller
+[2025-08-05 22:54:53] info: ✅ MongoDB connected successfully
+[2025-08-05 22:54:53] info: Listening in port: 2007
+[2025-08-05 22:54:54] warn: 68927875df43d598dca48821
+[2025-08-05 22:54:54] warn: ValidationError: _id: Path `_id` is required.
+[2025-08-05 22:54:54] error: Error in changeType Controller
+[2025-08-05 22:55:15] info: ✅ MongoDB connected successfully
+[2025-08-05 22:55:15] info: Listening in port: 2007
+[2025-08-05 22:55:17] warn: 68927875df43d598dca48821
+[2025-08-05 22:55:17] warn: ValidationError: _id: Path `_id` is required.
+[2025-08-05 22:55:17] error: Error in changeType Controller
+[2025-08-05 22:55:18] warn: 68927875df43d598dca48821
+[2025-08-05 22:55:18] warn: ValidationError: _id: Path `_id` is required.
+[2025-08-05 22:55:18] error: Error in changeType Controller
+[2025-08-05 22:55:34] info: ✅ MongoDB connected successfully
+[2025-08-05 22:55:34] info: Listening in port: 2007
+[2025-08-05 22:55:35] warn: 68927875df43d598dca48821
+[2025-08-05 22:56:19] info: ✅ MongoDB connected successfully
+[2025-08-05 22:56:19] info: Listening in port: 2007
+[2025-08-05 22:56:31] info: ✅ MongoDB connected successfully
+[2025-08-05 22:56:31] info: Listening in port: 2007
+[2025-08-05 22:56:32] warn: 68927875df43d598dca48821
+[2025-08-05 22:56:32] warn: ValidationError: _id: Path `_id` is required.
+[2025-08-05 22:56:43] info: ✅ MongoDB connected successfully
+[2025-08-05 22:56:43] info: Listening in port: 2007
+[2025-08-05 22:56:43] warn: 68927875df43d598dca48821
+[2025-08-05 22:56:43] error: ValidationError: _id: Path `_id` is required.
+[2025-08-05 22:57:50] info: ✅ MongoDB connected successfully
+[2025-08-05 22:57:50] info: Listening in port: 2007
+[2025-08-05 22:57:51] warn: 68927875df43d598dca48821
+[2025-08-05 22:57:51] error: ValidationError: _id: Path `_id` is required.
+[2025-08-05 23:00:32] info: ✅ MongoDB connected successfully
+[2025-08-05 23:00:32] info: Listening in port: 2007
+[2025-08-05 23:03:03] info: ✅ MongoDB connected successfully
+[2025-08-05 23:03:03] info: Listening in port: 2007
+[2025-08-05 23:03:30] info: ✅ MongoDB connected successfully
+[2025-08-05 23:03:30] info: Listening in port: 2007
+[2025-08-05 23:03:59] info: ✅ MongoDB connected successfully
+[2025-08-05 23:03:59] info: Listening in port: 2007
+[2025-08-05 23:03:59] warn: ReferenceError: mongoose is not defined
+[2025-08-05 23:03:59] error: Error in changeType Controller
+[2025-08-05 23:04:37] info: ✅ MongoDB connected successfully
+[2025-08-05 23:04:37] info: Listening in port: 2007
+[2025-08-05 23:04:48] info: ✅ MongoDB connected successfully
+[2025-08-05 23:04:48] info: Listening in port: 2007
+[2025-08-05 23:05:27] info: ✅ MongoDB connected successfully
+[2025-08-05 23:05:27] info: Listening in port: 2007
+[2025-08-05 23:05:28] info: [object Object]
+[2025-08-05 23:05:43] info: ✅ MongoDB connected successfully
+[2025-08-05 23:05:43] info: Listening in port: 2007
+[2025-08-05 23:05:43] info: [object Object]
+[2025-08-05 23:05:49] info: [object Object]
+[2025-08-05 23:06:03] info: ✅ MongoDB connected successfully
+[2025-08-05 23:06:03] info: Listening in port: 2007
+[2025-08-05 23:06:07] info: ✅ MongoDB connected successfully
+[2025-08-05 23:06:07] info: Listening in port: 2007
+[2025-08-05 23:06:09] error: [object Object]
+[2025-08-05 23:06:17] info: ✅ MongoDB connected successfully
+[2025-08-05 23:06:17] info: Listening in port: 2007
+[2025-08-05 23:06:17] error: [object Object]
+[2025-08-05 23:06:37] info: ✅ MongoDB connected successfully
+[2025-08-05 23:06:37] info: Listening in port: 2007
+[2025-08-05 23:06:55] info: ✅ MongoDB connected successfully
+[2025-08-05 23:06:55] info: Listening in port: 2007
+[2025-08-05 23:07:51] info: ✅ MongoDB connected successfully
+[2025-08-05 23:07:51] info: Listening in port: 2007
+[2025-08-05 23:08:08] info: ✅ MongoDB connected successfully
+[2025-08-05 23:08:08] info: Listening in port: 2007
+[2025-08-05 23:08:53] info: ✅ MongoDB connected successfully
+[2025-08-05 23:08:53] info: Listening in port: 2007
+[2025-08-05 23:09:23] info: ✅ MongoDB connected successfully
+[2025-08-05 23:09:23] info: Listening in port: 2007
+[2025-08-05 23:11:06] info: ✅ MongoDB connected successfully
+[2025-08-05 23:11:06] info: Listening in port: 2007
+[2025-08-05 23:13:11] info: ✅ MongoDB connected successfully
+[2025-08-05 23:13:11] info: Listening in port: 2007
+[2025-08-05 23:15:02] info: ✅ MongoDB connected successfully
+[2025-08-05 23:15:02] info: Listening in port: 2007
+[2025-08-05 23:15:50] info: ✅ MongoDB connected successfully
+[2025-08-05 23:15:50] info: Listening in port: 2007
+[2025-08-05 23:20:16] info: ✅ MongoDB connected successfully
+[2025-08-05 23:20:16] info: Listening in port: 2007
+[2025-08-06 10:35:52] info: 🔄 MongoDB reconnected
+[2025-08-06 10:35:52] info: 🔄 MongoDB reconnected
+[2025-08-06 10:36:18] warn: ⚠️ MongoDB connection lost
+[2025-08-06 10:36:18] error: ❌ MongoDB initial connection failed
+[2025-08-06 10:36:18] info: Listening in port: 2007
+[2025-08-06 10:36:25] info: ✅ MongoDB connected successfully
+[2025-08-06 10:37:50] info: ✅ MongoDB connected successfully
+[2025-08-06 10:37:50] info: Listening in port: 2007
+[2025-08-06 10:38:12] info: ✅ MongoDB connected successfully
+[2025-08-06 10:38:12] info: Listening in port: 2007
+[2025-08-06 10:38:49] info: ✅ MongoDB connected successfully
+[2025-08-06 10:38:49] info: Listening in port: 2007
+[2025-08-06 10:42:20] info: ✅ MongoDB connected successfully
+[2025-08-06 10:42:20] info: Listening in port: 2007
+[2025-08-06 10:42:25] warn: {"buyingDetailes":{"fullName":"islam dzl77","state":16,"city":"braki","phone1":"klq,dq:;dq"}}
+[2025-08-06 10:42:55] info: ✅ MongoDB connected successfully
+[2025-08-06 10:42:55] info: Listening in port: 2007
+[2025-08-06 10:43:22] info: ✅ MongoDB connected successfully
+[2025-08-06 10:43:22] info: Listening in port: 2007
+[2025-08-06 10:43:23] warn: {"buyingDetailes":{"fullName":"islam dzl77","state":16,"city":"braki","phone1":"klq,dq:;dq"}}
+[2025-08-06 10:44:43] warn: {"buyingDetailes":{"fullName":"legbedj islam","state":16,"city":"braki","phone1":"0774374148","phone2":"0774374148","description":"wsloh sba7"}}
+[2025-08-06 10:45:29] info: ✅ MongoDB connected successfully
+[2025-08-06 10:45:29] info: Listening in port: 2007
+[2025-08-06 10:47:22] info: ✅ MongoDB connected successfully
+[2025-08-06 10:47:22] info: Listening in port: 2007
+[2025-08-06 10:48:59] info: ✅ MongoDB connected successfully
+[2025-08-06 10:48:59] info: Listening in port: 2007
+[2025-08-06 10:49:29] info: ✅ MongoDB connected successfully
+[2025-08-06 10:49:29] info: Listening in port: 2007
+[2025-08-06 10:52:55] info: ✅ MongoDB connected successfully
+[2025-08-06 10:52:55] info: Listening in port: 2007
+[2025-08-06 10:55:24] info: ✅ MongoDB connected successfully
+[2025-08-06 10:55:24] info: Listening in port: 2007
+[2025-08-06 10:55:50] info: ✅ MongoDB connected successfully
+[2025-08-06 10:55:50] info: Listening in port: 2007
+[2025-08-06 10:55:51] warn: [object Object]
+[2025-08-06 10:57:14] warn: [object Object]
+[2025-08-06 10:58:46] info: ✅ MongoDB connected successfully
+[2025-08-06 10:58:46] info: Listening in port: 2007
+[2025-08-06 10:58:59] info: ✅ MongoDB connected successfully
+[2025-08-06 10:58:59] info: Listening in port: 2007
+[2025-08-06 10:59:14] info: ✅ MongoDB connected successfully
+[2025-08-06 10:59:14] info: Listening in port: 2007
+[2025-08-06 11:00:25] info: ✅ MongoDB connected successfully
+[2025-08-06 11:00:25] info: Listening in port: 2007
+[2025-08-06 11:01:07] info: ✅ MongoDB connected successfully
+[2025-08-06 11:01:07] info: Listening in port: 2007
+[2025-08-06 11:01:40] info: ✅ MongoDB connected successfully
+[2025-08-06 11:01:40] info: Listening in port: 2007
+[2025-08-06 11:02:00] info: ✅ MongoDB connected successfully
+[2025-08-06 11:02:00] info: Listening in port: 2007
+[2025-08-06 11:02:06] info: ✅ MongoDB connected successfully
+[2025-08-06 11:03:10] info: ✅ MongoDB connected successfully
+[2025-08-06 11:03:10] info: Listening in port: 2007
+[2025-08-06 11:03:25] info: ✅ MongoDB connected successfully
+[2025-08-06 11:03:25] info: Listening in port: 2007
+[2025-08-06 11:03:52] info: ✅ MongoDB connected successfully
+[2025-08-06 11:03:52] info: Listening in port: 2007
+[2025-08-06 11:04:52] info: ✅ MongoDB connected successfully
+[2025-08-06 11:04:52] info: Listening in port: 2007
+[2025-08-06 11:05:19] info: ✅ MongoDB connected successfully
+[2025-08-06 11:05:19] info: Listening in port: 2007
+[2025-08-06 11:07:50] info: ✅ MongoDB connected successfully
+[2025-08-06 11:07:50] info: Listening in port: 2007
+[2025-08-06 11:08:24] error: Error in getStore Controller
+[2025-08-06 11:09:04] info: ✅ MongoDB connected successfully
+[2025-08-06 11:09:04] info: Listening in port: 2007
+[2025-08-06 11:09:06] error: Error in getStore Controller
+[2025-08-06 11:09:37] info: ✅ MongoDB connected successfully
+[2025-08-06 11:09:37] info: Listening in port: 2007
+[2025-08-06 11:09:37] error: Error in getStore Controller
+[2025-08-06 11:09:59] error: Error in getStore Controller
+[2025-08-06 11:10:15] info: ✅ MongoDB connected successfully
+[2025-08-06 11:10:15] info: Listening in port: 2007
+[2025-08-06 11:10:43] info: ✅ MongoDB connected successfully
+[2025-08-06 11:10:43] info: Listening in port: 2007
+[2025-08-06 11:12:33] info: ✅ MongoDB connected successfully
+[2025-08-06 11:12:33] info: Listening in port: 2007
+[2025-08-06 11:14:03] info: ✅ MongoDB connected successfully
+[2025-08-06 11:14:03] info: Listening in port: 2007
+[2025-08-06 11:14:06] warn: {"_id":"68927875df43d598dca48821","isActive":false}
+[2025-08-06 11:14:21] warn: {"_id":"68927875df43d598dca48821","isActive":false}
+[2025-08-06 11:14:26] warn: {"_id":"68927875df43d598dca48821","isActive":true}
+[2025-08-06 11:14:39] info: ✅ MongoDB connected successfully
+[2025-08-06 11:14:39] info: Listening in port: 2007
+[2025-08-06 11:15:34] info: ✅ MongoDB connected successfully
+[2025-08-06 11:15:34] info: Listening in port: 2007
+[2025-08-06 11:15:56] error: Error in addRating controller
+[2025-08-06 11:16:25] info: ✅ MongoDB connected successfully
+[2025-08-06 11:16:25] info: Listening in port: 2007
+[2025-08-06 11:17:06] info: ✅ MongoDB connected successfully
+[2025-08-06 11:17:06] info: Listening in port: 2007
+[2025-08-06 11:18:19] error: Error in addRating controller
+[2025-08-06 11:19:00] info: ✅ MongoDB connected successfully
+[2025-08-06 11:19:00] info: Listening in port: 2007
+[2025-08-06 11:19:03] error: Error in addRating controller
+[2025-08-06 11:19:03] error: Error: Next handler is not a function
+[2025-08-06 11:21:19] info: ✅ MongoDB connected successfully
+[2025-08-06 11:21:19] info: Listening in port: 2007
+[2025-08-06 11:21:20] warn: function changeRatings(Store, detailes, next, reject) {
+  try {
+    const { rating } = detailes;
+
+    if (![1, 0, -1].includes(rating)) {
+      return reject({ error: 'Invalid rating value' });
+    }
+
+    if (typeof Store.ratings !== 'object') {
+      Store.ratings = { count: 0, sum: 0, average: 0 };
+    }
+
+    Store.ratings.count++;
+
+    if (rating !== 0) {
+      Store.ratings.sum = (Store.ratings.sum || 0) + rating;
+    }
+
+    Store.ratings.average = Store.ratings.sum / Store.ratings.count;
+
+    next();
+  } catch (error) {
+
+    Logger.error({
+      message: 'Error in changeRatings',
+      error,
+      detailes
+    });
+    
+    reject(error);
+  }
+}
+[2025-08-06 11:21:20] error: Error in addRating controller
+[2025-08-06 11:21:20] error: Error: Next handler is not a function
+[2025-08-06 11:21:55] info: ✅ MongoDB connected successfully
+[2025-08-06 11:21:55] info: Listening in port: 2007
+[2025-08-06 11:21:57] warn: object
+[2025-08-06 11:21:57] error: Error in addRating controller
+[2025-08-06 11:21:57] error: Error: Next handler is not a function
+[2025-08-06 11:22:17] info: ✅ MongoDB connected successfully
+[2025-08-06 11:22:17] info: Listening in port: 2007
+[2025-08-06 11:22:19] warn: object
+[2025-08-06 11:22:19] error: Error in addRating controller
+[2025-08-06 11:22:19] error: Error: Next handler is not a function
+[2025-08-06 11:22:28] warn: object
+[2025-08-06 11:22:28] error: Error in addRating controller
+[2025-08-06 11:22:28] error: Error: Next handler is not a function
+[2025-08-06 11:23:20] info: ✅ MongoDB connected successfully
+[2025-08-06 11:23:20] info: Listening in port: 2007
+[2025-08-06 11:23:22] warn: object
+[2025-08-06 11:23:22] warn: object
+[2025-08-06 11:23:22] warn: [object Object]
+[2025-08-06 11:23:22] error: Error in addRating controller
+[2025-08-06 11:23:22] error: Error: Next handler is not a function
+[2025-08-06 11:23:44] info: ✅ MongoDB connected successfully
+[2025-08-06 11:23:44] info: Listening in port: 2007
+[2025-08-06 11:23:50] warn: object
+[2025-08-06 11:23:50] warn: object
+[2025-08-06 11:23:50] warn: [object Object]
+[2025-08-06 11:23:50] error: Error in addRating controller
+[2025-08-06 11:23:50] error: Error: Next handler is not a function
+[2025-08-06 11:24:00] warn: object
+[2025-08-06 11:24:00] warn: object
+[2025-08-06 11:24:00] warn: [object Object]
+[2025-08-06 11:24:00] error: Error in addRating controller
+[2025-08-06 11:24:00] error: Error: Next handler is not a function
+[2025-08-06 11:24:25] info: ✅ MongoDB connected successfully
+[2025-08-06 11:24:25] info: Listening in port: 2007
+[2025-08-06 11:24:34] warn: [object Object]
+[2025-08-06 11:24:34] error: Error in addRating controller
+[2025-08-06 11:24:34] error: Error: Next handler is not a function
+[2025-08-06 11:24:55] info: ✅ MongoDB connected successfully
+[2025-08-06 11:24:55] info: Listening in port: 2007
+[2025-08-06 11:24:57] error: Error in addRating controller
+[2025-08-06 11:24:57] error: Error: Next handler is not a function
+[2025-08-06 11:25:19] info: ✅ MongoDB connected successfully
+[2025-08-06 11:25:19] info: Listening in port: 2007
+[2025-08-06 11:25:20] error: Error in addRating controller
+[2025-08-06 11:25:20] error: Error: Next handler is not a function
+[2025-08-06 11:25:48] info: ✅ MongoDB connected successfully
+[2025-08-06 11:25:48] info: Listening in port: 2007
+[2025-08-06 11:25:48] error: Error in addRating controller
+[2025-08-06 11:25:48] error: Error: Next handler is not a function
+[2025-08-06 11:26:07] info: ✅ MongoDB connected successfully
+[2025-08-06 11:26:07] info: Listening in port: 2007
+[2025-08-06 11:26:11] error: Error in addRating controller
+[2025-08-06 11:26:11] error: Error: Next handler is not a function
+[2025-08-06 11:26:27] info: ✅ MongoDB connected successfully
+[2025-08-06 11:26:27] info: Listening in port: 2007
+[2025-08-06 11:26:30] error: Error in addRating controller
+[2025-08-06 11:26:30] error: Error: Next handler is not a function
+[2025-08-06 11:26:42] info: ✅ MongoDB connected successfully
+[2025-08-06 11:26:42] info: Listening in port: 2007
+[2025-08-06 11:26:45] error: Error in addRating controller
+[2025-08-06 11:26:45] error: Error: Next handler is not a function
+[2025-08-06 11:26:55] info: ✅ MongoDB connected successfully
+[2025-08-06 11:26:55] info: Listening in port: 2007
+[2025-08-06 11:26:56] error: Error in addRating controller
+[2025-08-06 11:26:56] error: Error: Next handler is not a function
+[2025-08-06 11:27:11] info: ✅ MongoDB connected successfully
+[2025-08-06 11:27:11] info: Listening in port: 2007
+[2025-08-06 11:27:14] error: Error in addRating controller
+[2025-08-06 11:27:14] error: Error: Next handler is not a function
+[2025-08-06 11:27:39] info: ✅ MongoDB connected successfully
+[2025-08-06 11:27:39] info: Listening in port: 2007
+[2025-08-06 11:27:40] error: Error in addRating controller
+[2025-08-06 11:27:40] error: TypeError: handler is not a function
+[2025-08-06 11:28:38] info: ✅ MongoDB connected successfully
+[2025-08-06 11:28:38] info: Listening in port: 2007
+[2025-08-06 11:28:41] error: Error in addRating controller
+[2025-08-06 11:28:41] error: Error: Next handler is not a function
+[2025-08-06 11:29:05] info: ✅ MongoDB connected successfully
+[2025-08-06 11:29:06] info: Listening in port: 2007
+[2025-08-06 11:29:49] info: ✅ MongoDB connected successfully
+[2025-08-06 11:29:49] info: Listening in port: 2007
+[2025-08-06 11:29:50] error: Error in addRating controller
+[2025-08-06 11:29:50] error: TypeError: handler is not a function
+[2025-08-06 11:29:59] info: ✅ MongoDB connected successfully
+[2025-08-06 11:29:59] info: Listening in port: 2007
+[2025-08-06 11:30:00] error: Error in addRating controller
+[2025-08-06 11:30:00] error: TypeError: handler is not a function
+[2025-08-06 11:30:20] info: ✅ MongoDB connected successfully
+[2025-08-06 11:30:20] info: Listening in port: 2007
+[2025-08-06 11:30:23] error: Error in addRating controller
+[2025-08-06 11:30:23] error: TypeError: handler is not a function
+[2025-08-06 11:31:13] info: ✅ MongoDB connected successfully
+[2025-08-06 11:31:13] info: Listening in port: 2007
+[2025-08-06 11:31:17] error: Error in addRating controller
+[2025-08-06 11:31:17] error: TypeError: handler is not a function
+[2025-08-06 11:31:25] info: ✅ MongoDB connected successfully
+[2025-08-06 11:31:25] info: Listening in port: 2007
+[2025-08-06 11:31:29] error: Error in addRating controller
+[2025-08-06 11:31:29] error: TypeError: handler is not a function
+[2025-08-06 11:31:51] info: ✅ MongoDB connected successfully
+[2025-08-06 11:31:51] info: Listening in port: 2007
+[2025-08-06 11:31:55] error: Error in addRating controller
+[2025-08-06 11:31:55] error: TypeError: handler is not a function
+[2025-08-06 11:32:20] info: ✅ MongoDB connected successfully
+[2025-08-06 11:32:21] info: Listening in port: 2007
+[2025-08-06 11:32:22] error: Error in addRating controller
+[2025-08-06 11:32:22] error: TypeError: handler is not a function
+[2025-08-06 11:32:29] info: ✅ MongoDB connected successfully
+[2025-08-06 11:32:29] info: Listening in port: 2007
+[2025-08-06 11:32:42] info: ✅ MongoDB connected successfully
+[2025-08-06 11:32:42] info: Listening in port: 2007
+[2025-08-06 11:32:44] error: Error in addRating controller
+[2025-08-06 11:32:44] error: TypeError: handler is not a function
+[2025-08-06 11:32:55] info: ✅ MongoDB connected successfully
+[2025-08-06 11:32:55] info: Listening in port: 2007
+[2025-08-06 11:33:00] error: Error in addRating controller
+[2025-08-06 11:33:00] error: TypeError: handler is not a function
+[2025-08-06 11:33:30] info: ✅ MongoDB connected successfully
+[2025-08-06 11:33:30] info: Listening in port: 2007
+[2025-08-06 11:34:19] info: ✅ MongoDB connected successfully
+[2025-08-06 11:34:19] info: Listening in port: 2007
+[2025-08-06 11:34:23] error: Error in addRating controller
+[2025-08-06 11:34:23] error: TypeError: handler is not a function
+[2025-08-06 11:34:38] info: ✅ MongoDB connected successfully
+[2025-08-06 11:34:38] info: Listening in port: 2007
+[2025-08-06 11:34:41] error: Error in addRating controller
+[2025-08-06 11:34:41] error: TypeError: handler is not a function
+[2025-08-06 11:34:57] info: ✅ MongoDB connected successfully
+[2025-08-06 11:34:57] info: Listening in port: 2007
+[2025-08-06 11:35:01] error: Error in addRating controller
+[2025-08-06 11:35:01] error: TypeError: handler is not a function
+[2025-08-06 11:36:16] info: ✅ MongoDB connected successfully
+[2025-08-06 11:36:16] info: Listening in port: 2007
+[2025-08-06 11:37:09] info: ✅ MongoDB connected successfully
+[2025-08-06 11:37:09] info: Listening in port: 2007
+[2025-08-06 11:39:14] info: ✅ MongoDB connected successfully
+[2025-08-06 11:39:14] info: Listening in port: 2007
+[2025-08-06 11:39:17] error: Error in addRating controller
+[2025-08-06 11:39:17] error: Error: Next handler is not a function
+[2025-08-06 11:39:28] info: ✅ MongoDB connected successfully
+[2025-08-06 11:39:28] info: Listening in port: 2007
+[2025-08-06 11:39:29] error: Error in addRating controller
+[2025-08-06 11:39:29] error: Error: Next handler is not a function
+[2025-08-06 11:40:29] info: ✅ MongoDB connected successfully
+[2025-08-06 11:40:29] info: Listening in port: 2007
+[2025-08-06 11:40:37] info: ✅ MongoDB connected successfully
+[2025-08-06 11:40:37] info: Listening in port: 2007
+[2025-08-06 11:40:40] error: Error in addRating controller
+[2025-08-06 11:40:40] error: Error: Next handler is not a function
+[2025-08-06 11:40:55] info: ✅ MongoDB connected successfully
+[2025-08-06 11:40:55] info: Listening in port: 2007
+[2025-08-06 11:42:12] info: ✅ MongoDB connected successfully
+[2025-08-06 11:42:12] info: Listening in port: 2007
+[2025-08-06 11:42:14] error: Error in addRating controller
+[2025-08-06 11:42:14] error: Error: Next handler is not a function
+[2025-08-06 11:42:44] info: ✅ MongoDB connected successfully
+[2025-08-06 11:42:44] info: Listening in port: 2007
+[2025-08-06 11:42:45] error: Error in addRating controller
+[2025-08-06 11:42:45] error: Error: Next handler is not a function
+[2025-08-06 11:43:59] info: ✅ MongoDB connected successfully
+[2025-08-06 11:43:59] info: Listening in port: 2007
+[2025-08-06 11:44:02] error: Error in addRating controller
+[2025-08-06 11:44:02] error: Error: Next handler is not a function
+[2025-08-06 11:44:37] info: ✅ MongoDB connected successfully
+[2025-08-06 11:44:37] info: Listening in port: 2007
+[2025-08-06 11:44:38] error: Error in addRating controller
+[2025-08-06 11:44:38] error: Error: Next handler is not a function
+[2025-08-06 11:45:08] info: ✅ MongoDB connected successfully
+[2025-08-06 11:45:08] info: Listening in port: 2007
+[2025-08-06 11:45:11] error: Error in addRating controller
+[2025-08-06 11:45:11] error: Error: Next handler is not a function
+[2025-08-06 11:45:34] info: ✅ MongoDB connected successfully
+[2025-08-06 11:45:34] info: Listening in port: 2007
+[2025-08-06 11:46:18] info: ✅ MongoDB connected successfully
+[2025-08-06 11:46:18] info: Listening in port: 2007
+[2025-08-06 11:46:23] info: ✅ MongoDB connected successfully
+[2025-08-06 11:46:23] info: Listening in port: 2007
+[2025-08-06 11:46:42] info: ✅ MongoDB connected successfully
+[2025-08-06 11:46:42] info: Listening in port: 2007
+[2025-08-06 11:47:06] info: ✅ MongoDB connected successfully
+[2025-08-06 11:47:06] info: Listening in port: 2007
+[2025-08-06 11:47:53] info: ✅ MongoDB connected successfully
+[2025-08-06 11:47:53] info: Listening in port: 2007
+[2025-08-06 11:49:32] info: ✅ MongoDB connected successfully
+[2025-08-06 11:49:32] info: Listening in port: 2007
+[2025-08-06 11:49:40] info: ✅ MongoDB connected successfully
+[2025-08-06 11:49:40] info: Listening in port: 2007
+[2025-08-06 11:50:30] info: ✅ MongoDB connected successfully
+[2025-08-06 11:50:30] info: Listening in port: 2007
+[2025-08-06 11:50:51] info: ✅ MongoDB connected successfully
+[2025-08-06 11:50:51] info: Listening in port: 2007
+[2025-08-06 11:51:13] info: ✅ MongoDB connected successfully
+[2025-08-06 11:51:13] info: Listening in port: 2007
+[2025-08-06 11:51:18] info: ✅ MongoDB connected successfully
+[2025-08-06 11:51:18] info: Listening in port: 2007
+[2025-08-06 11:51:22] error: Error in addRating controller
+[2025-08-06 11:51:22] error: Error: Next handler is not a function
+[2025-08-06 11:51:36] info: ✅ MongoDB connected successfully
+[2025-08-06 11:51:36] info: Listening in port: 2007
+[2025-08-06 11:51:40] error: Error in addRating controller
+[2025-08-06 11:51:40] error: Error: Next handler is not a function
+[2025-08-06 11:51:57] info: ✅ MongoDB connected successfully
+[2025-08-06 11:51:57] info: Listening in port: 2007
+[2025-08-06 11:52:24] info: ✅ MongoDB connected successfully
+[2025-08-06 11:52:24] info: Listening in port: 2007
+[2025-08-06 11:52:25] error: Error in addRating controller
+[2025-08-06 11:52:25] error: TypeError: handler is not a function
+[2025-08-06 11:53:01] info: ✅ MongoDB connected successfully
+[2025-08-06 11:53:01] info: Listening in port: 2007
+[2025-08-06 11:53:32] info: ✅ MongoDB connected successfully
+[2025-08-06 11:53:32] info: Listening in port: 2007
+[2025-08-06 11:54:29] info: ✅ MongoDB connected successfully
+[2025-08-06 11:54:29] info: Listening in port: 2007
+[2025-08-06 11:54:54] info: ✅ MongoDB connected successfully
+[2025-08-06 11:54:54] info: Listening in port: 2007
+[2025-08-06 11:56:50] info: ✅ MongoDB connected successfully
+[2025-08-06 11:56:50] info: Listening in port: 2007
+[2025-08-06 11:57:20] info: ✅ MongoDB connected successfully
+[2025-08-06 11:57:20] info: Listening in port: 2007
+[2025-08-06 11:57:29] error: Error in setOpen Controller
+[2025-08-06 12:04:48] info: ✅ MongoDB connected successfully
+[2025-08-06 12:04:48] info: Listening in port: 2007
+[2025-08-06 12:04:49] error: Error in setOpen Controller
+[2025-08-06 12:05:41] info: ✅ MongoDB connected successfully
+[2025-08-06 12:05:41] info: Listening in port: 2007
+[2025-08-06 12:05:51] info: ✅ MongoDB connected successfully
+[2025-08-06 12:05:51] info: Listening in port: 2007
+[2025-08-06 12:06:10] info: ✅ MongoDB connected successfully
+[2025-08-06 12:06:10] info: Listening in port: 2007
+[2025-08-06 12:06:52] info: ✅ MongoDB connected successfully
+[2025-08-06 12:06:52] info: Listening in port: 2007
+[2025-08-06 12:07:07] info: ✅ MongoDB connected successfully
+[2025-08-06 12:07:07] info: Listening in port: 2007
+[2025-08-06 12:07:41] info: ✅ MongoDB connected successfully
+[2025-08-06 12:07:41] info: Listening in port: 2007
+[2025-08-06 12:08:31] info: ✅ MongoDB connected successfully
+[2025-08-06 12:08:31] info: Listening in port: 2007
+[2025-08-06 12:10:17] info: ✅ MongoDB connected successfully
+[2025-08-06 12:10:17] info: Listening in port: 2007
+[2025-08-06 12:14:18] info: ✅ MongoDB connected successfully
+[2025-08-06 12:14:18] info: Listening in port: 2007
+[2025-08-06 12:14:31] info: ✅ MongoDB connected successfully
+[2025-08-06 12:14:31] info: Listening in port: 2007
+[2025-08-06 12:14:58] info: ✅ MongoDB connected successfully
+[2025-08-06 12:14:58] info: Listening in port: 2007
+[2025-08-06 12:19:23] info: ✅ MongoDB connected successfully
+[2025-08-06 12:19:23] info: Listening in port: 2007
+[2025-08-06 12:22:32] info: ✅ MongoDB connected successfully
+[2025-08-06 12:22:32] info: Listening in port: 2007
+[2025-08-06 12:24:39] info: ✅ MongoDB connected successfully
+[2025-08-06 12:24:39] info: Listening in port: 2007
+[2025-08-06 12:26:01] info: ✅ MongoDB connected successfully
+[2025-08-06 12:26:01] info: Listening in port: 2007
+[2025-08-06 12:27:28] info: ✅ MongoDB connected successfully
+[2025-08-06 12:27:28] info: Listening in port: 2007
+[2025-08-06 12:27:43] info: ✅ MongoDB connected successfully
+[2025-08-06 12:27:43] info: Listening in port: 2007
+[2025-08-06 12:31:06] info: ✅ MongoDB connected successfully
+[2025-08-06 12:31:06] info: Listening in port: 2007
+[2025-08-06 13:58:10] info: 🔄 MongoDB reconnected
+[2025-08-06 13:58:10] info: 🔄 MongoDB reconnected
+[2025-08-06 13:58:27] warn: ⚠️ MongoDB connection lost
+[2025-08-06 13:58:37] info: ✅ MongoDB connected successfully
+[2025-08-06 13:58:47] info: ✅ MongoDB connected successfully
+[2025-08-06 14:04:27] info: ✅ MongoDB connected successfully
+[2025-08-06 14:04:27] info: Listening in port: 2007
+[2025-08-06 14:04:34] info: ✅ MongoDB connected successfully
+[2025-08-06 14:04:34] info: Listening in port: 2007
+[2025-08-06 14:06:13] info: ✅ MongoDB connected successfully
+[2025-08-06 14:06:13] info: Listening in port: 2007
+[2025-08-06 14:06:40] info: ✅ MongoDB connected successfully
+[2025-08-06 14:06:40] info: Listening in port: 2007
+[2025-08-06 14:06:54] info: ✅ MongoDB connected successfully
+[2025-08-06 14:06:54] info: Listening in port: 2007
+[2025-08-06 14:07:08] info: ✅ MongoDB connected successfully
+[2025-08-06 14:07:08] info: Listening in port: 2007
+[2025-08-06 14:07:57] info: ✅ MongoDB connected successfully
+[2025-08-06 14:07:57] info: Listening in port: 2007
+[2025-08-06 14:08:37] info: ✅ MongoDB connected successfully
+[2025-08-06 14:08:37] info: Listening in port: 2007
+[2025-08-06 14:09:13] info: ✅ MongoDB connected successfully
+[2025-08-06 14:09:13] info: Listening in port: 2007
+[2025-08-06 14:09:17] error: Error in uploads Controller
+[2025-08-06 14:10:12] info: ✅ MongoDB connected successfully
+[2025-08-06 14:10:12] info: Listening in port: 2007
+[2025-08-06 14:10:13] error: Error in uploads ControllerReferenceError: package is not defined
+[2025-08-06 14:11:23] info: ✅ MongoDB connected successfully
+[2025-08-06 14:11:23] info: Listening in port: 2007
+[2025-08-06 14:11:53] info: ✅ MongoDB connected successfully
+[2025-08-06 14:11:53] info: Listening in port: 2007
+[2025-08-06 14:12:31] info: ✅ MongoDB connected successfully
+[2025-08-06 14:12:31] info: Listening in port: 2007
+[2025-08-06 14:14:14] info: ✅ MongoDB connected successfully
+[2025-08-06 14:14:14] info: Listening in port: 2007
+[2025-08-06 14:14:57] info: ✅ MongoDB connected successfully
+[2025-08-06 14:14:57] info: Listening in port: 2007
+[2025-08-06 14:15:40] warn: ⚠️ MongoDB connection lost
+[2025-08-06 14:15:40] error: ❌ MongoDB initial connection failed
+[2025-08-06 14:15:40] info: Listening in port: 2007
+[2025-08-06 14:20:38] warn: ⚠️ MongoDB connection lost
+[2025-08-06 14:20:38] error: ❌ MongoDB initial connection failed
+[2025-08-06 14:20:45] info: ✅ MongoDB connected successfully
+[2025-08-06 14:21:55] info: 🔄 MongoDB reconnected
+[2025-08-06 14:21:55] info: 🔄 MongoDB reconnected
+[2025-08-06 14:22:05] warn: ⚠️ MongoDB connection lost
+[2025-08-06 14:22:06] info: 🔄 MongoDB reconnected
+[2025-08-06 14:22:10] info: ✅ MongoDB connected successfully
+[2025-08-06 14:22:30] info: ✅ MongoDB connected successfully
+[2025-08-06 14:22:30] info: Listening in port: 2007
+[2025-08-06 14:26:14] info: ✅ MongoDB connected successfully
+[2025-08-06 14:26:14] info: Listening in port: 2007
+[2025-08-06 14:28:05] info: ✅ MongoDB connected successfully
+[2025-08-06 14:28:05] info: Listening in port: 2007
+[2025-08-06 14:30:56] info: ✅ MongoDB connected successfully
+[2025-08-06 14:30:56] info: Listening in port: 2007
+[2025-08-06 14:32:19] info: ✅ MongoDB connected successfully
+[2025-08-06 14:32:19] info: Listening in port: 2007
+[2025-08-06 14:32:24] error: Error in rejectFiles uploads
+[2025-08-06 14:32:56] info: ✅ MongoDB connected successfully
+[2025-08-06 14:32:56] info: Listening in port: 2007
+[2025-08-06 14:32:57] error: Error in rejectFiles uploadsTypeError: objectDB.fileNames is not iterable
+[2025-08-06 14:33:29] info: ✅ MongoDB connected successfully
+[2025-08-06 14:33:29] info: Listening in port: 2007
+[2025-08-06 14:33:36] error: Error in rejectFiles uploadsTypeError: objectDB.fileNames is not iterable
+[2025-08-06 14:34:16] info: ✅ MongoDB connected successfully
+[2025-08-06 14:34:16] info: Listening in port: 2007
+[2025-08-06 14:34:18] error: Error in rejectFiles uploadsTypeError: objectDB.fileNames is not iterable
+[2025-08-06 14:34:19] error: Error in rejectFiles uploadsTypeError: objectDB.fileNames is not iterable
+[2025-08-06 14:34:30] info: ✅ MongoDB connected successfully
+[2025-08-06 14:34:30] info: Listening in port: 2007
+[2025-08-06 14:34:33] error: Error in rejectFiles uploadsTypeError: objectDB.fileNames is not iterable
+[2025-08-06 14:35:00] info: ✅ MongoDB connected successfully
+[2025-08-06 14:35:00] info: Listening in port: 2007
+[2025-08-06 14:35:15] info: ✅ MongoDB connected successfully
+[2025-08-06 14:35:15] info: Listening in port: 2007
+[2025-08-06 14:35:38] error: Error in rejectFiles uploadsTypeError: objectDB.fileNames is not iterable
+[2025-08-06 14:36:33] info: ✅ MongoDB connected successfully
+[2025-08-06 14:36:33] info: Listening in port: 2007
+[2025-08-06 14:37:27] info: ✅ MongoDB connected successfully
+[2025-08-06 14:37:27] info: Listening in port: 2007
+[2025-08-06 14:37:51] info: ✅ MongoDB connected successfully
+[2025-08-06 14:37:51] info: Listening in port: 2007
+[2025-08-06 14:38:07] error: Error in rejectFiles uploadsReferenceError: data is not defined
+[2025-08-06 14:40:33] info: ✅ MongoDB connected successfully
+[2025-08-06 14:40:33] info: Listening in port: 2007
+[2025-08-06 14:45:26] info: ✅ MongoDB connected successfully
+[2025-08-06 14:45:26] info: Listening in port: 2007
+[2025-08-06 14:47:18] info: ✅ MongoDB connected successfully
+[2025-08-06 14:47:18] info: Listening in port: 2007
+[2025-08-06 14:47:35] info: ✅ MongoDB connected successfully
+[2025-08-06 14:47:35] info: Listening in port: 2007
+[2025-08-06 14:51:02] info: ✅ MongoDB connected successfully
+[2025-08-06 14:51:02] info: Listening in port: 2007
+[2025-08-06 14:56:15] info: ✅ MongoDB connected successfully
+[2025-08-06 14:56:15] info: Listening in port: 2007
+[2025-08-06 14:58:22] info: ✅ MongoDB connected successfully
+[2025-08-06 14:58:22] info: Listening in port: 2007
+[2025-08-06 14:59:46] info: ✅ MongoDB connected successfully
+[2025-08-06 14:59:46] info: Listening in port: 2007
+[2025-08-06 14:59:55] info: ✅ MongoDB connected successfully
+[2025-08-06 14:59:55] info: Listening in port: 2007
+[2025-08-06 15:01:06] info: ✅ MongoDB connected successfully
+[2025-08-06 15:01:06] info: Listening in port: 2007
+[2025-08-06 15:01:31] info: ✅ MongoDB connected successfully
+[2025-08-06 15:01:31] info: Listening in port: 2007
+[2025-08-06 15:02:38] info: ✅ MongoDB connected successfully
+[2025-08-06 15:02:38] info: Listening in port: 2007
+[2025-08-06 15:03:45] info: ✅ MongoDB connected successfully
+[2025-08-06 15:03:45] info: Listening in port: 2007
+[2025-08-06 15:07:34] info: ✅ MongoDB connected successfully
+[2025-08-06 15:07:34] info: Listening in port: 2007
+[2025-08-06 15:07:55] info: ✅ MongoDB connected successfully
+[2025-08-06 15:07:55] info: Listening in port: 2007
+[2025-08-06 15:09:24] info: ✅ MongoDB connected successfully
+[2025-08-06 15:09:25] info: Listening in port: 2007
+[2025-08-06 15:10:47] info: ✅ MongoDB connected successfully
+[2025-08-06 15:10:47] info: Listening in port: 2007
+[2025-08-06 15:11:15] info: ✅ MongoDB connected successfully
+[2025-08-06 15:11:15] info: Listening in port: 2007
+[2025-08-06 15:12:08] info: ✅ MongoDB connected successfully
+[2025-08-06 15:12:08] info: Listening in port: 2007
+[2025-08-06 15:12:25] info: ✅ MongoDB connected successfully
+[2025-08-06 15:12:25] info: Listening in port: 2007
+[2025-08-06 15:12:49] info: ✅ MongoDB connected successfully
+[2025-08-06 15:12:49] info: Listening in port: 2007
+[2025-08-06 15:13:27] info: ✅ MongoDB connected successfully
+[2025-08-06 15:13:27] info: Listening in port: 2007
+[2025-08-06 15:13:30] info: ✅ MongoDB connected successfully
+[2025-08-06 15:13:30] info: Listening in port: 2007
+[2025-08-06 15:19:49] info: ✅ MongoDB connected successfully
+[2025-08-06 15:19:49] info: Listening in port: 2007
+[2025-08-06 15:26:20] info: ✅ MongoDB connected successfully
+[2025-08-06 15:26:20] info: Listening in port: 2007
+[2025-08-06 15:26:52] info: ✅ MongoDB connected successfully
+[2025-08-06 15:26:52] info: Listening in port: 2007
+[2025-08-06 15:28:56] info: ✅ MongoDB connected successfully
+[2025-08-06 15:28:56] info: Listening in port: 2007
+[2025-08-06 15:37:02] info: ✅ MongoDB connected successfully
+[2025-08-06 15:37:02] info: Listening in port: 2007
+[2025-08-06 15:38:26] info: ✅ MongoDB connected successfully
+[2025-08-06 15:38:26] info: Listening in port: 2007
+[2025-08-06 15:41:55] info: ✅ MongoDB connected successfully
+[2025-08-06 15:41:55] info: Listening in port: 2007
+[2025-08-06 15:42:00] info: ✅ MongoDB connected successfully
+[2025-08-06 15:42:00] info: Listening in port: 2007
+[2025-08-06 15:44:09] info: ✅ MongoDB connected successfully
+[2025-08-06 15:44:09] info: Listening in port: 2007
+[2025-08-06 15:44:17] info: ✅ MongoDB connected successfully
+[2025-08-06 15:44:17] info: Listening in port: 2007
+[2025-08-06 15:44:54] info: ✅ MongoDB connected successfully
+[2025-08-06 15:44:54] info: Listening in port: 2007
+[2025-08-06 15:45:53] info: ✅ MongoDB connected successfully
+[2025-08-06 15:45:53] info: Listening in port: 2007
+[2025-08-06 15:49:52] info: ✅ MongoDB connected successfully
+[2025-08-06 15:49:52] info: Listening in port: 2007
+[2025-08-06 15:50:18] info: ✅ MongoDB connected successfully
+[2025-08-06 15:50:18] info: Listening in port: 2007
+[2025-08-06 15:50:36] info: ✅ MongoDB connected successfully
+[2025-08-06 15:50:36] info: Listening in port: 2007
+[2025-08-06 15:50:52] info: ✅ MongoDB connected successfully
+[2025-08-06 15:50:52] info: Listening in port: 2007
+[2025-08-06 15:51:12] info: ✅ MongoDB connected successfully
+[2025-08-06 15:51:12] info: Listening in port: 2007
+[2025-08-06 15:51:27] info: ✅ MongoDB connected successfully
+[2025-08-06 15:51:27] info: Listening in port: 2007
+[2025-08-06 15:52:31] info: ✅ MongoDB connected successfully
+[2025-08-06 15:52:31] info: Listening in port: 2007
+[2025-08-06 15:53:01] info: ✅ MongoDB connected successfully
+[2025-08-06 15:53:01] info: Listening in port: 2007
+[2025-08-06 15:58:48] info: ✅ MongoDB connected successfully
+[2025-08-06 15:58:48] info: Listening in port: 2007
+[2025-08-06 15:59:16] info: ✅ MongoDB connected successfully
+[2025-08-06 15:59:16] info: Listening in port: 2007
+[2025-08-06 16:06:50] info: ✅ MongoDB connected successfully
+[2025-08-06 16:06:50] info: Listening in port: 2007
+[2025-08-06 16:08:17] info: ✅ MongoDB connected successfully
+[2025-08-06 16:08:18] info: Listening in port: 2007
+[2025-08-06 16:08:20] info: ✅ MongoDB connected successfully
+[2025-08-06 16:08:20] info: Listening in port: 2007
+[2025-08-06 16:08:51] info: ✅ MongoDB connected successfully
+[2025-08-06 16:08:51] info: Listening in port: 2007
+[2025-08-06 16:09:06] info: ✅ MongoDB connected successfully
+[2025-08-06 16:09:06] info: Listening in port: 2007
+[2025-08-06 16:11:08] info: ✅ MongoDB connected successfully
+[2025-08-06 16:11:08] info: Listening in port: 2007
+[2025-08-06 16:11:38] info: ✅ MongoDB connected successfully
+[2025-08-06 16:11:38] info: Listening in port: 2007
+[2025-08-06 16:13:18] info: ✅ MongoDB connected successfully
+[2025-08-06 16:13:18] info: Listening in port: 2007
+[2025-08-06 16:16:24] info: ✅ MongoDB connected successfully
+[2025-08-06 16:16:24] info: Listening in port: 2007
+[2025-08-06 16:17:47] info: ✅ MongoDB connected successfully
+[2025-08-06 16:17:47] info: Listening in port: 2007
+[2025-08-06 16:18:22] info: ✅ MongoDB connected successfully
+[2025-08-06 16:18:22] info: Listening in port: 2007
+[2025-08-06 16:18:34] info: ✅ MongoDB connected successfully
+[2025-08-06 16:18:34] info: Listening in port: 2007
+[2025-08-06 18:31:14] info: 🔄 MongoDB reconnected
+[2025-08-06 18:31:25] warn: ⚠️ MongoDB connection lost
+[2025-08-06 18:31:25] info: 🔄 MongoDB reconnected
+[2025-08-06 18:31:30] info: ✅ MongoDB connected successfully
+[2025-08-06 18:31:32] info: ✅ MongoDB connected successfully
+[2025-08-06 18:31:33] info: Listening in port: 2007
+[2025-08-06 18:33:39] info: ✅ MongoDB connected successfully
+[2025-08-06 18:33:39] info: Listening in port: 2007
+[2025-08-06 18:39:16] info: ✅ MongoDB connected successfully
+[2025-08-06 18:39:16] info: Listening in port: 2007
+[2025-08-06 18:41:22] info: ✅ MongoDB connected successfully
+[2025-08-06 18:41:22] info: Listening in port: 2007
+[2025-08-06 18:42:48] info: ✅ MongoDB connected successfully
+[2025-08-06 18:42:48] info: Listening in port: 2007
+[2025-08-06 18:42:54] info: ✅ MongoDB connected successfully
+[2025-08-06 18:42:54] info: Listening in port: 2007
+[2025-08-06 18:46:01] info: ✅ MongoDB connected successfully
+[2025-08-06 18:46:01] info: Listening in port: 2007
+[2025-08-06 18:48:58] info: ✅ MongoDB connected successfully
+[2025-08-06 18:48:58] info: Listening in port: 2007
+[2025-08-06 18:49:52] info: ✅ MongoDB connected successfully
+[2025-08-06 18:49:52] info: Listening in port: 2007
+[2025-08-06 18:50:07] info: ✅ MongoDB connected successfully
+[2025-08-06 18:50:07] info: Listening in port: 2007
+[2025-08-06 18:50:46] info: ✅ MongoDB connected successfully
+[2025-08-06 18:50:46] info: Listening in port: 2007
+[2025-08-06 18:51:10] info: ✅ MongoDB connected successfully
+[2025-08-06 18:51:10] info: Listening in port: 2007
+[2025-08-06 18:51:59] info: ✅ MongoDB connected successfully
+[2025-08-06 18:51:59] info: Listening in port: 2007
+[2025-08-06 18:52:59] info: ✅ MongoDB connected successfully
+[2025-08-06 18:53:00] info: Listening in port: 2007
+[2025-08-06 18:53:20] info: ✅ MongoDB connected successfully
+[2025-08-06 18:53:20] info: Listening in port: 2007
+[2025-08-06 18:53:49] info: ✅ MongoDB connected successfully
+[2025-08-06 18:53:49] info: Listening in port: 2007
+[2025-08-06 18:55:39] info: ✅ MongoDB connected successfully
+[2025-08-06 18:55:39] info: Listening in port: 2007
+[2025-08-06 18:56:41] info: ✅ MongoDB connected successfully
+[2025-08-06 18:56:42] info: Listening in port: 2007
+[2025-08-06 18:57:02] info: ✅ MongoDB connected successfully
+[2025-08-06 18:57:02] info: Listening in port: 2007
+[2025-08-06 18:59:42] info: ✅ MongoDB connected successfully
+[2025-08-06 18:59:42] info: Listening in port: 2007
+[2025-08-06 19:00:35] info: ✅ MongoDB connected successfully
+[2025-08-06 19:00:35] info: Listening in port: 2007
+[2025-08-06 19:02:00] info: ✅ MongoDB connected successfully
+[2025-08-06 19:02:00] info: Listening in port: 2007
+[2025-08-06 19:02:31] info: ✅ MongoDB connected successfully
+[2025-08-06 19:02:31] info: Listening in port: 2007
+[2025-08-06 19:04:29] info: ✅ MongoDB connected successfully
+[2025-08-06 19:04:29] info: Listening in port: 2007
+[2025-08-06 19:05:43] info: ✅ MongoDB connected successfully
+[2025-08-06 19:05:43] info: Listening in port: 2007
+[2025-08-06 19:07:47] info: ✅ MongoDB connected successfully
+[2025-08-06 19:07:47] info: Listening in port: 2007
+[2025-08-06 19:10:18] info: ✅ MongoDB connected successfully
+[2025-08-06 19:10:18] info: Listening in port: 2007
+[2025-08-06 19:10:32] info: ✅ MongoDB connected successfully
+[2025-08-06 19:10:32] info: Listening in port: 2007
+[2025-08-06 19:10:52] info: ✅ MongoDB connected successfully
+[2025-08-06 19:10:52] info: Listening in port: 2007
+[2025-08-06 19:12:17] info: ✅ MongoDB connected successfully
+[2025-08-06 19:12:17] info: Listening in port: 2007
+[2025-08-06 19:13:30] info: ✅ MongoDB connected successfully
+[2025-08-06 19:13:30] info: Listening in port: 2007
+[2025-08-06 19:14:23] error: Error in resolveFiles uploads
+[2025-08-06 19:14:35] error: Error in resolveFiles uploads
+[2025-08-06 19:15:17] info: ✅ MongoDB connected successfully
+[2025-08-06 19:15:17] info: Listening in port: 2007
+[2025-08-06 19:15:21] info: ✅ MongoDB connected successfully
+[2025-08-06 19:15:22] info: Listening in port: 2007
+[2025-08-06 19:15:23] error: Error in resolveFiles uploadsTypeError [ERR_INVALID_ARG_TYPE]: The "path" argument must be of type string. Received undefined
+[2025-08-06 19:16:57] info: ✅ MongoDB connected successfully
+[2025-08-06 19:16:57] info: Listening in port: 2007
+[2025-08-06 19:17:06] info: ✅ MongoDB connected successfully
+[2025-08-06 19:17:06] info: Listening in port: 2007
+[2025-08-06 19:17:17] info: ✅ MongoDB connected successfully
+[2025-08-06 19:17:17] info: Listening in port: 2007
+[2025-08-06 19:17:20] error: Error in resolveFiles uploadsTypeError [ERR_INVALID_ARG_TYPE]: The "path" argument must be of type string. Received undefined
+[2025-08-06 19:17:38] info: ✅ MongoDB connected successfully
+[2025-08-06 19:17:38] info: Listening in port: 2007
+[2025-08-06 19:17:39] error: Error in resolveFiles uploadsTypeError [ERR_INVALID_ARG_TYPE]: The "path" argument must be of type string. Received undefined
+[2025-08-06 19:18:07] info: ✅ MongoDB connected successfully
+[2025-08-06 19:18:07] info: Listening in port: 2007
+[2025-08-06 19:18:10] error: Error in resolveFiles uploadsTypeError [ERR_INVALID_ARG_TYPE]: The "path" argument must be of type string. Received undefined
+[2025-08-06 19:18:38] info: ✅ MongoDB connected successfully
+[2025-08-06 19:18:38] info: Listening in port: 2007
+[2025-08-06 19:19:04] error: Error in resolveFiles uploadsTypeError [ERR_INVALID_ARG_TYPE]: The "path" argument must be of type string. Received undefined
+[2025-08-06 19:20:54] info: ✅ MongoDB connected successfully
+[2025-08-06 19:20:54] info: Listening in port: 2007
+[2025-08-06 19:20:56] error: Error in resolveFiles uploadsTypeError [ERR_INVALID_ARG_TYPE]: The "path" argument must be of type string. Received undefined
+[2025-08-06 19:21:11] info: ✅ MongoDB connected successfully
+[2025-08-06 19:21:11] info: Listening in port: 2007
+[2025-08-06 19:21:28] info: ✅ MongoDB connected successfully
+[2025-08-06 19:21:28] info: Listening in port: 2007
+[2025-08-06 19:21:29] error: Error in resolveFiles uploadsTypeError [ERR_INVALID_ARG_TYPE]: The "path" argument must be of type string. Received undefined
+[2025-08-06 19:21:47] info: ✅ MongoDB connected successfully
+[2025-08-06 19:21:47] info: Listening in port: 2007
+[2025-08-06 19:22:02] info: ✅ MongoDB connected successfully
+[2025-08-06 19:22:02] info: Listening in port: 2007
+[2025-08-06 19:22:06] error: Error in resolveFiles uploadsTypeError [ERR_INVALID_ARG_TYPE]: The "path" argument must be of type string. Received undefined
+[2025-08-06 19:22:19] info: ✅ MongoDB connected successfully
+[2025-08-06 19:22:19] info: Listening in port: 2007
+[2025-08-06 19:22:21] error: Error in resolveFiles uploadsTypeError [ERR_INVALID_ARG_TYPE]: The "path" argument must be of type string. Received undefined
+[2025-08-06 19:22:45] info: ✅ MongoDB connected successfully
+[2025-08-06 19:22:45] info: Listening in port: 2007
+[2025-08-06 19:23:20] info: ✅ MongoDB connected successfully
+[2025-08-06 19:23:20] info: Listening in port: 2007
+[2025-08-06 19:23:42] info: ✅ MongoDB connected successfully
+[2025-08-06 19:23:42] info: Listening in port: 2007
+[2025-08-06 19:23:50] info: ✅ MongoDB connected successfully
+[2025-08-06 19:23:50] info: Listening in port: 2007
+[2025-08-06 19:24:59] info: ✅ MongoDB connected successfully
+[2025-08-06 19:24:59] info: Listening in port: 2007
+[2025-08-06 19:25:14] info: ✅ MongoDB connected successfully
+[2025-08-06 19:25:14] info: Listening in port: 2007
+[2025-08-06 19:29:54] info: ✅ MongoDB connected successfully
+[2025-08-06 19:29:54] info: Listening in port: 2007
+[2025-08-06 19:29:58] info: ✅ MongoDB connected successfully
+[2025-08-06 19:29:58] info: Listening in port: 2007
+[2025-08-06 19:32:37] info: ✅ MongoDB connected successfully
+[2025-08-06 19:32:37] info: Listening in port: 2007
+[2025-08-06 19:34:17] info: ✅ MongoDB connected successfully
+[2025-08-06 19:34:17] info: Listening in port: 2007
+[2025-08-06 19:35:06] error: Error in resolveFiles uploadsTypeError [ERR_INVALID_ARG_TYPE]: The "path" argument must be of type string. Received undefined
+[2025-08-06 19:35:33] error: Error in resolveFiles uploadsTypeError [ERR_INVALID_ARG_TYPE]: The "path" argument must be of type string. Received undefined
+[2025-08-06 19:36:04] info: ✅ MongoDB connected successfully
+[2025-08-06 19:36:04] info: Listening in port: 2007
+[2025-08-06 19:36:04] error: Error in resolveFiles uploadsTypeError [ERR_INVALID_ARG_TYPE]: The "path" argument must be of type string. Received undefined
+[2025-08-06 23:43:02] info: 🔄 MongoDB reconnected
+[2025-08-06 23:43:02] info: 🔄 MongoDB reconnected

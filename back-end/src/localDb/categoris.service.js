@@ -1,11 +1,12 @@
 const DataStore = require('nedb');
 const DataStoreUseger = require('./db.useger');
-const Validations = require('../../validations/index');
-const Utils = require('../../utils/index');
-const Logger = require('../Logger');
+const Validations = require('../validations/index');
+const Utils = require('../utils/index');
+const Logger = require('../services/Logger');
+const path = require('path');
 
 const categoris = new DataStore({
-  filename: './datastore/categoris.db',
+  filename: path.join(__dirname, './datastore/categoris.db'),
   autoload: true,
 })
 

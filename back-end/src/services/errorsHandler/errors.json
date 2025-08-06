@@ -3,6 +3,14 @@
     "message": "Invalid available data",
     "code": 400
   },
+  "INVALID_PACKAGE": {
+    "message": "Invalid Package",
+    "code": 404
+  },
+  "ACCOUNT_NOT_AVAILABLE": {
+    "message": "Account not available",
+    "code": 404
+  },
   "SYSTEM_ERROR": {
     "message": "Unknown system error",
     "code": 500
@@ -74,6 +82,14 @@
   "INVALID_REQUEST": {
     "message": "The request is invalid",
     "code": 400
+  },
+  "INVALID_STORE_ID": {
+    "message": "storeId is required",
+    "code": 400
+  },
+  "INVALID_STORE": {
+    "message": "Invalid Store",
+    "code": 404
   },
   "SERVICE_UNAVAILABLE": {
     "message": "Service temporarily unavailable",

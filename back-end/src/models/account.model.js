@@ -6,7 +6,6 @@ const accountSchema = new mongoose.Schema({
   email: {
     type: SchemaTypes.String,
     unique: true,
-    required: true,
     lowercase: true,
     trim: true,
   },

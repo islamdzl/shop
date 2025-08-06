@@ -5,7 +5,7 @@ const Validations = require('../../../validations/index')
   objectRequest
 */
 
-function addObjectRequest(Store, detailes, next, reject) {
+async function  addObjectRequest(Store, detailes, next, reject) {
   try {
     const objectRequestValidate = Validations.StoreValidate.request(detailes.objectRequest)
 

@@ -281,3 +281,43 @@ exports.updateBuyingDetailes = async(req, res)=> {
     ErrorHandler.useResponseError(res, ErrorHandler.ERRORS.SYSTEM_ERROR)
   }
 }
+
+exports.get = async(req, res)=> {
+  /*
+    {}
+  */
+
+    const data = req.body;
+    const user = req.user;
+
+    try{
+
+      const projections = {
+        cart: 1,
+        buying: 1,
+        success: 1
+      }
+
+      const cart = await CartService.getCartById(user._id, projections);
+
+      if (! cart) {
+        ErrorHandler.useResponseError(res, ErrorHandler.ERRORS.CART_NOT_FOUND)
+        return;
+      }
+
+
+      res.status(200).json({
+        shoppingCart: cart.cart,
+        buying: cart.buying,
+        success: cart.success
+      })
+    }catch(error) {
+
+      Logger.error({
+        message: 'Error in get Controller',
+        error
+      })
+
+      ErrorHandler.useResponseError(res, ErrorHandler.ERRORS.SYSTEM_ERROR)
+    }
+}

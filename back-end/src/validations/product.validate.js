@@ -20,7 +20,7 @@ exports.create = (data)=> {
     'any.required': 'الاسم مطلوب'
   }),
 
-  ownerId: joi.object().required(),
+  ownerId: joi.string().required(),
 
   content: joi.number().min(1).default(null),
   
@@ -35,6 +35,25 @@ exports.create = (data)=> {
   categories: joi.array().min(1).required(),
 
   delivery: joi.number().default(null)
+  })
+
+  return validateReturner(schema, data)
+}
+
+
+exports.verifyDetailes = (data)=> {
+  const schema = joi.object({
+  name: joi.string().min(3).max(20).required().messages({
+    'string.min': 'الاسم قصير بزاف',
+    'string.max': 'الاسم طويل بزاف',
+    'any.required': 'الاسم مطلوب'
+  }),
+
+  packageId: joi.string().required(),
+
+  price: joi.number().min(0).default(0),
+
+  categories: joi.array().min(1).required(),
   })
 
   return validateReturner(schema, data)

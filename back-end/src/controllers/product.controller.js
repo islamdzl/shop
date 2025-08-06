@@ -5,6 +5,7 @@ const Validations = require('../validations')
 const StoreService = require('../services/store/index')
 const CartService = require('../services/cart/index')
 const Utils = require('../utils/index')
+const LocalDB = require('../localDb/index')
 
 exports.BuyProduct = async(req, res)=> {
   /*
@@ -196,6 +197,65 @@ exports.setAvailable = async(req, res)=> {
 
       Logger.error({
         message: 'Error in getProduct Controller',
+        error
+      })
+
+      ErrorHandler.useResponseError(res, ErrorHandler.ERRORS.SYSTEM_ERROR)
+    }
+}
+
+
+exports.createNew = async(req, res)=> {
+  /*
+    {
+      name: "String"
+      ownerId: joi.object().required(),
+      content: Number | null
+      price:   Number
+      isAvailable: Boolean,
+      description: String
+      categories: [ "", ""],
+      delivery: Number | null
+    }
+  */
+
+    const data = req.body;
+    const user = req.user;
+
+    try{
+
+      if (! data.packageId) {
+        ErrorHandler.useResponseError(res, ErrorHandler.ERRORS.PACKAGE_ID_INVALID)
+        return;
+      }
+
+      const validate = Validations.Product.verifyDetailes(data);
+
+      if (! validate.valid) {
+        res.status(400).json({
+          error: validate.errors[0]
+        })
+        return;
+      }
+      const resolvedPackage = await LocalDB.Uploads.resolveFiles(data.packageId)
+
+      console.log(resolvedPackage)
+      if (! resolvedPackage) {
+        ErrorHandler.useResponseError(res, ErrorHandler.ERRORS.INVALID_PACKAGE)
+        return;
+      }
+
+      const lastValidate = Validations.Product.create(Utils.Merge.simpleMerge(validate.value, {
+        imagesUrls: resolvedPackage,
+        ownerId: user._id
+      }))
+
+      res.json(lastValidate)
+
+    }catch(error) {
+
+      Logger.error({
+        message: 'Error in createNew Controller > Product',
         error
       })
 

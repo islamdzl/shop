@@ -28,12 +28,13 @@ exports.insert = async(dataStore, middlware, data)=> {
   })
 }
 
-exports.exist = (dataStore, condition, resolve) => {
+exports.exist = (dataStore, condition, resolve = ()=>{}) => {
   
   dataStore.findOne(condition, (err, doc) => {
     if (err) {
       Logger.error({ message: 'Error in exist uploads', error: err })
-      return resolve(false)
+      resolve(false)
+      return;
     }
 
     resolve(!!doc)
@@ -159,6 +160,6 @@ exports.remove = async(dataStore, middlware, condition = {}, options = {})=> {
       reject(err)
     }
 
-    middlware(data, next, cansel)
+    middlware(condition, next, cansel)
   })
 }

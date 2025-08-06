@@ -1,6 +1,13 @@
 const joi = require('joi')
 
 const validateReturner = (schema, data)=> {
+
+  if (! data) {
+    return {
+      valid: false,
+      errors: 'Invalid Data'
+    }
+  }
   const { error, value } = schema.validate(data)
   if (error) {
     return {

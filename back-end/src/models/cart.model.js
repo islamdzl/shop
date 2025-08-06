@@ -14,6 +14,8 @@ const cartSchema = new mongoose.Schema({
     description: {type: SchemaTypes.String, default: ''},
   },
 
+  ratings: {type: SchemaTypes.Map},
+
   cart: {
     type: SchemaTypes.Mixed,
     default: []
@@ -27,7 +29,7 @@ const cartSchema = new mongoose.Schema({
   success: {
     type: SchemaTypes.Mixed,
     default: []
-  }
+  },
 
 }, {
   timestamp: true

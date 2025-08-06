@@ -14,7 +14,7 @@ exports.createObjectDB = (data)=> {
   const schema = joi.object({
     userId: joi.string().required(),
     packageId: joi.string().required(),
-    fileNames: joi.array(),
+    fileNames: joi.array().default([]),
   })
 
   return validateReturner(schema, data)
