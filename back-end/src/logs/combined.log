@@ -1793,3 +1793,5 @@
 [2025-08-10 23:53:33] error: Error in createNew Controller > Product
 [2025-08-10 23:54:01] info: ✅ MongoDB connected successfully
 [2025-08-10 23:54:01] info: Listening in port: 2007
+[2025-08-10 23:55:24] info: ✅ MongoDB connected successfully
+[2025-08-10 23:55:24] info: Listening in port: 2007

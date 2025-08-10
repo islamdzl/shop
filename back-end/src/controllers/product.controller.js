@@ -226,7 +226,6 @@ exports.createNew = async(req, res)=> {
 
       const payload = await UploadUtils.FindOne(Uploads, {_id: user._id.toString()});
       
-      console.log((payload))
       if (! payload || payload.files.length === 0) {
         EHandler.URError(res, EHandler.ERRORS.PREVIOW_IMAGE_INVALID)
         return
