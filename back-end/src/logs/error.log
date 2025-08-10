@@ -226,3 +226,15 @@
 [2025-08-10 21:36:04] error: ❌ MongoDB initial connection failed
 [2025-08-10 21:46:50] error: ❌ MongoDB initial connection failed
 [2025-08-10 21:47:25] error: ❌ MongoDB initial connection failed
+[2025-08-10 22:26:02] error: ❌ MongoDB initial connection failed
+[2025-08-10 22:34:08] error: ❌ MongoDB initial connection failed
+[2025-08-10 22:51:23] error: Error in createNew Controller > Product
+[2025-08-10 23:40:06] error: Error in ResolveUploadTempFiles utils LDB
+[2025-08-10 23:40:40] error: Error in ResolveUploadTempFiles utils LDB
+[2025-08-10 23:41:00] error: Error in ResolveUploadTempFiles utils LDB
+[2025-08-10 23:41:31] error: Error in ResolveUploadTempFiles utils LDB
+[2025-08-10 23:45:22] error: Error in ResolveUploadTempFiles utils LDB
+[2025-08-10 23:46:22] error: Error in ResolveUploadTempFiles utils LDBError: Invalid payload
+[2025-08-10 23:47:03] error: Error in ResolveUploadTempFiles utils LDB
+[2025-08-10 23:47:34] error: Error in ResolveUploadTempFiles utils LDBTypeError [ERR_INVALID_ARG_TYPE]: The "path" argument must be of type string. Received undefined
+[2025-08-10 23:53:33] error: Error in createNew Controller > Product

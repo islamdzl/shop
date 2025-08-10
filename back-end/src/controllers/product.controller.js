@@ -1,7 +1,8 @@
 const Logger = require('../services/Logger');
 const EHandler = require('../services/EHandler/index')
 const Validations = require('../validations')
-const LDB = require('../services/LDB/index')
+const Uploads = require('../services/LDB/uploads.service')
+const UploadUtils = require('../services/LDB/utils')
 
 const Product = require('../models/product.model')
 const Store = require('../models/store.model')
@@ -223,27 +224,29 @@ exports.createNew = async(req, res)=> {
 
     try{
 
-      if (! await LDB.Uploads.getTempFiles(user._id)) {
+      const payload = await UploadUtils.FindOne(Uploads, {_id: user._id.toString()});
+      
+      console.log((payload))
+      if (! payload || payload.files.length === 0) {
         EHandler.URError(res, EHandler.ERRORS.PREVIOW_IMAGE_INVALID)
         return
       }
 
 
       data.ownerId = user._id;
-
-      data.imagesUrls = await LDB.Uploads.resolveFiles(user._id)
-
+      
       const { error, value } = Validations.Product.create(data);
-
+      
       if (error) {
         EHandler.UCRError(res, error)
         return;
       }
+      
+      value.imagesUrls = await UploadUtils.ResolveUploadTempFiles(Uploads, {_id: user._id.toString()})
 
-      return
 
-      await ProductService.createProduct(value, user._id)
-
+      const product = new Product(value)
+      await product.save()
       res.status(200).end()
     }catch(error) {
 

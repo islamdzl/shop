@@ -4,27 +4,15 @@ const joi = require('joi')
 
 exports.create = (data = {})=> {
   const schema = joi.object({
-  name: joi.string().min(3).max(20).required().messages({
-    'string.min': 'الاسم قصير بزاف',
-    'string.max': 'الاسم طويل بزاف',
-    'any.required': 'الاسم مطلوب'
-  }),
-
-  ownerId: joi.string().required(),
-
-  content: joi.number().min(1).default(null),
-  
+  name: joi.string().min(3).max(20).required(),
+  ownerId: joi.object().required(),
+  stack: joi.number().min(1).default(null),
   price: joi.number().min(0).default(0),
-
   isAvailable: joi.boolean().default(true),
-
   description: joi.string().default('No discription !'),
-
-  imagesUrls: joi.array().min(1).required(),
-
   categories: joi.array().min(1).required(),
-
-  delivery: joi.number().default(null)
+  delivery: joi.number().default(null),
+  requests: joi.number().min(0).default(0)
   })
 
   return  schema.validate(data)

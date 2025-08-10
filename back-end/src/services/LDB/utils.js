@@ -1,7 +1,11 @@
 const path = require('path')
 const fs = require('fs')
+const Logger = require('../Logger')
 
-exports.yearMonthDay = (beforePath, afterPath)=> {
+const PT = path.join(__dirname, '../../uploads/temp')
+const PU = path.join(__dirname, '../../uploads')
+
+exports.yearMonthDay = (beforePath = '', afterPath = '')=> {
   const now = new Date()
   const year = now.getFullYear()
   const month = String(now.getMonth() + 1).padStart(2, '0')
@@ -11,6 +15,7 @@ exports.yearMonthDay = (beforePath, afterPath)=> {
 }
 
 exports.year = (beforePath = '', afterPath = '')=> {
+  const now = new Date()
   const year = now.getFullYear()
   return beforePath + year.toString() + afterPath;
 }
@@ -22,17 +27,17 @@ exports.month = (beforePath = '', afterPath = '')=> {
   
 }
  
-exports.year = (beforePath = '', afterPath = '')=> {
+exports.day = (beforePath = '', afterPath = '')=> {
   const now = new Date()
   const day = String(now.getDate()).padStart(2, '0')
   return beforePath + day.toString() + afterPath;
 }
 
-exports.ifPathExist = (path)=> {
-  if (! path || typeof path != 'string') {
+exports.ifPathExist = (Path)=> {
+  if (! Path || typeof Path != 'string') {
     return false
   }
-  return fs.existsSync(path)
+  return fs.existsSync(Path)
 }
 
 exports.createPath = (dirname, pathDir)=> {
@@ -47,7 +52,6 @@ exports.createPath = (dirname, pathDir)=> {
       fs.mkdirSync(path.join(dirname, ...paths.slice(0, i)))
     }
   }
-  
   return true;
 }
 
@@ -65,4 +69,102 @@ exports.deleteFiles = (files = [])=> {
     }
     resolve(true)
   })
+}
+
+exports.FindOne = async(Model, filter, projections = {})=> {
+  return new Promise((resolve, reject)=> {
+    Model.findOne(filter, projections, (error, payload)=> {
+      if (error) return reject(error)
+      resolve(payload)
+    })
+  })
+}
+
+exports.Insert = async(Model, payload)=> {
+  return new Promise((resolve, reject)=> {
+    Model.insert(payload, (error, payload)=> {
+      if (error) return reject(error)
+      resolve(payload)
+    })
+  })
+}
+
+exports.Update = async(Model, filter, payload)=> {
+  return new Promise((resolve, reject)=> {
+    Model.update(filter, payload, (error, updates)=> {
+      if (error) return reject(error);
+      resolve(updates)
+    })
+  })
+}
+
+exports.Delete = async(Model, filter = {}, options = {})=> {
+  return new Promise((resolve, reject)=> {
+    Model.remove(filter, options, (error, deleteds)=> {
+      if (error) return reject(error);
+      resolve(deleteds)
+    })
+  })
+}
+
+exports.ResolveUploadTempFiles = async(Model, filter)=> {
+  try{
+    const payload = await exports.FindOne(Model, filter)
+
+    if (! payload) {
+      throw new Error('Invalid payload')
+    }
+
+    const result = [];
+
+    for (const file of payload.files) {
+      const YMD = exports.yearMonthDay()
+      
+      const PFT = path.join(PT, file.name);
+      const PFU = path.join(PU, YMD, file.name)
+
+      if (fs.existsSync(PFT)) {
+
+        if (! fs.existsSync(PFU)) {
+          exports.createPath(PU, YMD)
+        }
+
+        fs.cpSync(PFT, PFU)
+        fs.rmSync(PFT, {force: true})
+        result.push(PFU)
+      }
+    }
+
+    await exports.Delete(Model, filter)
+    return result;
+  }catch(error) {
+
+    Logger.error({
+      message: 'Error in ResolveUploadTempFiles utils LDB' + error,
+      error
+    })
+
+    return []
+  }
+}
+
+exports.RejectUploadTempFiles = async(Model, filter)=> {
+  try{
+    const payload = await exports.FindOne(Model, filter)
+
+    for (const file of payload.files) {
+      const PFT = path.join(PT, file.name);
+
+      if (fs.existsSync(PFT)) {
+        fs.rmSync(PFT, {force: true})
+      }
+    }
+    return await exports.Delete(Model, filter)
+  }catch(error) {
+
+    Logger.error({
+      message: 'Error in RejectUploadTempFiles utils LDB',
+      error
+    })
+  }
 }
