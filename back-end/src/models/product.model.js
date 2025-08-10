@@ -1,9 +1,6 @@
 const mongoose = require('mongoose')
 const { SchemaTypes } = require('mongoose')
 
-const ProductMiddlware = require('../middlewares/product/index')
-const { required } = require('../services/store/middlwares/createProduct.service')
-
 const productSchema = new mongoose.Schema({
   name: {
     type: SchemaTypes.String,
@@ -20,7 +17,7 @@ const productSchema = new mongoose.Schema({
     required: true
   },
 
-  content: {
+  stack: {
     type: SchemaTypes.Number,
     default: 0
   },
@@ -58,9 +55,6 @@ const productSchema = new mongoose.Schema({
 }, {
   timestamps: true
 })
-
-productSchema.pre('save', ProductMiddlware.ChangeValue)
-productSchema.pre('updateOne', ProductMiddlware.ChangeValue)
 
 const Product = mongoose.model('Product', productSchema)
 

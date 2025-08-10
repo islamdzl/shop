@@ -188,3 +188,41 @@
 [2025-08-06 19:35:06] error: Error in resolveFiles uploadsTypeError [ERR_INVALID_ARG_TYPE]: The "path" argument must be of type string. Received undefined
 [2025-08-06 19:35:33] error: Error in resolveFiles uploadsTypeError [ERR_INVALID_ARG_TYPE]: The "path" argument must be of type string. Received undefined
 [2025-08-06 19:36:04] error: Error in resolveFiles uploadsTypeError [ERR_INVALID_ARG_TYPE]: The "path" argument must be of type string. Received undefined
+[2025-08-08 17:03:14] error: Error in clearSuccess Controller
+[2025-08-08 17:04:14] error: Error in updateDetailes ControllerReferenceError: data is not defined
+[2025-08-08 19:20:39] error: Error in create object uploads
+[2025-08-08 19:21:10] error: Error in create object uploads
+[2025-08-08 19:22:03] error: Error in create object uploads
+[2025-08-08 19:24:20] error: Error in create object uploads
+[2025-08-08 19:24:22] error: Error in create object uploads
+[2025-08-08 19:25:09] error: Error in create object uploads
+[2025-08-08 19:25:10] error: Error in create object uploads
+[2025-08-08 19:25:11] error: Error in create object uploads
+[2025-08-08 19:25:48] error: Error in create object uploads
+[2025-08-08 19:25:49] error: Error in create object uploads
+[2025-08-08 19:25:50] error: Error in create object uploads
+[2025-08-08 19:27:01] error: Error in create object uploads
+[2025-08-08 19:45:15] error: Error in createNew Controller > Product
+[2025-08-08 19:45:38] error: Error in createNew Controller > Product
+[2025-08-08 19:46:32] error: Error in resolveFiles uploadsTypeError [ERR_INVALID_ARG_TYPE]: The "path" argument must be of type string. Received undefined
+[2025-08-08 19:47:13] error: Error in createNew Controller > Product
+[2025-08-08 19:48:02] error: Error in createNew Controller > Product
+[2025-08-08 19:48:34] error: Error in resolveFiles uploadsTypeError [ERR_INVALID_ARG_TYPE]: The "path" argument must be of type string. Received undefined
+[2025-08-08 19:49:51] error: Error in createNew Controller > Product
+[2025-08-08 19:51:38] error: Error in createNew Controller > Product
+[2025-08-08 19:52:46] error: Error in createNew Controller > Product
+[2025-08-08 19:53:11] error: Error in createNew Controller > Product
+[2025-08-08 19:53:36] error: Error in createNew Controller > Product
+[2025-08-08 19:57:30] error: Error in resolveFiles uploadsError: ENOENT: no such file or directory, copyfile '/home/islamdzl/Desktop/coder/shop/back-end/src/uploads/temp/fcca3dde-1.png' -> '/home/islamdzl/Desktop/coder/shop/back-end/src/uploads/2025/08/08/0cbf0f53-809b-4cd8-b3a3-580cbb6ff957.png'
+[2025-08-08 23:23:05] error: ❌ MongoDB initial connection failed
+[2025-08-10 19:20:19] error: Error in login Controller
+[2025-08-10 19:20:56] error: Error in login Controller
+[2025-08-10 19:20:57] error: Error in login Controller
+[2025-08-10 19:20:58] error: Error in login Controller
+[2025-08-10 19:22:49] error: Error in register Controller
+[2025-08-10 19:23:14] error: Error in register Controller
+[2025-08-10 19:27:24] error: Error in resolveFiles uploadsError: packageId is required
+[2025-08-10 19:30:27] error: Error in getTempFiles uploadsError: Invalid Package
+[2025-08-10 21:36:04] error: ❌ MongoDB initial connection failed
+[2025-08-10 21:46:50] error: ❌ MongoDB initial connection failed
+[2025-08-10 21:47:25] error: ❌ MongoDB initial connection failed

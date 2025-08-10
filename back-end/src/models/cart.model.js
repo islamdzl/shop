@@ -1,22 +1,12 @@
 const mongoose = require('mongoose')
 const { SchemaTypes } = require('mongoose')
 
-const CartMiddlware = require('../middlewares/cart/index')
 
 const cartSchema = new mongoose.Schema({
 
-  buyingDetailes: {
-    fullName: {type: SchemaTypes.String, default: ''},
-    phone1: {type: SchemaTypes.String, default: ''},
-    phone2: {type: SchemaTypes.String, default: ''},
-    state: {type: SchemaTypes.Number, default: 0},
-    city: {type: SchemaTypes.String, default: ''},
-    description: {type: SchemaTypes.String, default: ''},
-  },
-
   ratings: {type: SchemaTypes.Map},
 
-  cart: {
+  shoppingCart: {
     type: SchemaTypes.Mixed,
     default: []
   },
@@ -34,9 +24,6 @@ const cartSchema = new mongoose.Schema({
 }, {
   timestamp: true
 })
-
-cartSchema.pre('save', CartMiddlware.ChangeValue)
-cartSchema.pre('updateOne', CartMiddlware.ChangeValue)
 
 const Cart = mongoose.model('Cart', cartSchema)
 

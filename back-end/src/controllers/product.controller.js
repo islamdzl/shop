@@ -1,11 +1,11 @@
 const Logger = require('../services/Logger');
-const ProductService = require('../services/product/index')
-const ErrorHandler = require('../services/errorsHandler/index')
+const EHandler = require('../services/EHandler/index')
 const Validations = require('../validations')
-const StoreService = require('../services/store/index')
-const CartService = require('../services/cart/index')
-const Utils = require('../utils/index')
-const LocalDB = require('../localDb/index')
+const LDB = require('../services/LDB/index')
+
+const Product = require('../models/product.model')
+const Store = require('../models/store.model')
+const Settings = require('../models/settings.model')
 
 exports.BuyProduct = async(req, res)=> {
   /*
@@ -13,7 +13,7 @@ exports.BuyProduct = async(req, res)=> {
 
     {
       product: {
-        productId: {objectId}
+        id: {objectId}
         count: 1
       }
 
@@ -24,6 +24,7 @@ exports.BuyProduct = async(req, res)=> {
         phone1: '*********'
         phone2: '*********'
         description: ''
+        deliveryToHome: false
       }
     }
   */
@@ -33,78 +34,72 @@ exports.BuyProduct = async(req, res)=> {
 
     try{
 
-      if (typeof data.product !== 'object') {
-        ErrorHandler.useResponseError(res, ErrorHandler.ERRORS.INVALID_DATA)
+      const { error, value } = Validations.Product.buyProduct(data)
+
+      if (error) {
+        EHandler.UCRError(res, error)
         return;
       }
 
-      if (! Validations.Others.objectId(data.product.productId)) {
-        ErrorHandler.useResponseError(res, ErrorHandler.ERRORS.PRODUCT_ID_INVALID)
-        return;
+      let buyingDetailes = value.buyingDetailes;
+
+      if (! buyingDetailes && user) {
+        
+        const projections = {buyingDetailes: 1}
+        const settings = await Settings.findById(user._id, projections)
+
+        if (! settings) {
+          EHandler.URError(res, EHandler.ERRORS.SETTINGS_NOT_FOUND)
+          return;
+        }
+
+        buyingDetailes = settings.buyingDetailes;
       }
 
-      const productId = data.product.productId;
-
-      let buyingDetailes = {};
-
-      if (user) {
-        const cart = await CartService.getCartById(user._id, {buyingDetailes: 1})
-
-        if (! cart) {
-          ErrorHandler.useResponseError(res, ErrorHandler.ERRORS.CART_NOT_FOUND)
-          return;
-        }
-
-        buyingDetailes = cart.buyingDetailes;
-      }else {
-
-        if (typeof data.buyingDetailes !== 'object') {
-          ErrorHandler.useResponseError(res, ErrorHandler.ERRORS.INVALID_DATA)
-          return;
-        }
-
-        const validateBuyingDetailes = Validations.CartValidate.buyingDetailes(data.buyingDetailes)
-
-        if (! validateBuyingDetailes.valid) {
-          res.status(400).json({
-            errors: validateBuyingDetailes.errors
-          })
-          return;
-        }
-
-        buyingDetailes = validateBuyingDetailes.value;
-      }
-
-      const product = await ProductService.getProduct(productId, {
+      const product = await Product.findById(value.product.id, {
         price: 1,
-        isAvailable: 1
+        isAvailable: 1,
+        ownerId:1,
+        stack: 1,
+        name: 1,
+        requests: 1
       })
 
-      if (! product.isAvailable) {
-        ErrorHandler.useResponseError(res, ErrorHandler.ERRORS.PRODUCT_NOT_AVAILABLE)
+      if (! product || ! product.isAvailable) {
+        EHandler.URError(res, EHandler.ERRORS.PRODUCT_NOT_AVAILABLE)
         return;
       }
 
-      const request = Utils.Merge.simpleMerge(buyingDetailes, {
-        clientId: req.user?._id,
-        count: data.count,
-        ownerId: 1
-      })
-
-      const objectRequest = StoreService.createObjectRequest(request)
-
-      if (! objectRequest) {
-        ErrorHandler.useResponseError(res, ErrorHandler.ERRORS.INVALID_DATA)
-        return
+      if (product.stack && product.stack < value.product.count) {
+        EHandler.URError(res, EHandler.ERRORS.INVALID_COUNT)
+        return;
       }
 
-      const storeOptions = {
-        objectRequest
+      product.requests += 1;
+
+      if (product.stack) {
+        product.stack -= value.product.count;
       }
 
-      await StoreService.MidllwaresUseger(product.ownerId, storeOptions, StoreService.Middlewares.addRequest)
-      await ProductService.MidllwaresUseger(product._id, {}, ProductService.Midllwares.requestEnc)
 
+      const request = {          
+        client: buyingDetailes,
+        clientId: user._id || null,
+        productId: product._id,
+        count: value.product.count,
+        productName: product.name,
+        fullPrice: product.price * value.product.count
+      }
+
+      await Store.findByIdAndUpdate(product.ownerId,
+        {
+          $push: {
+            requests: request
+          }
+        },
+        {new: true, projection: {_id: 1}}
+      )
+      await product.save()
       res.status(200).end()
     }catch(error) {
 
@@ -113,7 +108,7 @@ exports.BuyProduct = async(req, res)=> {
         error
       })
 
-      ErrorHandler.useResponseError(res, ErrorHandler.ERRORS.SYSTEM_ERROR)
+      EHandler.URError(res, EHandler.ERRORS.SYSTEM_ERROR)
     }
 }
 
@@ -131,21 +126,17 @@ exports.getProduct = async(req, res)=> {
 
     try{
 
-      if (! Validations.Others.objectId(data.productId)) {
-
-        ErrorHandler.useResponseError(ErrorHandler.ERRORS.PRODUCT_ID_INVALID)
+      const { error, value } = Validations.Product.getProduct(data)
+      
+      if (error) {
+        EHandler.UCRError(res, error)
         return;
       }
 
-      const projection = {
-
-      }
-
-      const product = await ProductService.getProduct(data.productId, projection)
+      const product = await Product.findById(value.productId)
 
       if (! product) {
-
-        ErrorHandler.useResponseError(res, ErrorHandler.ERRORS.PRODUCT_NOT_AVAILABLE)
+        EHandler.URError(res, EHandler.ERRORS.PRODUCT_NOT_AVAILABLE)
         return;
       }
 
@@ -157,7 +148,7 @@ exports.getProduct = async(req, res)=> {
         error
       })
 
-      ErrorHandler.useResponseError(res, ErrorHandler.ERRORS.SYSTEM_ERROR)
+      EHandler.URError(res, EHandler.ERRORS.SYSTEM_ERROR)
     }
 }
 
@@ -177,22 +168,30 @@ exports.setAvailable = async(req, res)=> {
 
     try{
 
-      if (! Validations.Others.objectId(data.productId)) {
-        ErrorHandler.useResponseError(res, ErrorHandler.ERRORS.PRODUCT_ID_INVALID)
+      const { error, value } = Validations.Product.setAvailable(data)
+
+      if (error) {
+        EHandler.URError(res, EHandler.ERRORS.PRODUCT_ID_INVALID)
         return;
       }
 
-      if (typeof data.isAvailable !== 'boolean') {
-        ErrorHandler.useResponseError(res, ErrorHandler.ERRORS.INVALID_DATA)
+      const product = await Product.findById(value.productId, {
+        ownerId: 1,
+        isAvailable: 1,
+      })
+
+      if (! product) {
+        EHandler.URError(res, EHandler.ERRORS.PRODUCT_NOT_AVAILABLE)
         return;
       }
 
-      const productOptions = {
-        isAvailable: data.isAvailable
-      }
+      product.isAvailable = value.available;
 
-      await ProductService.MidllwaresUseger(data.productId, productOptions, ProductService.Midllwares.setStateAvailable)
+      if (value.stack) product.stack = value.stack;
 
+      await product.save()
+
+      res.status(200).json({stack: product.stack,isAvailable: product.isAvailable});
     }catch(error) {
 
       Logger.error({
@@ -200,7 +199,7 @@ exports.setAvailable = async(req, res)=> {
         error
       })
 
-      ErrorHandler.useResponseError(res, ErrorHandler.ERRORS.SYSTEM_ERROR)
+      EHandler.URError(res, EHandler.ERRORS.SYSTEM_ERROR)
     }
 }
 
@@ -210,7 +209,7 @@ exports.createNew = async(req, res)=> {
     {
       name: "String"
       ownerId: joi.object().required(),
-      content: Number | null
+      satack: Number | null
       price:   Number
       isAvailable: Boolean,
       description: String
@@ -224,34 +223,28 @@ exports.createNew = async(req, res)=> {
 
     try{
 
-      if (! data.packageId) {
-        ErrorHandler.useResponseError(res, ErrorHandler.ERRORS.PACKAGE_ID_INVALID)
+      if (! await LDB.Uploads.getTempFiles(user._id)) {
+        EHandler.URError(res, EHandler.ERRORS.PREVIOW_IMAGE_INVALID)
+        return
+      }
+
+
+      data.ownerId = user._id;
+
+      data.imagesUrls = await LDB.Uploads.resolveFiles(user._id)
+
+      const { error, value } = Validations.Product.create(data);
+
+      if (error) {
+        EHandler.UCRError(res, error)
         return;
       }
 
-      const validate = Validations.Product.verifyDetailes(data);
+      return
 
-      if (! validate.valid) {
-        res.status(400).json({
-          error: validate.errors[0]
-        })
-        return;
-      }
-      const resolvedPackage = await LocalDB.Uploads.resolveFiles(data.packageId)
+      await ProductService.createProduct(value, user._id)
 
-      console.log(resolvedPackage)
-      if (! resolvedPackage) {
-        ErrorHandler.useResponseError(res, ErrorHandler.ERRORS.INVALID_PACKAGE)
-        return;
-      }
-
-      const lastValidate = Validations.Product.create(Utils.Merge.simpleMerge(validate.value, {
-        imagesUrls: resolvedPackage,
-        ownerId: user._id
-      }))
-
-      res.json(lastValidate)
-
+      res.status(200).end()
     }catch(error) {
 
       Logger.error({
@@ -259,6 +252,8 @@ exports.createNew = async(req, res)=> {
         error
       })
 
-      ErrorHandler.useResponseError(res, ErrorHandler.ERRORS.SYSTEM_ERROR)
+      console.log(error)
+
+      EHandler.URError(res, EHandler.ERRORS.SYSTEM_ERROR)
     }
 }

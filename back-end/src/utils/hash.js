@@ -1,11 +1,21 @@
-const bcript = require('bcrypt')
+const bcrypt = require('bcrypt')
 
-const saltRounds = 12;
+const salt = 12;
 
-exports.hash = async(text)=> {
-  return await bcript.hash(text, saltRounds)
+exports.compare  = async(password, hashPassword)=> {
+  return await bcrypt.compare(password, hashPassword)
 }
 
-exports.compare = async(userPassword, dbPasswordHash)=> {
-  return await bcript.compare(userPassword, dbPasswordHash)
+exports.hash = async(text)=> {
+  return new Promise((resolve, reject)=> {
+    bcrypt.hash(text, salt, (error, hash)=> {
+
+      if (error) {
+        reject(error);
+        return;
+      }
+
+      resolve(hash)
+    })
+  })
 }

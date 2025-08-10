@@ -1,65 +1,39 @@
 const joi = require('joi')
 
-const validateReturner = (schema, data)=> {
-  const { error, value } = schema.validate(data)
-  if (error) {
-    return {
-      valid: false,
-      errors: error.details.map(e => e.message)
-    }
-  }
-  return { valid: true, value }
-}
 
-
-exports.request = (requestDetailes)=> {
+exports.getStore = (data = {})=> {
 
   const schema = joi.object({
-    
-    clientId: joi.string().default(null),
-
-    fullName: joi.string().required().trim().min(7).messages({
-      'string.empty': 'الاسم الكامل لا يمكن أن يكون فارغًا',
-      'any.required': 'الاسم الكامل مطلوب'
-    }),
-
-    state: joi.number().required().messages({
-      'any.required': 'الولاية مطلوبة'
-    }),
-
-    city: joi.string().required().messages({
-      'any.required': 'المدينة مطلوبة'
-    }),
-
-    phone1: joi.string().required().min(8).max(11).messages({
-      'string.empty': 'رقم الهاتف الأول مطلوب',
-      'string.min': 'رقم الهاتف الأول قصير جدًا',
-      'string.max': 'رقم الهاتف الأول طويل جدًا',
-      'any.required': 'رقم الهاتف الأول مطلوب'
-    }),
-
-    phone2: joi.string().min(8).max(11).messages({
-      'string.min': 'رقم الهاتف الثاني قصير جدًا',
-      'string.max': 'رقم الهاتف الثاني طويل جدًا',
-    }),
-
-    description: joi.string().max(70).messages({
-      'string.max': 'الوصف لا يجب أن يتجاوز 70 حرفًا'
-    }),
-
-    productId: joi.string().required().messages({
-      'number.base': 'معرف المنتج غير صالح',
-      'any.required': 'معرف المنتج مطلوب'
-    }),
-
-    count: joi.number().min(1).max(100).messages({
-      'number.base': 'عدد المنتجات يجب أن يكون رقمًا',
-      'number.min': 'العدد الأدنى للمنتج هو 1',
-      'number.max': 'العدد الأقصى للمنتج هو 100'
-    }),
-
-    fullPrice: joi.number()
+    storeId: joi.string().hex().length(24).required()
   })
 
-  return validateReturner(schema, requestDetailes)
+  return schema.validate(data)
+}
+
+exports.setActivty = (data)=> {
+
+  const schema = joi.object({
+    activty: joi.boolean().required()
+  })
+
+  return schema.validate(data)
+}
+
+exports.addRating = (data)=> {
+
+  const schema = joi.object({
+    storeId: joi.string().hex().length(24).required(),
+    rating: joi.number().required().min(0).max(10).default(5)
+  })
+
+  return schema.validate(data)
+}
+
+exports.setOpen = (data)=> {
+
+  const schema = joi.object({
+    open: joi.boolean().required()
+  })
+
+  return schema.validate(data)
 }

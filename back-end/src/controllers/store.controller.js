@@ -1,8 +1,8 @@
 const Logger = require('../services/Logger');
-const ErrorHandler = require('../services/errorsHandler/index')
+const EHandler = require('../services/EHandler')
 const Validations = require('../validations')
-const StoreService = require('../services/store/index')
 
+const Store = require('../models/store.model')
 
 exports.getMyStore = async(req, res)=> {
 
@@ -15,14 +15,11 @@ exports.getMyStore = async(req, res)=> {
 
   try{
 
-    const projections = {}
-
-    const store = await StoreService.getStore(user._id, projections)
-
-    if (! store) {
-      ErrorHandler.useResponseError(res, ErrorHandler.ERRORS.INVALID_STORE)
-      return;
+    const projections = {
+      requests: 0
     }
+
+    const store = await Store.findById(user._id, projections)
 
     res.status(200).json(store)
   }catch(error) {
@@ -32,7 +29,7 @@ exports.getMyStore = async(req, res)=> {
       error
     })
 
-    ErrorHandler.useResponseError(res, ErrorHandler.ERRORS.SYSTEM_ERROR)
+    EHandler.URError(res, EHandler.ERRORS.SYSTEM_ERROR)
   }
 }
 
@@ -53,33 +50,32 @@ exports.getStore = async(req, res)=> {
 
   try{
 
+    const { error, value } = Validations.Store.getStore(data)
 
-    if (! data || ! Validations.Others.objectId(data.storeId)) {
-      ErrorHandler.useResponseError(res, ErrorHandler.ERRORS.INVALID_STORE_ID)
+    if (error) {
+      EHandler.UCRError(res, error)
       return;
     }
 
     const projections = {
-      name: 1,
       logo: 1,
+      name: 1,
       productList: 1,
+      description: 1,
+      categories: 1,
       location: 1,
       contact: 1,
       socialLinks: 1,
       ratings: 1,
       isVerified: 1,
       isOpen: 1,
-      description: 1,
-      categories: 1,
       isActive: 1,
-      createdAt: 1,
-      updatedAt: 1
     }
 
-    const store = await StoreService.getStore(data.storeId, projections)
+    const store = await Store.findById(value.storeId, projections)
 
     if (! store) {
-      ErrorHandler.useResponseError(res, ErrorHandler.ERRORS.INVALID_STORE)
+      EHandler.URError(res, EHandler.ERRORS.INVALID_STORE)
       return;
     }
 
@@ -91,7 +87,7 @@ exports.getStore = async(req, res)=> {
       error
     })
 
-    ErrorHandler.useResponseError(res, ErrorHandler.ERRORS.SYSTEM_ERROR)
+    EHandler.URError(res, EHandler.ERRORS.SYSTEM_ERROR)
   }
 }
 
@@ -108,22 +104,19 @@ exports.setActivty = async(req, res)=> {
 
   try{
 
-    if (! data || typeof data.activty !== 'boolean') {
-      ErrorHandler.useResponseError(res, ErrorHandler.ERRORS.INVALID_DATA)
+    const { error, value } = Validations.Store.setActivty(data)
+
+    if (error) {
+      EHandler.UCRError(res, error)
       return;
     }
 
-    const projections = {
-      isActive: 1
-    }
+    const store = await Store.findByIdAndUpdate(user._id,
+      {isActive: value.activty},
+      {new: true, projection: {isActive: 1}}
+    )
 
-    const store = await StoreService.getStore(user._id, projections)
-
-    store.isActive = data.activty;
-
-    await StoreService.saveStore(store, user._id)
-
-    res.status(200).end()
+    res.status(200).json({isActive: store.isActive})
   }catch(error) {
 
     Logger.error({
@@ -131,53 +124,7 @@ exports.setActivty = async(req, res)=> {
       error
     })
 
-    ErrorHandler.useResponseError(res, ErrorHandler.ERRORS.SYSTEM_ERROR)
-  }
-}
-
-exports.addRating = async(req, res)=> {
-
-  /*
-    {
-      storId: {objectId}
-      rating: 1 | 0 | -1 
-    }
-  */
-
-  const data = req.body;
-  const user = req.user;
-
-  try{
-
-    if (! data || ! Validations.Others.objectId(data.storeId)) {
-      ErrorHandler.useResponseError(res, ErrorHandler.ERRORS.INVALID_STORE_ID)
-      return;
-    }
-
-    if (! Number.isInteger(data.rating) || ! (data.rating >= -1 && data.rating <= 1)) {
-      ErrorHandler.useResponseError(res, ErrorHandler.ERRORS.INVALID_DATA)
-      return;
-    }
-
-    const options = {
-      rating: data.rating
-    }
-
-    await StoreService.MidllwaresUseger(data.storeId, options, StoreService.Midllewares.changeRatings)
-
-    res.status(200).end()
-  }catch(error) {
-
-    Logger.error({
-      message: 'Error in addRating controller',
-      error
-    })
-
-    Logger.error({
-      message: error
-    })
-
-    ErrorHandler.useResponseError(res, ErrorHandler.ERRORS.SYSTEM_ERROR)
+    EHandler.URError(res, EHandler.ERRORS.SYSTEM_ERROR)
   }
 }
 
@@ -194,22 +141,19 @@ exports.setOpen = async(req, res)=> {
 
   try{
 
-    if (! data || typeof data.open !== 'boolean') {
-      ErrorHandler.useResponseError(res, ErrorHandler.ERRORS.INVALID_DATA)
+    const { error, value } = Validations.Store.setOpen(data)
+
+    if (error) {
+      EHandler.URError(res, error)
       return;
     }
 
-    const projections = {
-      isOpen: 1
-    }
+    const storeUpdated = await Store.findByIdAndUpdate(user._id,
+      {isOpen: value.open},
+      {new: true, projection: {isOpen: 1}}
+    )
 
-    const store = await StoreService.getStore(user._id, projections)
-
-    store.isOpen = data.open;
-
-    await StoreService.saveStore(store, user._id)
-
-    res.status(200).end()
+    res.status(200).json({isOpen: storeUpdated.isOpen})
   }catch(error) {
 
     Logger.error({
@@ -217,6 +161,6 @@ exports.setOpen = async(req, res)=> {
       error
     })
 
-    ErrorHandler.useResponseError(res, ErrorHandler.ERRORS.SYSTEM_ERROR)
+    EHandler.URError(res, EHandler.ERRORS.SYSTEM_ERROR)
   }
 }

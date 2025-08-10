@@ -1,9 +1,7 @@
 const express = require('express')
 const cookieParser = require('cookie-parser')
 const cors = require('cors')
-const Validations = require('./validations/auth.user.validate')
 const app = express()
-
 const Routes = require('./routes/index')
 
 app.use(cookieParser())
@@ -16,7 +14,8 @@ app.use(Routes.User)
 app.use('/cart', Routes.Cart)
 app.use('/store', Routes.Store)
 app.use('/product', Routes.Product)
-app.use('/uploads', Routes.Uploads)
-app.use('/upload', /* Validations.getUser, */ Routes.Upload)
+app.use('/settings', Routes.Settings)
+
+// app.post('/upload', Middlewares.Uploads.before, Middlewares.Uploads.process, Middlewares.Uploads.after)
 
 module.exports = app;

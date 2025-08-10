@@ -1,9 +1,11 @@
 const Logger = require('../services/Logger');
-const CartService = require('../services/cart/index')
-const StoreService = require('../services/store/index')
-const ProductService = require('../services/product/index')
-const ErrorHandler = require('../services/errorsHandler/index')
-const Validations = require('../validations')
+const EHandler = require('../services/EHandler')
+const Validations = require('../validations');
+
+const Cart = require('../models/cart.model')
+const Product = require('../models/product.model')
+const Store = require('../models/store.model')
+const Settings = require('../models/settings.model')
 
 exports.shoppingCartAddProduct = async(req, res)=> {
   
@@ -17,47 +19,52 @@ exports.shoppingCartAddProduct = async(req, res)=> {
 
   try{
 
-    if (! Validations.Others.objectId(data.productId)) {
-      ErrorHandler.useResponseError(res, ErrorHandler.ERRORS.PRODUCT_ID_INVALID)
+    const { error, value } = Validations.Cart.shoppingCartAddIProduct(data);
+
+    if (error) {
+      EHandler.UCRError(res, error)
       return;
     }
 
-    const product = await ProductService.getProduct(data.productId)
+    const product = await Product.findById(value.productId, {
+      price: 1, name: 1, isAvailable: 1, ownerId: 1, stack: 1
+    })
 
-    if (! product) {
-      ErrorHandler.useResponseError(res, ErrorHandler.ERRORS.PRODUCT_NOT_AVAILABLE)
+    if (! product || ! product.isAvailable) {
+      EHandler.URError(res, EHandler.ERRORS.PRODUCT_NOT_AVAILABLE)
       return;
     }
 
-    const options = {
-
-      productCartObject: {
-        id:         product._id,
-        ownerId:    product.ownerId,
-        name:       product.name,
-        price:      product.price,
-        preview:    product.imagesUrls,
-        count:      data.count || 1,
-      }
-
-    }
-
-    const processState = await CartService.MidllwaresUseger(user._id, options, CartService.Midllwares.cartAddProduct)
-
-    if (! processState.statu) {
-      ErrorHandler.useResponseError(res, ErrorHandler.ERRORS.SYSTEM_ERROR)
+    if (product.stack < value.count) {
+      EHandler.URError(res, EHandler.ERRORS.PAYLOAD_TOO_LARGE)
       return;
     }
 
-    res.status(200).end()
+    const item = {
+      productId: product._id,
+      ownerId: product.ownerId,
+      count: value.count,
+      price: product.price,
+    }
+
+    const updatedCart = await Cart.findByIdAndUpdate( user._id,
+      {
+        $push:{
+          shoppingCart: item
+        },
+      },
+      {new: true}
+    )
+
+    res.status(200).json(updatedCart)
   }catch(error) {
 
     Logger.error({
-      message: 'Error in shoppingCartAddItem controller',
+      message: 'Error in shoppingCartAddProduct Controller Cart',
       error
     })
 
-    ErrorHandler.useResponseError(res, ErrorHandler.ERRORS.SYSTEM_ERROR)
+    EHandler.URError(res, EHandler.ERRORS.SYSTEM_ERROR)
   }
 }
 
@@ -72,31 +79,27 @@ exports.shoppingCartremoveProduct = async(req, res)=> {
 
   try{
 
-    if (! Validations.Others.objectId(data.productId)) {
-      ErrorHandler.useResponseError(res, ErrorHandler.ERRORS.PRODUCT_ID_INVALID)
+    const { error, value } = Validations.Cart.shoppingCartremoveProduct(data);
+
+    if (error) {
+      EHandler.UCRError(res, error)
       return;
     }
 
-    const options = {
-      productCartId: data.productId
-    }
+    const cart = await Cart.findById(user._id)
 
-    const processState = await CartService.MidllwaresUseger(user._id, options, CartService.Midllwares.cartRemoveProduct)
+    cart.shoppingCart = cart.shoppingCart.filter((item)=> item.productId.toString() !== value.productId)
 
-    if (! processState.statu) {
-      ErrorHandler.useResponseError(res, ErrorHandler.ERRORS.SYSTEM_ERROR)
-      return;
-    }
-
-    res.status(200).end()
+    await cart.save()
+    res.status(200).json(cart)
   }catch(error) {
 
     Logger.error({
-      message: 'Error in shoppingCartRemoveItem controller',
+      message: 'Error in shoppingCartRemoveItem controller Cart',
       error
     })
 
-    ErrorHandler.useResponseError(res, ErrorHandler.ERRORS.SYSTEM_ERROR)
+    EHandler.URError(res, EHandler.ERRORS.SYSTEM_ERROR)
   }
 }
 
@@ -109,26 +112,19 @@ exports.clearShoppingCart = async(req, res)=> {
   const { user } = req;
   try{
 
-    const cart = await CartService.getCartById(user._id)
+    const updatedCart = await Cart.findByIdAndUpdate(user._id,
+      {shoppingCart: []}, {new: true}
+    )
 
-    if (! cart) {
-      ErrorHandler.useResponseError(res, ErrorHandler.ERRORS.CART_NOT_FOUND)
-      return;
-    }
-
-    const newCart = CartService.Services.clearShoppingCart(cart)
-
-    await CartService.seveCart(newCart, user._id)
-
-    res.status(200).end()
+    res.status(200).json(updatedCart)
   }catch(error) {
 
     Logger.error({
-      message: 'Error in clearShoppingCart Controller',
+      message: 'Error in clearShoppingCart Controller Cart',
       error
     })
 
-    ErrorHandler.useResponseError(res, ErrorHandler.ERRORS.SYSTEM_ERROR)
+    EHandler.URError(res, EHandler.ERRORS.SYSTEM_ERROR)
   }
 }
 
@@ -140,56 +136,58 @@ exports.BuyShoppingCart = async(req, res)=> {
   */
 
   const { user } = req;
+
   try{
 
-    const cart = await CartService.getCartById(user._id)
+    const settings = await Settings.findById(user._id, {buyingDetailes: 1})
 
-    if (! cart) {
-      ErrorHandler.useResponseError(res, ErrorHandler.ERRORS.CART_NOT_FOUND)
+    if (! settings.buyingDetailes) {
+      res.redirect('/settings/buyingDetailes');
       return;
     }
 
-    if (! Validations.CartValidate.buyingDetailes(cart.buyingDetailes)) {
-      ErrorHandler.useResponseError(res, ErrorHandler.ERRORS.INVALID_DATA)
-      return;
-    }
+    const cart = await Cart.findByIdAndUpdate(user._id,
+      {shoppingCart: []},
+      {new: false, projection: {}}
+    )
 
-    for (const product of cart.cart) {
+    for (const item of cart.shoppingCart) {
 
+      const product = await Product.findById(item.productId)
 
-      const objectRequest = Validations.StoreValidate.request(
-        Object.assign(cart.buyingDetailes, {
-          clientId: user._id,
-          productId: product.id,
-          count: product.count,
-          fullPrice: product.price * product.count
-        })
-      )
+      const request = {          
+        client: settings.buyingDetailes,
+        clientId: user._id,
+        productId: item.productId,
+        count: item.count,
+        name: product.name,
+        fullPrice: item.price * item.count
+      }
 
-      const { isAvailable } = await ProductService.getProduct(product.id, {isAvailable: 1})
-
-      if (! isAvailable) {
+      if (! product || ! product.isAvailable || updatedProduct.stack - item.count < 0) {
         continue
       }
 
-      const storeOptions = {
-        objectRequest,
+      product.requests += 1;
+      if (product.stack) {
+        product.stack -= item.count;
       }
+      
+      cart.buying.push(product)
 
-      const cartOptions = {
-        productBuyingObject: product,
-      }
-
-      await ProductService.MidllwaresUseger(product.id, {}, ProductService.Midllwares.requestEnc)
-      await StoreService.MidllwaresUseger(user._id, storeOptions, StoreService.Middlewares.addRequest)
-      await CartService.MidllwaresUseger(user._id, cartOptions, CartService.Midllwares.buyingAddProduct)
+      await product.save()
+      await Store.findByIdAndUpdate(user._id,
+        {
+          $push: {
+            requests: request
+          }
+        },
+        {new: true, projection: {_id: 1}}
+      )
     }
 
-    const newCart = CartService.Services.clearShoppingCart(cart)
-
-    await CartService.seveCart(newCart, user._id)
-
-    res.status(200).end()
+    await cart.save()
+    res.status(200).json(cart)
   }catch(error) {
 
     Logger.error({
@@ -197,7 +195,7 @@ exports.BuyShoppingCart = async(req, res)=> {
       error
     })
 
-    ErrorHandler.useResponseError(res, ErrorHandler.ERRORS.SYSTEM_ERROR)
+    EHandler.URError(res, EHandler.ERRORS.SYSTEM_ERROR)
   }
 }
 
@@ -212,18 +210,13 @@ exports.clearSuccess = async(req, res)=> {
   const { user } = req;
   try{
 
-    const cart = await CartService.getCartById(user._id)
 
-    if (! cart) {
-      ErrorHandler.useResponseError(res, ErrorHandler.ERRORS.CART_NOT_FOUND)
-      return;
-    }
 
-    const newCart = CartService.Services.clearSuccess(cart)
-
-    await CartService.seveCart(newCart, user._id)
-
-    res.status(200).end()
+    const updtedCart = await Cart.findByIdAndUpdate(user._id,
+      {success: []},
+      {new: true}
+    )
+    res.status(200).json(updtedCart)
   }catch(error) {
 
     Logger.error({
@@ -231,56 +224,10 @@ exports.clearSuccess = async(req, res)=> {
       error
     })
 
-    ErrorHandler.useResponseError(res, ErrorHandler.ERRORS.SYSTEM_ERROR)
+    EHandler.URError(res, EHandler.ERRORS.SYSTEM_ERROR)
   }
 }
 
-
-exports.updateBuyingDetailes = async(req, res)=> {
-
-  /*
-    {
-      fullName: ''
-      state: 0
-      city: ''
-      phone1: '*********'
-      phone2: '*********'
-      description:  ''
-    }
-  */
-
-  const { user } = req;
-  const data = req.body;
-
-  try{
-
-    
-    const validateBuyingDetailes = Validations.CartValidate.buyingDetailes(data)
-    
-    if (! validateBuyingDetailes.valid) {
-      res.status(400).json({
-        message: validateBuyingDetailes.errors
-      })
-      return;
-    }
-    
-    const newCart = {
-      buyingDetailes: validateBuyingDetailes.value
-    }
-
-    await CartService.seveCart(newCart, user._id)
-
-    res.status(200).end()
-  }catch(error) {
-
-    Logger.error({
-      message: 'Error in clearSuccess Controller',
-      error
-    })
-
-    ErrorHandler.useResponseError(res, ErrorHandler.ERRORS.SYSTEM_ERROR)
-  }
-}
 
 exports.get = async(req, res)=> {
   /*
@@ -292,32 +239,16 @@ exports.get = async(req, res)=> {
 
     try{
 
-      const projections = {
-        cart: 1,
-        buying: 1,
-        success: 1
-      }
+      const cart = await Cart.findById(user._id);
 
-      const cart = await CartService.getCartById(user._id, projections);
-
-      if (! cart) {
-        ErrorHandler.useResponseError(res, ErrorHandler.ERRORS.CART_NOT_FOUND)
-        return;
-      }
-
-
-      res.status(200).json({
-        shoppingCart: cart.cart,
-        buying: cart.buying,
-        success: cart.success
-      })
+      res.status(200).json(cart)
     }catch(error) {
 
       Logger.error({
-        message: 'Error in get Controller',
+        message: 'Error in get Controller Cart',
         error
       })
 
-      ErrorHandler.useResponseError(res, ErrorHandler.ERRORS.SYSTEM_ERROR)
+      EHandler.URError(res, EHandler.ERRORS.SYSTEM_ERROR)
     }
 }

@@ -1,6 +1,5 @@
 const mongoose = require('mongoose');
 const { SchemaTypes } = mongoose;
-const StoreMeddlwares = require('../middlewares/store/index')
 
 const storeSchema = new mongoose.Schema({
   _id: {
@@ -47,9 +46,6 @@ const storeSchema = new mongoose.Schema({
 }, {
   timestamps: true
 })
-
-storeSchema.pre('save', StoreMeddlwares.ChangeValue)
-storeSchema.pre('updateOne', StoreMeddlwares.ChangeValue)
 
 const Store = mongoose.model('Store', storeSchema);
 
